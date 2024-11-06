@@ -1,0 +1,1019 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{nuscenes}{misc}{}
+    \name{author}{10}{}{%
+      {{hash=CH}{%
+         family={Caesar},
+         familyi={C\bibinitperiod},
+         given={Holger},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BV}{%
+         family={Bankiti},
+         familyi={B\bibinitperiod},
+         given={Varun},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lang},
+         familyi={L\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vora},
+         familyi={V\bibinitperiod},
+         given={Sourabh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LVE}{%
+         family={Liong},
+         familyi={L\bibinitperiod},
+         given={Venice\bibnamedelima Erin},
+         giveni={V\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=XQ}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Qiang},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=AK}{%
+         family={Anush},
+         familyi={A\bibinitperiod},
+         given={Krishnan},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YP}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Pan},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={Baldan},
+         familyi={B\bibinitperiod},
+         given={Giancarlo},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BO}{%
+         family={Beijbom},
+         familyi={B\bibinitperiod},
+         given={Oscar},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CH+1}
+    \strng{fullhash}{CHBVLAVSLVEXQAKYPBGBO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.48550/arxiv.1903.11027
+    \endverb
+    \field{title}{nuScenes: A multimodal dataset for autonomous driving}
+    \verb{url}
+    \verb https://arxiv.org/abs/1903.11027
+    \endverb
+    \field{journaltitle}{Cornell University}
+    \field{month}{01}
+    \field{year}{2019}
+  \endentry
+
+  \entry{dsgn}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CY}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Yilun},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Shu},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SX}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Xiaoyong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Jia},
+         familyi={J\bibinitperiod},
+         given={Jiaya},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CY+1}
+    \strng{fullhash}{CYLSSXJJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1109/cvpr42600.2020.01255
+    \endverb
+    \field{title}{DSGN: Deep Stereo Geometry Network for 3D Object Detection}
+    \verb{url}
+    \verb https://doi.org/10.1109/cvpr42600.2020.01255
+    \endverb
+    \field{month}{06}
+    \field{year}{2020}
+  \endentry
+
+  \entry{voxelrcnn}{article}{}
+    \name{author}{6}{}{%
+      {{hash=DJ}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={Jiajun},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Shaoshuai},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Peiwei},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=ZW}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Wengang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yanyong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Houqiang},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJ+1}
+    \strng{fullhash}{DJSSLPZWZYLH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1609/aaai.v35i2.16207
+    \endverb
+    \field{number}{2}
+    \field{pages}{1201\bibrangedash 1209}
+    \field{title}{Voxel R-CNN: Towards High Performance Voxel-based 3D Object Detection}
+    \verb{url}
+    \verb https://doi.org/10.1609/aaai.v35i2.16207
+    \endverb
+    \field{volume}{35}
+    \field{journaltitle}{Association for the Advancement of Artificial Intelligence}
+    \field{month}{05}
+    \field{year}{2021}
+  \endentry
+
+  \entry{kitti}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GA}{%
+         family={Geiger},
+         familyi={G\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lenz},
+         familyi={L\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Stiller},
+         familyi={S\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=UR}{%
+         family={Urtasun},
+         familyi={U\bibinitperiod},
+         given={Raquel},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GA+1}
+    \strng{fullhash}{GALPSCUR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Vision meets Robotics: The KITTI Dataset}
+    \field{journaltitle}{International Journal of Robotics Research (IJRR)}
+    \field{year}{2013}
+  \endentry
+
+  \entry{avod}{misc}{}
+    \name{author}{5}{}{%
+      {{hash=KJS}{%
+         family={Ku},
+         familyi={K\bibinitperiod},
+         given={Jason\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mozifian},
+         familyi={M\bibinitperiod},
+         given={Melissa},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Jungwook},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Harakeh},
+         familyi={H\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WSL}{%
+         family={Waslander},
+         familyi={W\bibinitperiod},
+         given={Steven\bibnamedelima L.},
+         giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KJS+1}
+    \strng{fullhash}{KJSMMLJHAWSL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1109/iros.2018.8594049
+    \endverb
+    \field{title}{Joint 3D Proposal Generation and Object Detection from View Aggregation}
+    \verb{url}
+    \verb https://doi.org/10.1109/iros.2018.8594049
+    \endverb
+    \field{month}{10}
+    \field{year}{2018}
+  \endentry
+
+  \entry{stereo_rcnn}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=LP}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Peiliang},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CX}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Xiaozhi},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Shaojie},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LPCXSS1}
+    \strng{fullhash}{LPCXSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1109/cvpr.2019.00783
+    \endverb
+    \field{title}{Stereo R-CNN Based 3D Object Detection for Autonomous Driving}
+    \verb{url}
+    \verb https://doi.org/10.1109/cvpr.2019.00783
+    \endverb
+    \field{month}{06}
+    \field{year}{2019}
+  \endentry
+
+  \entry{opencv_aruco_detection}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={OpenCV},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{howpublished}{\url{https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html}}
+    \field{note}{Accessed: 2024-11-04}
+    \field{title}{ArUco Marker Detection}
+    \field{year}{2024}
+  \endentry
+
+  \entry{pointnet++}{misc}{}
+    \name{author}{4}{}{%
+      {{hash=QCR}{%
+         family={Qi},
+         familyi={Q\bibinitperiod},
+         given={Charles\bibnamedelima R.},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Su},
+         familyi={S\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Guibas},
+         familyi={G\bibinitperiod},
+         given={Leonidas},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{QCR+1}
+    \strng{fullhash}{QCRLYSHGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \verb{doi}
+    \verb 10.48550/arxiv.1706.02413
+    \endverb
+    \field{title}{PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space}
+    \verb{url}
+    \verb https://arxiv.org/abs/1706.02413
+    \endverb
+    \field{journaltitle}{Cornell University}
+    \field{month}{01}
+    \field{year}{2017}
+  \endentry
+
+  \entry{frustum_pointnet}{article}{}
+    \name{author}{5}{}{%
+      {{hash=QCR}{%
+         family={Qi},
+         familyi={Q\bibinitperiod},
+         given={Charles\bibnamedelima Ruizhongtai},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Chenxia},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Su},
+         familyi={S\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GLJ}{%
+         family={Guibas},
+         familyi={G\bibinitperiod},
+         given={Leonidas\bibnamedelima J.},
+         giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{QCR+2}
+    \strng{fullhash}{QCRLWWCSHGLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \verb{eprint}
+    \verb 1711.08488
+    \endverb
+    \field{title}{Frustum PointNets for 3D Object Detection from {RGB-D} Data}
+    \verb{url}
+    \verb http://arxiv.org/abs/1711.08488
+    \endverb
+    \field{volume}{abs/1711.08488}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+  \endentry
+
+  \entry{pv_rcnn}{article}{}
+    \name{author}{7}{}{%
+      {{hash=SS}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Shaoshuai},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Chaoxu},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=JL}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zhe},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Jianping},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Hongsheng},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SS+1}
+    \strng{fullhash}{SSGCJLWZSJWWLH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1109/cvpr42600.2020.01054
+    \endverb
+    \field{title}{PV-RCNN: Point-Voxel Feature Set Abstraction for 3D Object Detection}
+    \verb{url}
+    \verb https://doi.org/10.1109/cvpr42600.2020.01054
+    \endverb
+    \field{month}{06}
+    \field{year}{2020}
+  \endentry
+
+  \entry{point_rcnn}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=SS}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Shaoshuai},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Hongsheng},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSWWLH1}
+    \strng{fullhash}{SSWWLH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.48550/arxiv.1812.04244
+    \endverb
+    \field{title}{PointRCNN: 3D Object Proposal Generation and Detection from Point Cloud}
+    \verb{url}
+    \verb https://arxiv.org/abs/1812.04244
+    \endverb
+    \field{journaltitle}{Cornell University}
+    \field{month}{01}
+    \field{year}{2018}
+  \endentry
+
+  \entry{point_gnn}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=SW}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Weijing},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=R}{%
+         family={Ragunathan},
+         familyi={R\bibinitperiod},
+      }}%
+      {{hash=R}{%
+         family={Rajkumar},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SWRR1}
+    \strng{fullhash}{SWRR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.48550/arxiv.2003.01251
+    \endverb
+    \field{title}{Point-GNN: Graph Neural Network for 3D Object Detection in a Point Cloud}
+    \verb{url}
+    \verb https://arxiv.org/abs/2003.01251
+    \endverb
+    \field{journaltitle}{Cornell University}
+    \field{month}{01}
+    \field{year}{2020}
+  \endentry
+
+  \entry{waymo}{misc}{}
+    \name{author}{23}{}{%
+      {{hash=SP}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Pei},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={Kretzschmar},
+         familyi={K\bibinitperiod},
+         given={Henrik},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DX}{%
+         family={Dotiwalla},
+         familyi={D\bibinitperiod},
+         given={Xerxes},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Chouard},
+         familyi={C\bibinitperiod},
+         given={Aurélien},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PV}{%
+         family={Patnaik},
+         familyi={P\bibinitperiod},
+         given={Vijaysai},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=TP}{%
+         family={Tsui},
+         familyi={T\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GJCY}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={James C.\bibnamedelima Y.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Yin},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CY}{%
+         family={Chai},
+         familyi={C\bibinitperiod},
+         given={Yuning},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CB}{%
+         family={Caine},
+         familyi={C\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={Vasudevan},
+         familyi={V\bibinitperiod},
+         given={Vijay},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=HW}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Ngiam},
+         familyi={N\bibinitperiod},
+         given={Jiquan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZH}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Hang},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Timofeev},
+         familyi={T\bibinitperiod},
+         given={Aleksei},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ES}{%
+         family={Ettinger},
+         familyi={E\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Krivokon},
+         familyi={K\bibinitperiod},
+         given={Maxim},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Amy},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={Joshi},
+         familyi={J\bibinitperiod},
+         given={Aditya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yu},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shlens},
+         familyi={S\bibinitperiod},
+         given={Jonathon},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Zhifeng},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Anguelov},
+         familyi={A\bibinitperiod},
+         given={Dragomir},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SP+1}
+    \strng{fullhash}{SPKHDXCAPVTPGJCYZYCYCBVVHWNJZHTAESKMGAJAZYSJCZAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1109/cvpr42600.2020.00252
+    \endverb
+    \field{title}{Scalability in Perception for Autonomous Driving: Waymo Open Dataset}
+    \verb{url}
+    \verb https://doi.org/10.1109/cvpr42600.2020.00252
+    \endverb
+    \field{month}{06}
+    \field{year}{2020}
+  \endentry
+
+  \entry{mv3d}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=uCXMHWJLBXT}{%
+         family={undefined},
+         familyi={u\bibinitperiod},
+         given={Chen; Xiaozhi; Ma; Huimin; Wan; Ji; Li; Bo; Xia;\bibnamedelima Tian},
+         giveni={C\bibinitperiod\bibinitdelim X\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim X\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{uCXMHWJLBXT1}
+    \strng{fullhash}{uCXMHWJLBXT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{title}{Multi-View 3D Object Detection Network for Autonomous Driving}
+    \verb{url}
+    \verb https://arxiv.org/abs/1611.07759v2
+    \endverb
+    \field{month}{11}
+    \field{year}{2016}
+  \endentry
+
+  \entry{pointpainting}{article}{}
+    \name{author}{4}{}{%
+      {{hash=VS}{%
+         family={Vora},
+         familyi={V\bibinitperiod},
+         given={Sourabh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lang},
+         familyi={L\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Helou},
+         familyi={H\bibinitperiod},
+         given={Bassam},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BO}{%
+         family={Beijbom},
+         familyi={B\bibinitperiod},
+         given={Oscar},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VS+1}
+    \strng{fullhash}{VSLAHBBO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \verb{doi}
+    \verb 10.1109/cvpr42600.2020.00466
+    \endverb
+    \field{title}{PointPainting: Sequential Fusion for 3D Object Detection}
+    \verb{url}
+    \verb https://doi.org/10.1109/cvpr42600.2020.00466
+    \endverb
+    \field{month}{06}
+    \field{year}{2020}
+  \endentry
+
+  \entry{pseudo_lidar}{misc}{}
+    \name{author}{6}{}{%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CW}{%
+         family={Chao},
+         familyi={C\bibinitperiod},
+         given={Wei‐Lun},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Garg},
+         familyi={G\bibinitperiod},
+         given={Divyansh},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Hariharan},
+         familyi={H\bibinitperiod},
+         given={Bharath},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Campbell},
+         familyi={C\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WKQ}{%
+         family={Weinberger},
+         familyi={W\bibinitperiod},
+         given={Kilian\bibnamedelima Q.},
+         giveni={K\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WY+1}
+    \strng{fullhash}{WYCWGDHBCMWKQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1109/cvpr.2019.00864
+    \endverb
+    \field{title}{Pseudo-LiDAR From Visual Depth Estimation: Bridging the Gap in 3D Object Detection for Autonomous Driving}
+    \verb{url}
+    \verb https://doi.org/10.1109/cvpr.2019.00864
+    \endverb
+    \field{month}{06}
+    \field{year}{2019}
+  \endentry
+
+  \entry{se_ssd}{article}{}
+    \name{author}{4}{}{%
+      {{hash=WZ}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Zheng},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=TW}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Weiliang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=JL}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=FC}{%
+         family={Fu},
+         familyi={F\bibinitperiod},
+         given={Chi‐Wing},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WZ+1}
+    \strng{fullhash}{WZTWJLFC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1109/cvpr46437.2021.01426
+    \endverb
+    \field{title}{SE-SSD: Self-Ensembling Single-Stage Object Detector From Point Cloud}
+    \verb{url}
+    \verb https://doi.org/10.1109/cvpr46437.2021.01426
+    \endverb
+    \field{month}{06}
+    \field{year}{2021}
+  \endentry
+
+  \entry{bdc_det}{article}{}
+    \name{author}{3}{}{%
+      {{hash=XQ}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Qiangeng},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhong},
+         familyi={Z\bibinitperiod},
+         given={Yiqi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=NU}{%
+         family={Neumann},
+         familyi={N\bibinitperiod},
+         given={Ulrich},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{XQZYNU1}
+    \strng{fullhash}{XQZYNU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \verb{doi}
+    \verb 10.1609/aaai.v36i3.20194
+    \endverb
+    \field{number}{3}
+    \field{pages}{2893\bibrangedash 2901}
+    \field{title}{Behind the Curtain: Learning Occluded Shapes for 3D Object Detection}
+    \verb{url}
+    \verb https://doi.org/10.1609/aaai.v36i3.20194
+    \endverb
+    \field{volume}{36}
+    \field{journaltitle}{Association for the Advancement of Artificial Intelligence}
+    \field{month}{06}
+    \field{year}{2022}
+  \endentry
+
+  \entry{pseudo_lidar++}{misc}{}
+    \name{author}{8}{}{%
+      {{hash=YY}{%
+         family={You},
+         familyi={Y\bibinitperiod},
+         given={Yurong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CW}{%
+         family={Chao},
+         familyi={C\bibinitperiod},
+         given={Wei‐Lun},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Garg},
+         familyi={G\bibinitperiod},
+         given={Divyansh},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Pleiss},
+         familyi={P\bibinitperiod},
+         given={Geoff},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Hariharan},
+         familyi={H\bibinitperiod},
+         given={Bharath},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Campbell},
+         familyi={C\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WKQ}{%
+         family={Weinberger},
+         familyi={W\bibinitperiod},
+         given={Kilian\bibnamedelima Q.},
+         giveni={K\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YY+1}
+    \strng{fullhash}{YYWYCWGDPGHBCMWKQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \verb{doi}
+    \verb 10.48550/arxiv.1906.06310
+    \endverb
+    \field{title}{Pseudo-LiDAR++: Accurate Depth for 3D Object Detection in Autonomous Driving}
+    \verb{url}
+    \verb https://arxiv.org/abs/1906.06310
+    \endverb
+    \field{journaltitle}{Cornell University}
+    \field{month}{01}
+    \field{year}{2019}
+  \endentry
+\enddatalist
+\endinput

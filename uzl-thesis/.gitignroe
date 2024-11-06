@@ -1,0 +1,41 @@
+# Ignore auxiliary LaTeX files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.run.xml
+*.nav
+*.snm
+
+# Ignore PDF and other output formats
+*.dvi
+*.ps
+*.eps
+
+# Ignore backup files
+*.bak
+*.sav
+*~ 
+*.backup
+
+# Ignore intermediate files from specific tools (like arara or latexmk)
+*.dpth
+*.md5
+*.auxlock

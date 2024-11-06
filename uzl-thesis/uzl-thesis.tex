@@ -1,0 +1,435 @@
+
+\documentclass[english,version-2020-11]{uzl-thesis}
+
+% Copy this file as a template for your thesis. You will have to take
+% action at all places marked by
+%
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+% !!! Your action is needed here !!!
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%
+% The first place your action is needed is the first line of this
+% document:
+%
+%
+% Language of the thesis:
+%
+% You must use either 'german' or 'english' above, depending on the
+% language used in the main text. This will automatically setup a lot
+% of things in the background.
+%
+%
+% Version of the class:
+%
+% You must specify which version of the thesis class is to be
+% used. This is important in case the class style changes in later
+% years, but we still want an older thesis to look the same, even when
+% things are changed in the class.
+%
+% Do not change or remove the version-xxxx key.
+%
+%
+% Text encoding:
+%
+% Your thesis *must* be encoded in utf8 (unicode), which is the
+% default in most editors these days. Do *not* change this to latin8.
+
+
+
+%%%
+%
+% Main setup:
+%
+%%%
+%
+% You must use the \UzLThesisSetup command to specify numerous things
+% about your thesis. This includes the entries on the title page, the 
+% abstracts, and the bibliography style. You do so by specifying
+% so-called "values" for so-called "keys". For instance, 
+% for the key "Autor" you must provide your name as the value. You do
+% so by writing 'Autor = {Max Mustermann}', that is, the value is put
+% into curly braces. You can use the \UzLThesisSetup command
+% repeatedly and the order in which you provide the keys is not
+% important. 
+%
+% Everything shown on the title page must be in German -- even
+% if the thesis is written in English! Just insert German text for
+% German keys and English text for English keys (like 'Abstract' needs
+% English text, while 'Zusammenfassung' needs German text).
+
+\UzLThesisSetup{
+  %
+  % !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  % !!! Your action is needed here !!!
+  % !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  %
+  % First, specify the institut or clinic at which the thesis was
+  % written. You get the logo file from them (make sure it has the
+  % correct size, namely the same as the example). If they do not have
+  % a logo, the university's default logo is used.
+  %
+  % The 'verfasst' gets two arguments. Change the first to {an der}
+  % for clinics, as in 'Verfasst = {an der}{Medizinischen Klinik I}'
+  %
+  Logo-Dateiname        = {logos/uzl-thesis-logo-itcs.pdf},
+  Verfasst              = {am}{Institut für Theoretische Informatik},
+  %
+  % The titles:
+  %
+  Titel auf Deutsch     = {
+    Vorlage für die \LaTeX-Klasse »uzl-thesis« zur Nutzung bei
+    Bachelor-~und Masterarbeiten an der  Universität~zu~Lübeck
+  }, 
+  Titel auf Englisch    = {
+    Template for the \LaTeX\ Class “uzl-thesis” for
+    Bachelor's and Master's Theses Written at the University~of~Lübeck 
+  },
+  %
+  % Author and supervisor:
+  % 
+  % Note that the 'Betreuer' or 'Betreuerin' is the supervisor, that
+  % is, the professor who officially supervises the thesis. If there
+  % is also an assistent of the professor who helped (typically a
+  % lot), use 'Mit Unterstützung von' to thank that person. If the
+  % thesis was mainly written 'externally' at some company or another
+  % institute, point this out using 'Weitere Unterstützung'. 
+  % 
+  % For your own name, do *not* add things like "BSc" or "BSc
+  % cand.". For the supervisor, you should normally include
+  % "Prof. Dr." or "PD Dr." (ask your supervisor, what is
+  % appropriate), but nothing more (so no
+  % "Univ.-Prof. Dr. Dr. h.c. mult." unless your supervisor insists).  
+  %
+  Autor                 = {Max Mustermann (alias Till Tantau)},
+  Betreuerin            = {Prof. Dr. Petra Wichtig-Wichtig},
+  % 
+  % Optional: Supporting persons and institutions. The text should be
+  % in German, even for an English thesis.
+  %
+  Mit Unterstützung von = {Harry Hilfreich},
+  % 
+  %   Weitere Unterstützung = {
+  %     Die Arbeit ist im Rahmen einer Tätigkeit bei der Firma Muster GmbH
+  %     entstanden.
+  %   },
+  %
+  %
+  % Your Degree Programm (Studiengang)
+  %
+  % Specify 'Bachelorarbeit' or 'Masterarbeit' and the degree
+  % programme. Make sure the name of programme is correct and not
+  % some abbreviation or some incorrect variant. For instance:
+  % 'Medizinische Ingenierwissenschaft', but not 'MIW';
+  % 'Medizinische Informatik', but not 'Medizin-Informatik';
+  % 'Informatik', but not 'Informatik (SSE)'.
+  %
+  % Use German names for German programmes and English names for
+  % English ones, so 'Infection Biology', not 'Infektionsbiologie'. 
+  % For programmes that have a German bachelor and an English master,
+  % use the German name for a bachelor thesis and the English name for
+  % the master thesis.
+  %
+  Bachelorarbeit,
+  Studiengang           = {Informatik},
+  %
+  % Date on which the thesis is turned in German, formatted the
+  % traditional German way:
+  %
+  Datum                 = {1. Januar 2021},
+  %
+  % The English abstract. You must always provide abstracts in German
+  % and in English. 
+  %
+  Abstract              = {
+    It is not easy to write a thesis that does not only advance
+    science, but that is also a pleasure to read. While the scientific
+    contribution of a thesis is undoubtedly of greater importance, the
+    impact of \emph{writing well} should not be underestimated: If
+    the person who grades a thesis finds no pleasure in the reading,
+    that person are also unlikely to find pleasure in giving outstanding
+    grades. A well-written text uses good German or English phrasing with a clear and correct 
+    sentence structure and language rhythm, there are no spelling
+    mistakes and the author's arguments are presented in a
+    clear, logical and understandable manner using well-chosen
+    examples and explanations. In addition, a nice-to-read font and a
+    pleasing layout are also helpful. The \LaTeX\ class presented in
+    this document helps with the latter: It contains a number of
+    ready-to-use designs and 
+    takes care of many small typographical chores.
+  },
+  Zusammenfassung       = {
+    Es ist nicht leicht, eine Abschlussarbeit so zu schreiben, dass sie
+    nicht nur inhaltlich gut ist, sondern es auch eine Freude ist, sie
+    zu lesen. Diese Freude ist aber wichtig: Wenn die Person, die die 
+    Arbeit benoten soll, wenig Gefallen am Lesen der Arbeit findet,
+    so wird sie auch wenig Gefallen an einer guten Note
+    finden. Glücklicherweise gibt es einige Kniffe, gut lesbare
+    Arbeiten zu schreiben. Am wichtigsten ist zweifelsohne, dass
+    die Arbeit in gutem Deutsch oder Englisch verfasst wurde mit klarem
+    Satzbau und gutem Sprachrhythmus, dass keine Rechtschreib- oder
+    Grammatikfehlern im Text auftauchen und dass die Argumente der
+    Autorin oder des Autors klar, logisch, verständlich und gut
+    veranschaulicht dargestellt werden. Daneben sind aber auch gut
+    lesbare Schriftbilder und ein angenehmes Layout hilfreich. Die Nutzung
+    dieser \LaTeX-Vorlage hilft der Schreiberin oder dem Schreiber
+    dabei zumindest bei Letzterem: Sie umfasst gute, sofort nutzbare
+    Designs und sie kümmert sich um viele typographische
+    Details.  
+  },
+  %
+  % Optional: 'Danksagungen' (German) or 'Acknowledgements'
+  % (English). Both keys are optional and both have the same effect of
+  % adding an acknowledgements text after the abstracts and before the
+  % table of contents.
+  %
+  Acknowledgements      = {
+    This is the place where you can thank people and institutions, do
+    not try to do this on the title page. The only exception is in
+    case you wrote your thesis while working or staying at a company or abroad. Then you
+    should use the \Latex{Weitere Unterstützung} key to provide a text
+    (in German) that acknowledges the company or foreign
+    institute. For instance, you could use texts like »Die Arbeit
+      ist im Rahmen einer Tätigkeit bei der Firma Muster GmbH
+      entstanden« or »Die Arbeit ist im Rahmen eines
+      Forschungsaufenthalts beim Institut für Dieses und Jenes an der
+      Universität Entenhausen entstanden«. Do not name and thank
+      individual persons from the company or foreign institute on the
+      title page, do that here. 
+  },
+  % Bibliography style: Choose between
+  % 
+  % 'Alphabetische Bibliographie'
+  % for all degree programmes in the natural sciences 
+  % 
+  % 'Numerische Bibliographie'
+  % alternative for all other degree programmes
+  % 
+  % Either will load biblatex and setup the citation methods and the
+  % bibliography styles correctly. You should not mess with them.
+  % 
+  %Alphabetische Bibliographie,
+  % Alternatively:
+  Numerische Bibliographie
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%
+% Styling the thesis
+%
+%%%%%%%%%%%%%%%%%%%%
+%
+% Creating a visually pleasing layout and choosing fonts is not
+% easy. Furthermore, different people have different preferences. Of
+% course, for the University of Lübeck, the dean of studies could just
+% force everyone to use one specific layout and font, but that seems a
+% bit drastic and, also, it seems nice that thesis by different people
+% have an individual style even though they all stick to the same
+% overall structure.
+%
+% For these reasons, I (Till Tantau) have spend quite some time on
+% designing a flexible layout and styling mechanism for theses.
+%
+% Basically, the overall structure of the thesis is fixed by the
+% thesis class and so are many structural elements. For instance, you
+% cannot change the order in which the abstract and table of contents
+% are shown, you cannot move the bibliography elsewhere, indeed, the
+% bibliography style is also fixed. Likewise, the text on the title
+% page is fixed.
+%
+% Although many things are fixed, you *can* change several other
+% things. For instance, you can change the font used for the main
+% text, you can change which font is used for titles and headings or
+% you can change whether titles and headlines are centered or flushed
+% left.
+%
+% There are many LaTeX packages for changing such things. You are
+% kindly asked *not to use them*. Rather, use (only) the options
+% offered by the thesis class. All possible choices and combinations
+% there have been tested by me and produce nice results; what happens
+% with other packages no one knows and might no longer conform to what
+% is expected by the university. As you will see, you still have a
+% lot of options.
+%
+%
+% Technical note: All styling is done via the command
+%
+% \UzLStyle{...}
+%
+% where ... is a key-value list just as for \UzLThesisSetup. The
+% difference is just that everything having to do with styling as
+% controlled by \UzLStyle, while the more “formal” setup keys are
+% controlled by \UzLThesisSetup.
+%
+%%%
+%
+% Designs
+%
+%
+% A \emph{design} is a whole set of font and layout options bundled
+% together. They have been chosen in such a way that a visually
+% pleasing “overall appearance” results.
+%
+%
+% \UzLStyle{computer modern oldschool design}
+%
+% The look of this design mimics the “classical” way a paper or report
+% created with \LaTeX\ looks like: The Computer Modern font is used,
+% bold face fonts are used for headlines, only black and white are
+% used as colors. This design reminds me of older scientific
+% documents, especially from the computer science community where
+% \LaTeX\ was used very early.
+%
+%
+% \UzLStyle{computer modern basic design}
+%
+% A slightly less “oldschool” version of the previous design. It is
+% still a classic design in the sense that it uses the Computer Modern
+% font and that it still has this “good old \LaTeX” look, but some
+% more modern aspects (like colors!) have been added.
+%
+% Note that this design uses Myriad for the title page (one of the
+% “modern aspect”), which means that his font must be installed.
+%
+%
+% \UzLStyle{computer modern scholary design}
+%
+% In my opinion, this is the ultimate “scholary design”: The thesis
+% will look like it has been typeset by hand some 150 years ago and
+% then printed by a university press. There is really nothing “modern”
+% about it and the word in the name of the design is just part of the
+% name of the “Computer Modern” font.
+%
+%
+% \UzLStyle{pagella basic design}
+%
+% A, well, basic design that uses the Pagella font rather than the
+% Computer Modern font. Especially the bold face version of this font
+% looks nicer than the Computer Modern counterpart. Also, Pagella,
+% while still having a “bookish” look, still feels a bit fresher than
+% Computer Modern. 
+%
+%
+% \UzLStyle{pagella centered design}
+%
+% A variant of the basic Pagella design that centers all
+% headlines. A nice alternative to the basic version.
+%
+%
+% \UzLStyle{pagella contrast design}
+%
+% This design tries to create some visual friction by contrasting the
+% sans serif headline font (in bold!) with the main text. I find it a
+% visually very interesting combination.
+%
+%
+% \UzLStyle{alegrya basic design}
+%
+% The third variant of the basic design, this time using the Alegrya
+% font. 
+%
+%
+% \UzLStyle{alegrya scholary design}
+%
+% The Alegrya version of the previous “scholary” design. Unlike the
+% Computer Modern version, this design does not look old, but more
+% fresh -- while still creating the impression that the text must be
+% about a very scientific subject. 
+%
+%
+% \UzLStyle{alegrya stylish design}
+%
+% The design is quite similar to the scholary version for the Alegrya
+% font, but with even more modern additions. “Stylish” is the word
+% that comes to my mind.
+%
+%
+\UzLStyle{alegrya modern design}
+%
+% A design that uses the sans serif version of the Alegrya font for
+% the headlines. This is a nice modern overall design.
+%
+%%%
+
+
+
+
+%%%%%%%%
+%
+% Now, include the package you need here using \usepackage. 
+%
+% However, many standard packages are already loaded by the class:
+%
+% amsmath, amssymb, amsthm, babel, biblatex, csquotes, etoolbox,
+% filecontents, fontspec, geometry, hyperref, tikz (with libraries
+% arrows.meta, positioning and shapes), varioref, url 
+%
+% Indeed, in many cases you will not need any extra packages.
+%
+%%%%%%%
+\usepackage{cleveref}
+\usepackage{multirow}
+\usepackage{subcaption}
+
+\begin{document}
+
+%
+% The title page and table of contents will be inserted automatically
+% here. 
+%
+
+\include{chapters/introduction}
+\include{chapters/background_and_related_works}
+\include{chapters/swd_dataset}
+\include{chapters/ground_truth_generation_circle_fitting}
+\include{chapters/ground_truth_generation_aruco}
+\include{chapters/model_and_methodology}
+\include{chapters/discussion}
+\include{chapters/conclusion}
+% Normally, the bibliography comes next at this point. Do *not* (try
+% to) include further indices and tables like an index or
+% a list of figures or a list of tables or such things. Nobody
+% actually uses them and they just use up space. 
+%
+% You *can* however include a glossary, if this seems appropriate. It
+% goes here as an unnumbered chapter. Most thesis will *not* need a
+% glossary: a well-written text (re)explains strange words and
+% concepts as necessary. However, there are situations where a
+% glossary may be helpful.
+
+\include{chapters/bibliography}
+
+
+% If you need to have an appendix (I advise against it), insert it
+% here using, first, \appendix and then \chapter and then,
+% possibly, \section. 
+%
+% \appendix
+%
+% \chapter{Technical Appendix}
+%
+% \section{Experimental Parameters} % possibly
+%
+% Again, I advise against using an appendix.
+
+\end{document}
+
+%  LocalWords:  LaTeX tex moretexcs Lübeck pdf uzl lualatex bibtex th
+%  LocalWords:  TechReport Kernighan Lamport's Tantau's Tantau cls kZ
+%  LocalWords:  Mustermann emacs oldschool pdflatex texmf utf biber
+%  LocalWords:  biblatex Alphabetische Bibliographie Numerische VIIa
+%  LocalWords:  varioref german Einleitung Beiträge dieser Arbeit xml
+%  LocalWords:  Ergebnisse Verwandte Arbeiten Aufbau nucleotide VIIc
+%  LocalWords:  ensembl amino phylogenetic Alexa Siri decrypt versa
+%  LocalWords:  cryptographic pre nondeterministic deterministically
+%  LocalWords:  Beutelspacher Untersuchungen zum genetischen sep llcc
+%  LocalWords:  Beispiel tikz jpg png Alegrya Kasimir Malewitsch PGF
+%  LocalWords:  Lamport Institut für Theoretische Informatik zu url
+%  LocalWords:  Universität Springer DowneyF Downey Parameterized doi
+%  LocalWords:  BibLaTeX Kime Philipp urldate Mittelbach hyperref Lua
+%  LocalWords:  Rahtz Oberdiek Heiko Braams Bezos López fontspec Das
+%  LocalWords:  Arseneau amsmath ist Tipps und zur Formulierung
+%  LocalWords:  mathematischer Gedanken Mathematik Studienanfänger
+%  LocalWords:  Albrecht Vieweg Teubner Verlag

@@ -1,0 +1,62 @@
+\chapter{Introduction}
+% In a German thesis write: \chapter{Einleitung}
+
+
+The increasing complexity of modern automotive systems has led to a growing
+demand for precise in-cabin monitoring technologies. Among these, 
+steering wheel detection plays a pivotal role in monitoring driver
+behavior, enhancing safety, and facilitating autonomous control in 
+advanced driver-assistance systems. Estimating the 3D location and 
+orientation of the steering wheel is crucial for systems that rely on
+driver interaction and vehicle control. 
+Yet, achieving accurate 3D detection of such an object within a car's 
+interior presents unique challenges, including variations in rotation and
+position within confined, occlusion-prone environments. This is because 
+the car's interior is a complex and constrained environment, with limited 
+sensor coverage and frequent occlusions of key components like the 
+steering wheel. Accurately determining the 3D position and orientation of 
+the steering wheel is essential for enabling advanced driver monitoring 
+and assistive technologies, but poses significant technical hurdles 
+compared to object detection in open, outdoor environments. 
+
+
+\section{Contributions of this thesis}
+This thesis addresses the problem of steering wheel detection using a 3D 
+point cloud, which offers a rich representation of spatial information. 
+Specifically, this research contributes in two significant ways: 
+First, it introduces a novel dataset that represents the car interior, 
+including 3D point clouds and annotated bounding boxes for the steering 
+wheel. This dataset was created through a meticulous process involving 
+the recording of point cloud data, feature extraction, and preprocessing 
+to ensure data integrity and clarity. By accurately determining the 
+steering wheel’s 3D position and orientation, this dataset serves as a 
+critical foundation for model training and validation.
+
+Second, this thesis proposes a model-based approach for detecting the 
+steering wheel’s 3D position using a modified VoxelRCNN architecture. 
+Existing 3D object detection models, such as those trained on KITTI 
+dataset data, are typically optimized for outdoor environments with 
+non-cubic point cloud dimensions and restricted rotational degrees of 
+freedom (DOF). To overcome these limitations, the research modifies the VoxelRCNN 
+architecture to account for a cubic point cloud structure and allows for rotation detection along 
+the x-axis, which is crucial for accurately representing the orientation of the steering wheel.
+
+Through these contributions, this research aims to advance the field of 
+interior monitoring and lay groundwork for more robust in-cabin perception
+systems.
+
+\section{structure of this thesis}
+The remainder of this thesis is structured as follows. Chapter 2 reviews 
+relevant literature on 3D object detection and the limitations of existing 
+techniques in car interior applications. Chapter 3 details the dataset 
+creation process, including data acquisition, preprocessing, and attempts 
+at accurate position estimation, comparing two approaches to establish a 
+reliable ground truth. Chapter 4 describes the proposed 3D object detection 
+model and necessary modifications for steering wheel detection in cubic point 
+clouds. Chapter 5 presents experimental results and analyzes the model’s performance. 
+Finally, Chapter 6 discusses the significance of the findings, potential 
+applications, limitations, and directions for future research.
+
+
+
+

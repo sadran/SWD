@@ -1,0 +1,62 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {"name":"Python Debugger: Current File","type":"debugpy","request":"launch","program":"${file}","console":"integratedTerminal"},
+        {
+            "name": "Python: pcdet dataset",
+            "type": "python",
+            "request": "launch",
+            "module": "pcdet.datasets.swd.swd_dataset",
+            "args": [
+                "create_swd_infos",
+                "tools/cfgs/dataset_configs/swd_dataset.yaml"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+         },
+         {
+          "name": "Debug Voxel R-CNN Training (Non-Distributed)",
+          "type": "python",
+          "request": "launch",
+          "program": "train.py",
+          "console": "integratedTerminal",
+          "args": [
+            "--launcher", "pytorch",
+            "--cfg_file", "cfgs/voxel_rcnn/voxel_rcnn_sw.yaml",
+            "--epochs", "50",
+            "--workers", "8"
+          ],
+          "cwd": "${workspaceFolder}/tools/",  // Set current working directory
+          "env": {
+            "CUDA_VISIBLE_DEVICES": "0"
+          },
+          "subProcess": true,
+          "redirectOutput": true
+         },
+         {
+          "name": "Debug Voxel R-CNN Validation (Non-Distributed)",
+          "type": "python",
+          "request": "launch",
+          "program": "test.py",
+          "console": "integratedTerminal",
+          "args": [
+            "--launcher", "pytorch",
+            "--cfg_file", "cfgs/voxel_rcnn/voxel_rcnn_sw.yaml",
+            "--ckpt", "${workspaceFolder}/output/voxel_rcnn/voxel_rcnn_sw/rotation_along_x/ckpt/checkpoint_epoch_80.pth",
+            "--extra_tag", "rotation_along_x",
+            "--batch_size", "2",
+            "--save_to_file", "--eval_all"
+          ],
+          "cwd": "${workspaceFolder}/tools/",  // Set current working directory
+          "env": {
+            "CUDA_VISIBLE_DEVICES": "0"
+          },
+          "subProcess": true,
+          "redirectOutput": true
+         }
+    ]
+}

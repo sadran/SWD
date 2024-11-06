@@ -1,0 +1,224 @@
+\chapter{Background and related works}
+In this section, we explore the foundational concepts and advancements 
+in 3D object detection techniques that are relevant to 
+in-cabin monitoring and steering wheel detection. Given the critical 
+role of perception in autonomous driving, achieving robust and reliable 
+3D detection of interior components like the steering wheel has become a 
+key challenge in this field. This chapter presents an overview of 
+various 3D object detection methods, focusing on point cloud-based 
+approaches, multimodal fusion techniques, and image-based approaches. 
+We also discuss the unique challenges posed by interior environments, 
+including issues such as occlusions, irregular lighting conditions, 
+and limited rotational freedom for 3D bounding boxes, which make 
+existing detection methods difficult to apply directly to car interior 
+scenarios. Finally, we provide an overview of publicly available 
+datasets and the key performance metrics commonly used in 3D object 
+detection for autonomous driving, assessing their relevance and 
+applicability for interior monitoring applications.
+
+
+\section{3D Object Detection in Autonomous Driving}
+3D object detection in autonomous driving enables the vehicle to
+understand and perceive its surrounding environment by identifying, 
+localizing, and characterizing nearby objects. In this context, 
+3D detection provides both precise spatial positioning and orientation 
+information for objects, making it an essential component for crucial 
+tasks such as path planning, collision avoidance, and motion prediction.
+However, current 3D object detection methods are primarily optimized 
+for exterior, outdoor environments, where sensor setups, object dynamics, 
+and available datasets differ significantly from the more constrained and
+complex interior scenarios found within a vehicle. Outdoor 3D detection
+has greatly benefited from the availability of large-scale datasets like 
+KITTI, nuScenes, and Waymo, which provide extensive labeling for objects 
+in open, relatively unobstructed spaces, captured under varied lighting 
+and weather conditions. These datasets and approaches, however, 
+do not adequately address the intricacies and unique challenges 
+involved in detecting objects within a vehicle's constrained and 
+complex interior space.
+
+\subsection{Challenges in 3D Detection for Interior Monitoring}
+Detecting objects in the car interior, specifically the steering wheel, 
+involves overcoming several challenges:
+\begin{itemize}
+    \item \uzlemph{Limited Field of View (FOV)}: Unlike outdoor detection, 
+    where sensors cover a 360° view around the vehicle, interior sensors 
+    are constrained to the car’s internal structure, resulting in 
+    limited and often obstructed views of certain objects.
+    \item \uzlemph{Occlusions and Sparse Data}: Objects like the steering
+    wheel may be partially or fully occluded by the driver’s hands or 
+    other interior elements, and point cloud data from LiDAR or other 
+    depth sensors can be sparse due to occlusion and reflective surfaces.
+    \item \uzlemph{Variability in Rotational Degrees of Freedom (DOF)}: While 
+    outdoor models assume limited rotational DOF (often around the z-axis for vehicles), 
+    steering wheel detection requires accurate modeling of rotation 
+    around the x-axis to capturithe essential rotational characteristics 
+    of the steering wheel.
+    \item \uzlemph{Adaptability to Point Cloud Dimensions}: Standard point 
+    clouds from datasets like KITTI have unbalanced dimensions, favoring 
+    a broader lateral view. In contrast, interior point clouds are 
+    typically cubic, and models must adapt to these differences for 
+    effective detection.
+\end{itemize}
+
+
+\section{3D Object Detection Methods}
+3D object detection techniques are generally categorized based on the 
+input modality (image-based, point cloud-based, or multimodal fusion) 
+and architecture type (two-stage, single-stage, or hybrid). 
+\Cref{3d_object_detection_Categorization} shows a summary of the key approaches and their characteristics.
+
+\begin{table}[htpb]
+    \caption{Categorization of 3D object detection approaches by input modality and architecture type}
+    \label{3d_object_detection_Categorization}
+    \centering
+    \begin{tabular}{|l r l|}
+        \uzlhline
+        \hspace{1cm} \uzlemph{Category} & \multicolumn{2}{c|}{\hspace{-1cm}\uzlemph{Method}} \\
+        \uzlhline
+        \uzlemph{Image-Based Methods} & \uzlemph{Result-Lifting} & Stereo R-CNN \cite{stereo_rcnn}\\
+        & \uzlemph{Feature-Lifting} & Pseudo-LiDAR \cite{pseudo_lidar}\\
+        &  & Pseudo-LiDAR++ \cite{pseudo_lidar++}\\
+        &  & DSGN \cite{dsgn}\\
+        & & \\
+        \uzlemph{Point Cloud-Based Methods} & \uzlemph{Voxel-Based} & VoxelNet \cite{voxnet} \\
+        &  & VoxelRCNN \cite{voxelrcnn} \\
+        &  & SE-SSD \cite{se_ssd} \\
+        &  & BtcDet \cite{bdc_det} \\
+        
+        & \uzlemph{Point-Based} & PointRCNN \cite{point_rcnn} \\
+        &  & Point-GNN \cite{point_gnn}\\
+        &  & PointNet++ \cite{pointnet++}\\
+        & \uzlemph{Hybrid} & PV-RCNN \cite{pv_rcnn} \\
+        & & \\
+        \uzlemph{Multimodal Fusion-Based} & \uzlemph{Early Fusion} & AVOD \cite{avod} \\
+        &  & MV3D \cite{mv3d} \\
+        & \uzlemph{Deep Fusion} & PointPainting \cite{pointpainting} \\
+        & \uzlemph{Sequential} & Frustum PointNets \cite{frustum_pointnet} \\
+        \hline
+    \end{tabular}
+\end{table}
+\subsection{Image-Based Methods}
+Image-based 3D detection methods rely on RGB images or stereo images 
+to infer depth and spatial information. These methods are cost-effective 
+and widely applicable, but they lack direct depth information, 
+which makes it challenging to accurately localize objects in 3D space. 
+Image-based approaches typically involve:
+\begin{itemize}
+    \item \uzlemph{Result-Lifting}: Detecting objects in 2D and projecting 
+    their bounding boxes to 3D space based on geometric constraints or 
+    templates, as in methods like Stereo R-CNN \cite{stereo_rcnn}.
+    \item \uzlemph{Feature-Lifting}: Estimating depth maps from images 
+    and creating pseudo-LiDAR \cite{pseudo_lidar} point clouds, 
+    which can then be processed similarly to actual LiDAR data. 
+    Approaches like Pseudo-LiDAR++ \cite{pseudo_lidar++} and 
+    DSGN \cite{dsgn} have shown promising results, but 
+    they still struggle with accuracy over long distances and under 
+    variable lighting, which is especially problematic in the dimly lit car interiors.
+\end{itemize}
+
+
+\subsection{Point Cloud-Based Methods}
+Point cloud-based methods are better suited for direct 3D localization, 
+using data from LiDAR or other depth sensors to create dense, spatial 
+representations. These methods can be further divided into voxel-based, 
+point-based, and hybrid approaches:
+\begin{itemize}
+    \item \uzlemph{Voxel-Based Methods}: VoxelNet \cite{voxnet} 
+    and its successors, such as VoxelRCNN \cite{voxelrcnn}, 
+    partition the point cloud into voxel grids and apply convolutional 
+    operations, capturing spatial structure but at a high computational 
+    cost. Another effective voxel-based approach is 
+    SE-SSD (Self-Ensembling Single-Stage Detector) \cite{se_ssd} 
+    that improves on voxel-based approaches by using a student-teacher 
+    framework. The student model learns from a teacher model that is 
+    refined with additional structure-aware information, improving 
+    robustness and accuracy in challenging conditions such as occlusions 
+    and sparse point clouds. Another voxel-based approach, 
+    BtcDet \cite{bdc_det}, focuses on long-range and sparse 
+    data detection. BtcDet enhances detection performance in challenging 
+    scenes by using shape-adaptive learning to manage low-quality data, 
+    which is particularly useful in adverse weather or complex scenes.
+    \item \uzlemph{Point-Based Methods}: Approaches like 
+    PointRCNN \cite{point_rcnn} and 
+    Point-GNN \cite{point_gnn} use permutation-invariant 
+    operations on raw point clouds, maintaining fine-grained details 
+    but often requiring high computational resources and memory. 
+    For example, PointNet++ \cite{pointnet++} , 
+    a popular point-based method, hierarchically extracts features 
+    from individual points, preserving fine-grained geometric details 
+    but demanding significant computational power.
+    \item \uzlemph{Hybrid Methods}: Combining voxel and point approaches, 
+    methods like PV-RCNN \cite{pv_rcnn} aim to balance 
+    computational efficiency with spatial accuracy by processing both 
+    coarse-grained voxel features and fine-grained point details. 
+    This hybrid approach has proven advantageous for complex environments but 
+    has yet to be fully adapted for indoor environments with unique constraints, 
+    like a car interior.
+\end{itemize}
+
+
+\subsection{Multimodal Fusion-Based Methods}
+Multimodal fusion combines RGB images and point cloud data to enhance detection 
+accuracy by leveraging complementary data. Early, deep, and late fusion 
+strategies vary based on when the modalities are combined in the model. 
+PointPainting \cite{pointpainting}, for example, demonstrates 
+deep fusion by blending intermediate features from both modalities, 
+while methods like AVOD \cite{avod} and 
+MV3D \cite{mv3d} 
+rely on early fusion to incorporate image information directly into the point 
+cloud processing pipeline. 
+Additionally, Frustum PointNets \cite{frustum_pointnet}, for instance, 
+fuses LiDAR and image features within 3D frustums projected from 2D object 
+detection results, effectively reducing the search space for 3D object detection. 
+However, aligning features between images and point clouds in indoor 
+environments poses significant challenges, particularly due to spatial 
+and view misalignments.
+
+
+
+\section{Datasets for 3D Object Detection in Autonomous Driving}
+The field has developed multiple benchmark datasets, each with unique attributes 
+for testing 3D detection models:
+\begin{itemize}
+    \item \uzlemph{KITTI}: One of the earliest and most influential datasets, 
+    KITTI \cite{kitti} 
+    includes over 200,000 labeled objects captured in outdoor urban settings. 
+    However, its limited class diversity and lack of interior scenes make it 
+    less suitable for in-cabin monitoring.
+    \item \uzlemph{nuScenes} \cite{nuscenes}\uzlemph{ and Waymo} \cite{waymo}: 
+    These datasets provide richer scenes, diverse weather and lighting 
+    conditions, and multimodal data, including LiDAR, radar, and cameras. 
+    Although they cover more object classes than KITTI, they still focus on 
+    outdoor scenarios.
+\end{itemize}
+The absence of publicly available in-cabin datasets emphasizes the need 
+for specialized datasets to meet the requirements of car interior 
+monitoring tasks.
+
+
+\section{Performance Metrics for 3D Object Detection}
+3D object detection performance is commonly evaluated through metrics 
+such as Average Precision (AP) and mean Average Precision (mAP).
+Additional metrics include:
+\begin{itemize}
+    \item \uzlemph{Intersection over Union (IoU)}: 
+    IoU evaluates the overlap between predicted and ground truth bounding 
+    boxes. For autonomous driving, models are often tested at varying IoU 
+    thresholds depending on object size and importance.
+    \item \uzlemph{NuScenes Detection Score (NDS)} and \uzlemph{Average Precision with Heading (APH)}: 
+    Used in the nuScenes and Waymo datasets, these metrics account for 
+    orientation and other attributes specific to 3D space, offering a 
+    comprehensive measure of performance for complex scenes.    
+\end{itemize}
+
+
+\section{Summary}
+In summary, while 3D object detection has seen substantial advancements 
+in outdoor environments, these methods face limitations when applied to 
+in-cabin monitoring. The unique challenges of interior environments 
+require adapted models, tailored datasets, and precise metrics that can 
+account for both spatial constraints and occlusions. In the following 
+chapters, we detail our approach to address these gaps by creating a 
+dedicated dataset and adapting a 3D object detection model, optimized 
+for steering wheel detection and localization within a confined interior 
+space.

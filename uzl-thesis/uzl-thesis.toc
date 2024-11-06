@@ -1,0 +1,52 @@
+\babel@toc {english}{}\relax 
+\babel@toc {german}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {german}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {german}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Contributions of this thesis}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}structure of this thesis}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Background and related works}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}3D Object Detection in Autonomous Driving}{3}{section.2.1}%
+\contentsline {subsection}{Challenges in 3D Detection for Interior Monitoring}{4}{section*.2}%
+\contentsline {section}{\numberline {2.2}3D Object Detection Methods}{4}{section.2.2}%
+\contentsline {subsection}{Image-Based Methods}{4}{section*.4}%
+\contentsline {subsection}{Point Cloud-Based Methods}{5}{section*.5}%
+\contentsline {subsection}{Multimodal Fusion-Based Methods}{6}{section*.6}%
+\contentsline {section}{\numberline {2.3}Datasets for 3D Object Detection in Autonomous Driving}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Performance Metrics for 3D Object Detection}{6}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Summary}{7}{section.2.5}%
+\contentsline {chapter}{\numberline {3}SWD dataset}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Recording Procedure}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Data Extraction}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Ground Truth}{10}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Grand Truth Generation: Fitting a Circle (initial approach)}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}methodology}{14}{section.4.2}%
+\contentsline {subsection}{Annotating the Steering Wheel with 2D Points}{14}{section*.11}%
+\contentsline {subsection}{Fitting an Ellipse to 2D Points}{14}{section*.12}%
+\contentsline {subsection}{Sampling Points from the Ellipse and Mapping to 3D}{14}{section*.13}%
+\contentsline {subsection}{Fitting a Sphere to the 3D Points}{14}{section*.14}%
+\contentsline {subsection}{Refining with a Circular Cross-Section from the Sphere}{15}{section*.15}%
+\contentsline {subsection}{Aligning the Circle with a Rotation Matrix}{15}{section*.16}%
+\contentsline {section}{\numberline {4.3}Conclusion}{15}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Ground Truth Generaiton: ArUco Markers and Plane Fitting (Refined Approach)}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Methodoloy}{18}{section.5.2}%
+\contentsline {subsection}{location estimation}{18}{section*.19}%
+\contentsline {subsection}{Evaluating ArUco Markers for Orientation Estimation}{20}{section*.22}%
+\contentsline {subsection}{Generating the Steering Wheel’s Oriented Bounding Box}{21}{section*.25}%
+\contentsline {section}{\numberline {5.3}Results}{21}{section.5.3}%
+\contentsline {subsection}{Location Estimation Results}{21}{section*.26}%
+\contentsline {subsection}{Orientation Estimation Results}{21}{section*.27}%
+\contentsline {subsection}{Systematic Error in Orientation Estimation}{21}{section*.28}%
+\contentsline {subsection}{Generating the Steering Wheel’s Oriented Bounding Box}{21}{section*.29}%
+\contentsline {section}{\numberline {5.4}Conclusion}{21}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Model and Methodology}{24}{chapter.6}%
+\contentsline {chapter}{\numberline {7}discussion}{25}{chapter.7}%
+\contentsline {chapter}{\numberline {8}conclusion}{26}{chapter.8}%
+\contentsline {chapter}{Bibliography}{27}{chapter*.30}%

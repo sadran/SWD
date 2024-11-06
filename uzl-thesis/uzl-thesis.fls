@@ -1,0 +1,499 @@
+PWD /Users/sadra/Projects/SW_Detection/uzl-thesis
+INPUT /usr/local/texlive/2024/texmf-var/web2c/luahbtex/lualatex.fmt
+INPUT /Users/sadra/Projects/SW_Detection/uzl-thesis/uzl-thesis.tex
+OUTPUT uzl-thesis.log
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-ini-files/lualatexquotejobname.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/ltluatex.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-main.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-init.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/lualibs/lualibs.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/lualibs/lualibs-basic.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/lualibs/lualibs-basic-merged.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/lualibs/lualibs-compat.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/lualibs/lualibs-extended.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/lualibs/lualibs-extended-merged.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-log.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/fontloader-basics-gen.lua
+OUTPUT /Users/sadra/Library/texlive/2024/texmf-var/m_t_x_t_e_s_t.tmp
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-parsers.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-configuration.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-status.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-28.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-fallback.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-multiscript.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-scripts.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/unicode-data/ScriptExtensions.txt
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/unicode-data/Scripts.txt
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-loaders.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-database.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-unicode.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/unicode-data/PropList.txt
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/unicode-data/WordBreakProperty.txt
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/unicode-data/SpecialCasing.txt
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/lua-uni-algos/lua-uni-case.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/lua-uni-algos/lua-uni-parse.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/unicode-data/CaseFolding.txt
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-realpath.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-colors.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-resolvers.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-features.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/lua-uni-algos/lua-uni-normalize.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-arabic.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-harf-define.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-harf-var-cff2.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-harf-var-t2-writer.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-harf-var-ttf.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-harf-plug.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-letterspace.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-embolden.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-notdef.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/unicode-data/PropList.txt
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-suppress.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-szss.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-auxiliary.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-tounicode.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-case.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload-bcp47.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.lua
+INPUT ./uzl-thesis.cls
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifluatex.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/luatex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-luatex.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.cfg
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/varioref.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hluatex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/luababel.def
+INPUT /usr/local/texlive/2024/texmf-var/tex/generic/config/language.dat
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/luababel.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel-german/german.ldf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel-german/germanb.ldf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-de-1901.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-de-1901.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/en/babel-en.ini
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/de/babel-german.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/de/babel-de.ini
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/filecontents/filecontents.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
+INPUT ./uzl-thesis-patches.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-dm.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-unicode.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-compat.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.cfg
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/unicode-math/unicode-math-luatex.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/fix-cm.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1enc.def
+INPUT /usr/local/texlive/2024/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.lua
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/alegreya/Alegreya.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifxetex.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/textcomp.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreya-regular.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreya-bold.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreya-italic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreya-bolditalic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreya-extrabold.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreya-extrabolditalic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreya-black.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreya-blackitalic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreya-medium.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreya-mediumitalic.luc
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/alegreya/AlegreyaSans.sty
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-regular.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-bold.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-italic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-bolditalic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-black.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-blackitalic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-extrabold.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-extrabolditalic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-thin.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-thinitalic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-light.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-lightitalic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-medium.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/alegreyasans-mediumitalic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-italic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmonocaps10-regular.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmonocaps10-oblique.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/texgyrepagella-math.luc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/texgyrechorus-mediumitalic.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmonoprop10-regular.luc
+INPUT /Users/sadra/Library/texlive/2024/texmf-var/luatex-cache/generic/fonts/otl/lmmonoprop10-oblique.luc
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/cleveref/cleveref.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+INPUT ./uzl-thesis.aux
+INPUT ./chapters/introduction.aux
+INPUT ./chapters/background_and_related_works.aux
+INPUT ./chapters/swd_dataset.aux
+INPUT ./chapters/ground_truth_generation_circle_fitting.aux
+INPUT ./chapters/ground_truth_generation_aruco.aux
+INPUT ./chapters/model_and_methodology.aux
+INPUT ./chapters/discussion.aux
+INPUT ./chapters/conclusion.aux
+INPUT ./chapters/bibliography.aux
+OUTPUT uzl-thesis.aux
+INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT ./uzl-thesis.out
+INPUT ./uzl-thesis.out
+OUTPUT uzl-thesis.pdf
+INPUT ./uzl-thesis.out
+OUTPUT uzl-thesis.out
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/german.lbx
+OUTPUT uzl-thesis-blx.bib
+INPUT ./uzl-thesis.bbl
+INPUT ./uzl-thesis.bbl
+INPUT ./uzl-thesis.bbl
+INPUT ./logos/uzl-thesis-logo-itcs.pdf
+INPUT ./logos/uzl-thesis-logo-itcs.pdf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT ./logos/uzl-thesis-logo-slogan.pdf
+INPUT ./logos/uzl-thesis-logo-slogan.pdf
+INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang2.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang3.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang2.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang3.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang2.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang3.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT ./uzl-thesis.toc
+OUTPUT uzl-thesis.toc
+OUTPUT chapters/introduction.aux
+INPUT ./chapters/introduction.tex
+OUTPUT chapters/background_and_related_works.aux
+INPUT ./chapters/background_and_related_works.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+OUTPUT chapters/swd_dataset.aux
+INPUT ./chapters/swd_dataset.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./media/chapter 3/demo_model.jpg
+INPUT ./media/chapter 3/demo_model.jpg
+INPUT ./media/chapter 3/reference_board.jpg
+INPUT ./media/chapter 3/reference_board.jpg
+INPUT ./media/chapter 3/gt_stream.png
+INPUT ./media/chapter 3/gt_stream.png
+INPUT ./media/chapter 3/main_stream.png
+INPUT ./media/chapter 3/main_stream.png
+INPUT ./media/chapter 3/obb1.png
+INPUT ./media/chapter 3/obb1.png
+INPUT ./media/chapter 3/obb2.png
+INPUT ./media/chapter 3/obb2.png
+INPUT ./media/chapter 3/obb3.png
+INPUT ./media/chapter 3/obb3.png
+INPUT ./media/chapter 3/obb4.png
+INPUT ./media/chapter 3/obb4.png
+INPUT ./media/chapter 3/obb5.png
+INPUT ./media/chapter 3/obb5.png
+INPUT ./media/chapter 3/obb6.png
+INPUT ./media/chapter 3/obb6.png
+INPUT ./media/chapter 3/torus1.png
+INPUT ./media/chapter 3/torus1.png
+INPUT ./media/chapter 3/torus2.png
+INPUT ./media/chapter 3/torus2.png
+INPUT ./media/chapter 3/torus3.png
+INPUT ./media/chapter 3/torus3.png
+INPUT ./media/chapter 3/torus4.png
+INPUT ./media/chapter 3/torus4.png
+INPUT ./media/chapter 3/torus5.png
+INPUT ./media/chapter 3/torus5.png
+INPUT ./media/chapter 3/torus6.png
+INPUT ./media/chapter 3/torus6.png
+OUTPUT chapters/ground_truth_generation_circle_fitting.aux
+INPUT ./chapters/ground_truth_generation_circle_fitting.tex
+INPUT ./media/chapter 4/ellipse.png
+INPUT ./media/chapter 4/ellipse.png
+INPUT ./media/chapter 4/sampled_points.png
+INPUT ./media/chapter 4/sampled_points.png
+INPUT ./media/chapter 4/obb.png
+INPUT ./media/chapter 4/obb.png
+INPUT ./media/chapter 4/sphere.png
+INPUT ./media/chapter 4/sphere.png
+INPUT ./media/chapter 4/circl.png
+INPUT ./media/chapter 4/circl.png
+OUTPUT chapters/ground_truth_generation_aruco.aux
+INPUT ./chapters/ground_truth_generation_aruco.tex
+INPUT ./media/chapter 5/singlemarkersoriginal.jpg
+INPUT ./media/chapter 5/singlemarkersoriginal.jpg
+INPUT ./media/chapter 5/singlemarkersdetection.jpg
+INPUT ./media/chapter 5/singlemarkersdetection.jpg
+INPUT ./media/chapter 5/singlemarkersaxes.jpg
+INPUT ./media/chapter 5/singlemarkersaxes.jpg
+INPUT ./media/chapter 5/aruco_detection.png
+INPUT ./media/chapter 5/aruco_detection.png
+INPUT ./media/chapter 5/aruco_board_ids.png
+INPUT ./media/chapter 5/aruco_board_ids.png
+INPUT ./media/chapter 5/aruco_board_estimation0.png
+INPUT ./media/chapter 5/aruco_board_estimation0.png
+INPUT ./media/chapter 5/aruco_board_estimation1.png
+INPUT ./media/chapter 5/aruco_board_estimation1.png
+INPUT ./media/chapter 5/aruco_board_estimation2.png
+INPUT ./media/chapter 5/aruco_board_estimation2.png
+INPUT ./media/chapter 5/aruco_board_estimation3.png
+INPUT ./media/chapter 5/aruco_board_estimation3.png
+INPUT ./media/chapter 5/plane_fitting.png
+INPUT ./media/chapter 5/plane_fitting.png
+OUTPUT chapters/model_and_methodology.aux
+INPUT ./chapters/model_and_methodology.tex
+OUTPUT chapters/discussion.aux
+INPUT ./chapters/discussion.tex
+OUTPUT chapters/conclusion.aux
+INPUT ./chapters/conclusion.tex
+OUTPUT chapters/bibliography.aux
+INPUT ./chapters/bibliography.tex
+INPUT ./uzl-thesis-bibtex-entries.bib
+INPUT ./uzl-thesis.aux
+INPUT ./chapters/introduction.aux
+INPUT ./chapters/background_and_related_works.aux
+INPUT ./chapters/swd_dataset.aux
+INPUT ./chapters/ground_truth_generation_circle_fitting.aux
+INPUT ./chapters/ground_truth_generation_aruco.aux
+INPUT ./chapters/model_and_methodology.aux
+INPUT ./chapters/discussion.aux
+INPUT ./chapters/conclusion.aux
+INPUT ./chapters/bibliography.aux
+INPUT ./uzl-thesis.out
+INPUT ./uzl-thesis.run.xml
+OUTPUT uzl-thesis.run.xml
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
