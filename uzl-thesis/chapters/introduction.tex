@@ -20,10 +20,11 @@ and assistive technologies, but poses significant technical hurdles
 compared to object detection in open, outdoor environments. 
 
 
-\section{Contributions of this thesis}
-This thesis addresses the problem of steering wheel detection using a 3D 
+\section{Contributions of This Thesis}
+This thesis addresses the problem of steering wheel detection using 3D 
 point cloud, which offers a rich representation of spatial information. 
 Specifically, this research contributes in two significant ways: 
+
 First, it introduces a novel dataset that represents the car interior, 
 including 3D point clouds and annotated bounding boxes for the steering 
 wheel. This dataset was created through a meticulous process involving 
@@ -41,21 +42,8 @@ freedom (DOF). To overcome these limitations, the research modifies the VoxelRCN
 architecture to account for a cubic point cloud structure and allows for rotation detection along 
 the x-axis, which is crucial for accurately representing the orientation of the steering wheel.
 
-Through these contributions, this research aims to advance the field of 
-interior monitoring and lay groundwork for more robust in-cabin perception
-systems.
-
-\section{structure of this thesis}
-The remainder of this thesis is structured as follows. Chapter 2 reviews 
-relevant literature on 3D object detection and the limitations of existing 
-techniques in car interior applications. Chapter 3 details the dataset 
-creation process, including data acquisition, preprocessing, and attempts 
-at accurate position estimation, comparing two approaches to establish a 
-reliable ground truth. Chapter 4 describes the proposed 3D object detection 
-model and necessary modifications for steering wheel detection in cubic point 
-clouds. Chapter 5 presents experimental results and analyzes the model’s performance. 
-Finally, Chapter 6 discusses the significance of the findings, potential 
-applications, limitations, and directions for future research.
+\section{Structure of This Thesis}
+The structure of this thesis is organized to guide the reader through the progression from background research to dataset development, methodology, and results, concluding with a discussion of findings. Chapter 1 introduces the topic and outlines the key contributions of the thesis, setting the stage for the research conducted. Chapter 2 provides background information, covering essential concepts in 3D object detection for autonomous driving, reviewing related work, and summarizing existing datasets and performance metrics. Chapter 3 details the creation of the SWD dataset, describing the recording procedure, data extraction process, and ground truth generation. Chapters 4 and 5 focus on two approaches for generating ground truth: Chapter 4 describes the initial approach using circle fitting, while Chapter 5 explains the refined approach involving ArUco board including an introduction, methodology, evaluation, results, and conclusion sections. Chapter 6 presents the model and methodology used in training and evaluating the steering wheel detection model. Chapter 7 discusses the results and insights gained from the experiments, while Chapter 8 concludes the thesis by summarizing the findings, implications, and potential directions for future work. This structured approach ensures a comprehensive understanding of the methodologies and advancements made in estimating the steering wheel’s 3D position using point clouds.
 
 
 

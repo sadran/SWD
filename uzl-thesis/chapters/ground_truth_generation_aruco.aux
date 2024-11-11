@@ -1,6 +1,6 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Ground Truth Generaiton: ArUco Markers and Plane Fitting (Refined Approach)}{17}{chapter.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Ground Truth Generaiton: ArUco Board (Refined Approach)}{17}{chapter.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{17}{section.5.1}\protected@file@percent }
 \newlabel{fig:marker}{{5.1a}{18}{Single ArUco Markers}{figure.caption.18}{}}
 \newlabel{fig:marker@cref}{{[subfigure][1][5,1]5.1a}{[1][17][]18}}
@@ -16,48 +16,108 @@
 \newlabel{sub@fig:marker_orientation@cref}{{[subfigure][3][5,1]5.1c}{[1][17][]18}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces ArUco merkers' detection and pose estimation by OpenCV.}}{18}{figure.caption.18}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5.2}Methodoloy}{18}{section.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{location estimation}{18}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Location Estimation}{18}{section*.19}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces OpenCV detected the ArUco markers' location in the 2d image.}}{19}{figure.caption.20}\protected@file@percent }
 \newlabel{fig:detectMarkers}{{5.2}{19}{OpenCV detected the ArUco markers' location in the 2d image}{figure.caption.20}{}}
 \newlabel{fig:detectMarkers@cref}{{[figure][2][5]5.2}{[1][19][]19}}
-\@writefile{toc}{\contentsline {subsection}{Evaluating ArUco Markers for Orientation Estimation}{20}{section*.22}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{Generating the Steering Wheel’s Oriented Bounding Box}{21}{section*.25}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Results}{21}{section.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{Location Estimation Results}{21}{section*.26}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{Orientation Estimation Results}{21}{section*.27}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{Systematic Error in Orientation Estimation}{21}{section*.28}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{Generating the Steering Wheel’s Oriented Bounding Box}{21}{section*.29}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Conclusion}{21}{section.5.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces To calculate the center of the board, we utilized multiple marker pairs that are symmetrically positioned on opposite sides of the board as marker pairs \{(0,5), (1,4), (2,3)\}.}}{22}{figure.caption.21}\protected@file@percent }
-\newlabel{fig:marker_ids}{{5.3}{22}{To calculate the center of the board, we utilized multiple marker pairs that are symmetrically positioned on opposite sides of the board as marker pairs \{(0,5), (1,4), (2,3)\}}{figure.caption.21}{}}
-\newlabel{fig:marker_ids@cref}{{[figure][3][5]5.3}{[1][20][]22}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces The markers' coordinate system estimated by OpenCV's \emph  {estimatePoseSingleMarkers} function on a 3x4 board shows that this method is highly sensitive to the markers' distance, camera angle and other environmental factors. Axis-color correspondences are X: red, Y: green, Z: blue, with Z axis pointing out}}{23}{figure.caption.23}\protected@file@percent }
-\newlabel{fig:estimatePoseSingleMarkers}{{5.4}{23}{The markers' coordinate system estimated by OpenCV's \emph {estimatePoseSingleMarkers} function on a 3x4 board shows that this method is highly sensitive to the markers' distance, camera angle and other environmental factors. Axis-color correspondences are X: red, Y: green, Z: blue, with Z axis pointing out}{figure.caption.23}{}}
-\newlabel{fig:estimatePoseSingleMarkers@cref}{{[figure][4][5]5.4}{[1][20][]23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Illustration of the plane fitting method, showing the sampled points around the center of the ArUco board in red and the normal vector of the fitted plane in light blue, which represents the orientation of the steering wheel.}}{23}{figure.caption.24}\protected@file@percent }
-\newlabel{fig:plane_fitting}{{5.5}{23}{Illustration of the plane fitting method, showing the sampled points around the center of the ArUco board in red and the normal vector of the fitted plane in light blue, which represents the orientation of the steering wheel}{figure.caption.24}{}}
-\newlabel{fig:plane_fitting@cref}{{[figure][5][5]5.5}{[1][21][]23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces To calculate the center of the board, multiple marker pairs are considered that are symmetrically positioned on opposite sides of the board as marker pairs \{(0,5), (1,4), (2,3)\} for a 2x3 board.}}{20}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:marker_ids}{{5.3}{20}{To calculate the center of the board, multiple marker pairs are considered that are symmetrically positioned on opposite sides of the board as marker pairs \{(0,5), (1,4), (2,3)\} for a 2x3 board}{figure.caption.21}{}}
+\newlabel{fig:marker_ids@cref}{{[figure][3][5]5.3}{[1][20][]20}}
+\@writefile{toc}{\contentsline {subsection}{Orientation Estimation}{20}{section*.22}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces The markers' coordinate system estimated by OpenCV's \emph  {estimatePoseSingleMarkers} function on a 3x4 board shows that this method is highly sensitive to the markers' distance, camera angle and other environmental factors. Axis-color correspondences are X: red, Y: green, Z: blue, with Z axis pointing out}}{21}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:estimatePoseSingleMarkers}{{5.4}{21}{The markers' coordinate system estimated by OpenCV's \emph {estimatePoseSingleMarkers} function on a 3x4 board shows that this method is highly sensitive to the markers' distance, camera angle and other environmental factors. Axis-color correspondences are X: red, Y: green, Z: blue, with Z axis pointing out}{figure.caption.23}{}}
+\newlabel{fig:estimatePoseSingleMarkers@cref}{{[figure][4][5]5.4}{[1][21][]21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Illustration of the plane fitting method, showing the sampled points around the center of a 3x4 ArUco board in red and the normal vector of the fitted plane in light blue, which represents the orientation of the ArUco board.}}{22}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:plane_fitting}{{5.5}{22}{Illustration of the plane fitting method, showing the sampled points around the center of a 3x4 ArUco board in red and the normal vector of the fitted plane in light blue, which represents the orientation of the ArUco board}{figure.caption.24}{}}
+\newlabel{fig:plane_fitting@cref}{{[figure][5][5]5.5}{[1][21][]22}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Evaluation}{22}{section.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Experiment 1: Inter-Marker Distance Evaluation}{22}{section*.25}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Geometry of the 3x4 ArUco board used in the experiment 1. Distances between markers and the center of the board can be calculated using the dimensions provided in the figure.}}{23}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:marker_dimention}{{5.6}{23}{Geometry of the 3x4 ArUco board used in the experiment 1. Distances between markers and the center of the board can be calculated using the dimensions provided in the figure}{figure.caption.26}{}}
+\newlabel{fig:marker_dimention@cref}{{[figure][6][5]5.6}{[1][22][]23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Distance matrix of the markers and center of the board for the 3x4 ArUco board used in experiment 1.}}{23}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:distance_matrix}{{5.7}{23}{Distance matrix of the markers and center of the board for the 3x4 ArUco board used in experiment 1}{figure.caption.27}{}}
+\newlabel{fig:distance_matrix@cref}{{[figure][7][5]5.7}{[1][22][]23}}
+\@writefile{toc}{\contentsline {subsection}{Experiment 2: Distance and Angle Variation}{24}{section*.28}\protected@file@percent }
+\newlabel{fig:board_on_wall_plain_fitting}{{5.8a}{24}{The red region represents the plane fitted to the board, with the light blue vector indicating the normal vector of this plane. The camera’s coordinate system is shown by the dark blue (z-axis), red (x-axis), and green (y-axis) vectors}{figure.caption.29}{}}
+\newlabel{fig:board_on_wall_plain_fitting@cref}{{[subfigure][1][5,8]5.8a}{[1][24][]24}}
+\newlabel{sub@fig:board_on_wall_plain_fitting}{{a}{24}{The red region represents the plane fitted to the board, with the light blue vector indicating the normal vector of this plane. The camera’s coordinate system is shown by the dark blue (z-axis), red (x-axis), and green (y-axis) vectors}{figure.caption.29}{}}
+\newlabel{sub@fig:board_on_wall_plain_fitting@cref}{{[subfigure][1][5,8]5.8a}{[1][24][]24}}
+\newlabel{fig:board_on_wall_opencv}{{5.8b}{24}{Markers' orientation estimated by OpenCV. color codes are as: dark blue (z-axis), red (x-axis), and green (y-axis)}{figure.caption.29}{}}
+\newlabel{fig:board_on_wall_opencv@cref}{{[subfigure][2][5,8]5.8b}{[1][24][]24}}
+\newlabel{sub@fig:board_on_wall_opencv}{{b}{24}{Markers' orientation estimated by OpenCV. color codes are as: dark blue (z-axis), red (x-axis), and green (y-axis)}{figure.caption.29}{}}
+\newlabel{sub@fig:board_on_wall_opencv@cref}{{[subfigure][2][5,8]5.8b}{[1][24][]24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Experimental setup for steering wheel position estimation. The camera is positioned 100 cm away from the ArUco board, facing straightforward.}}{24}{figure.caption.29}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Results}{25}{section.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Locaiton Estimation}{25}{section*.30}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Inter-marker distance matrix errors for direct 3D estimation (a) and 2D mapping approaches (b) on a 3x4 ArUco board.}}{26}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:distance_error_matrix}{{5.9}{26}{Inter-marker distance matrix errors for direct 3D estimation (a) and 2D mapping approaches (b) on a 3x4 ArUco board}{figure.caption.31}{}}
+\newlabel{fig:distance_error_matrix@cref}{{[figure][9][5]5.9}{[1][25][]26}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.10}{\ignorespaces Inter-marker distance Mean Square Erorr for both locaiton estimation approaches.}}{27}{table.caption.32}\protected@file@percent }
+\newlabel{tab:mse}{{5.10}{27}{Inter-marker distance Mean Square Erorr for both locaiton estimation approaches}{table.caption.32}{}}
+\newlabel{tab:mse@cref}{{[table][10][5]5.10}{[1][25][]27}}
+\@writefile{toc}{\contentsline {subsection}{Orientation Estimation Results}{27}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Systematic Error in Orientation Estimation}{27}{section*.36}\protected@file@percent }
+\newlabel{fig:opencv_distance_mean_error}{{5.11a}{28}{Board's distance mean errors estimated by OpenCV in different experiment setups}{figure.caption.33}{}}
+\newlabel{fig:opencv_distance_mean_error@cref}{{[subfigure][1][5,11]5.11a}{[1][27][]28}}
+\newlabel{sub@fig:opencv_distance_mean_error}{{a}{28}{Board's distance mean errors estimated by OpenCV in different experiment setups}{figure.caption.33}{}}
+\newlabel{sub@fig:opencv_distance_mean_error@cref}{{[subfigure][1][5,11]5.11a}{[1][27][]28}}
+\newlabel{fig:2d_mapping_distanc_mean_error}{{5.11b}{28}{Board's distance mean errors estimated by mapping from 2D to 3D in different experiment setups}{figure.caption.33}{}}
+\newlabel{fig:2d_mapping_distanc_mean_error@cref}{{[subfigure][2][5,11]5.11b}{[1][27][]28}}
+\newlabel{sub@fig:2d_mapping_distanc_mean_error}{{b}{28}{Board's distance mean errors estimated by mapping from 2D to 3D in different experiment setups}{figure.caption.33}{}}
+\newlabel{sub@fig:2d_mapping_distanc_mean_error@cref}{{[subfigure][2][5,11]5.11b}{[1][27][]28}}
+\newlabel{fig:opencv_distances}{{5.11c}{28}{Board's distances estimated by OpenCV in 5 selected experiment setups}{figure.caption.33}{}}
+\newlabel{fig:opencv_distances@cref}{{[subfigure][3][5,11]5.11c}{[1][27][]28}}
+\newlabel{sub@fig:opencv_distances}{{c}{28}{Board's distances estimated by OpenCV in 5 selected experiment setups}{figure.caption.33}{}}
+\newlabel{sub@fig:opencv_distances@cref}{{[subfigure][3][5,11]5.11c}{[1][27][]28}}
+\newlabel{fig:2d_mapping_distances}{{5.11d}{28}{Board's distances estimated by mapping from 2D to 3D in 5 selected experiment setups}{figure.caption.33}{}}
+\newlabel{fig:2d_mapping_distances@cref}{{[subfigure][4][5,11]5.11d}{[1][27][]28}}
+\newlabel{sub@fig:2d_mapping_distances}{{d}{28}{Board's distances estimated by mapping from 2D to 3D in 5 selected experiment setups}{figure.caption.33}{}}
+\newlabel{sub@fig:2d_mapping_distances@cref}{{[subfigure][4][5,11]5.11d}{[1][27][]28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Comparing board's distance mean errors and distances in different experiment setups estimated by two location estimation approaches.}}{28}{figure.caption.33}\protected@file@percent }
+\newlabel{fig:distance_error_matrix}{{5.11}{28}{Comparing board's distance mean errors and distances in different experiment setups estimated by two location estimation approaches}{figure.caption.33}{}}
+\newlabel{fig:distance_error_matrix@cref}{{[figure][11][5]5.11}{[1][27][]28}}
+\newlabel{fig:opencv_mean_angle}{{5.12a}{29}{Board's mean angle with the camera's Z axis estimated by OpenCV in different experiment setups}{figure.caption.35}{}}
+\newlabel{fig:opencv_mean_angle@cref}{{[subfigure][1][5,12]5.12a}{[1][27][]29}}
+\newlabel{sub@fig:opencv_mean_angle}{{a}{29}{Board's mean angle with the camera's Z axis estimated by OpenCV in different experiment setups}{figure.caption.35}{}}
+\newlabel{sub@fig:opencv_mean_angle@cref}{{[subfigure][1][5,12]5.12a}{[1][27][]29}}
+\newlabel{fig:plane_fitting_mean_angle}{{5.12b}{29}{Board's mean angle with the Z axis estimated by plane fitting in different experiment setups}{figure.caption.35}{}}
+\newlabel{fig:plane_fitting_mean_angle@cref}{{[subfigure][2][5,12]5.12b}{[1][27][]29}}
+\newlabel{sub@fig:plane_fitting_mean_angle}{{b}{29}{Board's mean angle with the Z axis estimated by plane fitting in different experiment setups}{figure.caption.35}{}}
+\newlabel{sub@fig:plane_fitting_mean_angle@cref}{{[subfigure][2][5,12]5.12b}{[1][27][]29}}
+\newlabel{fig:opencv_angles}{{5.12c}{29}{Board's angles with the Z axis, estimated by OpenCV in 5 selected experiment setups}{figure.caption.35}{}}
+\newlabel{fig:opencv_angles@cref}{{[subfigure][3][5,12]5.12c}{[1][27][]29}}
+\newlabel{sub@fig:opencv_angles}{{c}{29}{Board's angles with the Z axis, estimated by OpenCV in 5 selected experiment setups}{figure.caption.35}{}}
+\newlabel{sub@fig:opencv_angles@cref}{{[subfigure][3][5,12]5.12c}{[1][27][]29}}
+\newlabel{fig:plane_fitting_angles}{{5.12d}{29}{Board's angles with the Z axis, estimated by plane fitting in 5 selected experiment setups}{figure.caption.35}{}}
+\newlabel{fig:plane_fitting_angles@cref}{{[subfigure][4][5,12]5.12d}{[1][27][]29}}
+\newlabel{sub@fig:plane_fitting_angles}{{d}{29}{Board's angles with the Z axis, estimated by plane fitting in 5 selected experiment setups}{figure.caption.35}{}}
+\newlabel{sub@fig:plane_fitting_angles@cref}{{[subfigure][4][5,12]5.12d}{[1][27][]29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Comparing board's angles and mean angle with the Z axis in different experiment setups estimated by two rotation estimation approaches.}}{29}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:distance_error_matrix}{{5.12}{29}{Comparing board's angles and mean angle with the Z axis in different experiment setups estimated by two rotation estimation approaches}{figure.caption.35}{}}
+\newlabel{fig:distance_error_matrix@cref}{{[figure][12][5]5.12}{[1][27][]29}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Conclusion}{30}{section.5.5}\protected@file@percent }
 \@setckpt{chapters/ground_truth_generation_aruco}{
-\setcounter{page}{24}
+\setcounter{page}{31}
 \setcounter{equation}{0}
 \setcounter{enumi}{4}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
-\setcounter{footnote}{2}
+\setcounter{footnote}{1}
 \setcounter{mpfootnote}{0}
 \setcounter{chapter}{5}
-\setcounter{section}{4}
+\setcounter{section}{5}
 \setcounter{subsection}{0}
-\setcounter{figure}{5}
-\setcounter{table}{5}
+\setcounter{figure}{12}
+\setcounter{table}{12}
 \setcounter{parentequation}{0}
 \setcounter{theorem}{0}
 \setcounter{vrcnt}{0}
 \setcounter{section@level}{1}
 \setcounter{Item}{9}
-\setcounter{Hfootnote}{2}
-\setcounter{bookmark@seq@number}{22}
+\setcounter{Hfootnote}{1}
+\setcounter{bookmark@seq@number}{23}
 \setcounter{lstnumber}{1}
 \setcounter{tabx@nest}{0}
 \setcounter{listtotal}{0}
@@ -68,7 +128,7 @@
 \setcounter{citetotal}{0}
 \setcounter{multicitecount}{0}
 \setcounter{multicitetotal}{0}
-\setcounter{instcount}{35}
+\setcounter{instcount}{39}
 \setcounter{maxnames}{3}
 \setcounter{minnames}{1}
 \setcounter{maxitems}{3}
@@ -173,9 +233,9 @@
 \setcounter{smartand}{1}
 \setcounter{bbx:relatedcount}{0}
 \setcounter{bbx:relatedtotal}{0}
-\setcounter{caption@flags}{2}
+\setcounter{caption@flags}{6}
 \setcounter{continuedfloat}{0}
-\setcounter{subfigure}{0}
+\setcounter{subfigure}{4}
 \setcounter{subtable}{0}
-\setcounter{lstlisting}{5}
+\setcounter{lstlisting}{12}
 }

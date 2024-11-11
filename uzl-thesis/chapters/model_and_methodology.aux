@@ -1,27 +1,45 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Model and Methodology}{24}{chapter.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Model and Methodology}{31}{chapter.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Introduction}{31}{section.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Network Architecture}{31}{section.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Voxel Feature Encoding (VFE)}{31}{section*.38}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Voxel R-CNN pipeline: The input point cloud is voxelized, and features are extracted using a 3D backbone network. These features are transformed into a Bird’s Eye View and processed by a 2D backbone and Region Proposal Network (RPN) to generate 3D region proposals. Finally, voxel RoI pooling extracts region-specific features for box refinement in the detection subnet.}}{32}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:voxelrcnn}{{6.1}{32}{Voxel R-CNN pipeline: The input point cloud is voxelized, and features are extracted using a 3D backbone network. These features are transformed into a Bird’s Eye View and processed by a 2D backbone and Region Proposal Network (RPN) to generate 3D region proposals. Finally, voxel RoI pooling extracts region-specific features for box refinement in the detection subnet}{figure.caption.37}{}}
+\newlabel{fig:voxelrcnn@cref}{{[figure][1][6]6.1}{[1][31][]32}}
+\@writefile{toc}{\contentsline {subsection}{3D Backbone}{33}{section*.39}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Bird's Eye View Transformation}{33}{section*.40}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{2D Backbone}{33}{section*.41}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Region Proposal Network (RPN)}{34}{section*.42}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{RoI Head}{34}{section*.43}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Voxel RoI pooling aggregates features from neighboring voxels for each grid point \(g_i\) using a voxel query approach \blx@tocontentsinit {0}\cite {voxelrcnn}, then applies a PointNet module followed by max pooling to produce an aggregated feature vector \(\miteta _i\), summarizing local voxel features. Source: \blx@tocontentsinit {0}\cite {voxelrcnn}}}{35}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:roi_pooling}{{6.2}{35}{Voxel RoI pooling aggregates features from neighboring voxels for each grid point \(g_i\) using a voxel query approach \cite {voxelrcnn}, then applies a PointNet module followed by max pooling to produce an aggregated feature vector \(\eta _i\), summarizing local voxel features. Source: \cite {voxelrcnn}}{figure.caption.44}{}}
+\newlabel{fig:roi_pooling@cref}{{[figure][2][6]6.2}{[1][35][]35}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Adaptatoins for steering wheel detection}{36}{section.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Adjustments to Bounding Box Encodings}{36}{section*.45}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Network Adjustments}{37}{section*.46}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Summary}{37}{section.6.4}\protected@file@percent }
 \@setckpt{chapters/model_and_methodology}{
-\setcounter{page}{25}
+\setcounter{page}{38}
 \setcounter{equation}{0}
 \setcounter{enumi}{4}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
-\setcounter{footnote}{2}
+\setcounter{footnote}{1}
 \setcounter{mpfootnote}{0}
 \setcounter{chapter}{6}
-\setcounter{section}{0}
+\setcounter{section}{4}
 \setcounter{subsection}{0}
-\setcounter{figure}{0}
-\setcounter{table}{0}
+\setcounter{figure}{2}
+\setcounter{table}{2}
 \setcounter{parentequation}{0}
 \setcounter{theorem}{0}
 \setcounter{vrcnt}{0}
 \setcounter{section@level}{1}
 \setcounter{Item}{9}
-\setcounter{Hfootnote}{2}
-\setcounter{bookmark@seq@number}{23}
+\setcounter{Hfootnote}{1}
+\setcounter{bookmark@seq@number}{28}
 \setcounter{lstnumber}{1}
 \setcounter{tabx@nest}{0}
 \setcounter{listtotal}{0}
@@ -32,7 +50,7 @@
 \setcounter{citetotal}{0}
 \setcounter{multicitecount}{0}
 \setcounter{multicitetotal}{0}
-\setcounter{instcount}{35}
+\setcounter{instcount}{45}
 \setcounter{maxnames}{3}
 \setcounter{minnames}{1}
 \setcounter{maxitems}{3}
@@ -141,5 +159,5 @@
 \setcounter{continuedfloat}{0}
 \setcounter{subfigure}{0}
 \setcounter{subtable}{0}
-\setcounter{lstlisting}{0}
+\setcounter{lstlisting}{2}
 }

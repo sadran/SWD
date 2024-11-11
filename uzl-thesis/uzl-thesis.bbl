@@ -17,6 +17,32 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{opencv_library}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=BG}{%
+         family={Bradski},
+         familyi={B\bibinitperiod},
+         given={Gary},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kaehler},
+         familyi={K\bibinitperiod},
+         given={Adrian},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BGKA1}
+    \strng{fullhash}{BGKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{note}{Software library. Available at https://opencv.org}
+    \field{title}{OpenCV}
+    \field{year}{2000}
+  \endentry
+
   \entry{nuscenes}{misc}{}
     \name{author}{10}{}{%
       {{hash=CH}{%
@@ -1014,6 +1040,40 @@
     \field{journaltitle}{Cornell University}
     \field{month}{01}
     \field{year}{2019}
+  \endentry
+
+  \entry{voxelnet}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ZY}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Yin},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=TO}{%
+         family={Tuzel},
+         familyi={T\bibinitperiod},
+         given={Oncel},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZYTO1}
+    \strng{fullhash}{ZYTO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \verb{eprint}
+    \verb 1711.06396
+    \endverb
+    \field{title}{VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection}
+    \verb{url}
+    \verb http://arxiv.org/abs/1711.06396
+    \endverb
+    \field{volume}{abs/1711.06396}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
   \endentry
 \enddatalist
 \endinput

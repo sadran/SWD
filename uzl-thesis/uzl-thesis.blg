@@ -8,7 +8,7 @@ A level-1 auxiliary file: chapters/swd_dataset.aux
 A level-1 auxiliary file: chapters/ground_truth_generation_circle_fitting.aux
 A level-1 auxiliary file: chapters/ground_truth_generation_aruco.aux
 A level-1 auxiliary file: chapters/model_and_methodology.aux
-A level-1 auxiliary file: chapters/discussion.aux
+A level-1 auxiliary file: chapters/results.aux
 A level-1 auxiliary file: chapters/conclusion.aux
 A level-1 auxiliary file: chapters/bibliography.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -28,49 +28,47 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: uzl-thesis-blx.bib
 Database file #2: uzl-thesis-bibtex-entries.bib
-Warning--I didn't find a database entry for "voxnet"
 Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 20 entries,
+You've used 22 entries,
             6399 wiz_defined-function locations,
-            1324 strings with 13756 characters,
-and the built_in function-call counts, 253194 in all, are:
-= -- 21720
-> -- 3374
-< -- 818
-+ -- 8980
-- -- 1638
-* -- 19496
-:= -- 32405
+            1333 strings with 14005 characters,
+and the built_in function-call counts, 265217 in all, are:
+= -- 22571
+> -- 3592
+< -- 872
++ -- 9342
+- -- 1728
+* -- 20339
+:= -- 33726
 add.period$ -- 0
-call.type$ -- 20
-change.case$ -- 174
+call.type$ -- 22
+change.case$ -- 193
 chr.to.int$ -- 142
-cite$ -- 38
-duplicate$ -- 27330
-empty$ -- 19644
-format.name$ -- 2156
-if$ -- 48930
+cite$ -- 42
+duplicate$ -- 28753
+empty$ -- 20687
+format.name$ -- 2290
+if$ -- 51356
 int.to.chr$ -- 0
-int.to.str$ -- 39
+int.to.str$ -- 43
 missing$ -- 0
-newline$ -- 1019
-num.names$ -- 782
-pop$ -- 8025
+newline$ -- 1079
+num.names$ -- 864
+pop$ -- 8724
 preamble$ -- 1
-purify$ -- 390
+purify$ -- 419
 quote$ -- 0
-skip$ -- 4073
+skip$ -- 4428
 stack$ -- 0
-substring$ -- 41337
-swap$ -- 3907
-text.length$ -- 890
-text.prefix$ -- 19
+substring$ -- 42699
+swap$ -- 4187
+text.length$ -- 946
+text.prefix$ -- 21
 top$ -- 1
-type$ -- 668
+type$ -- 736
 warning$ -- 0
-while$ -- 4178
+while$ -- 4356
 width$ -- 0
-write$ -- 1000
-(There was 1 warning)
+write$ -- 1058

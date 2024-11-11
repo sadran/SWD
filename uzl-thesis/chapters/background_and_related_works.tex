@@ -1,20 +1,19 @@
-\chapter{Background and related works}
-In this section, we explore the foundational concepts and advancements 
+\chapter{Background and Related Works}
+This chapter explores the foundational concepts and advancements 
 in 3D object detection techniques that are relevant to 
 in-cabin monitoring and steering wheel detection. Given the critical 
 role of perception in autonomous driving, achieving robust and reliable 
 3D detection of interior components like the steering wheel has become a 
-key challenge in this field. This chapter presents an overview of 
+key challenge in this field. Additionally, an overview of 
 various 3D object detection methods, focusing on point cloud-based 
-approaches, multimodal fusion techniques, and image-based approaches. 
-We also discuss the unique challenges posed by interior environments, 
+approaches, multimodal fusion techniques, and image-based approaches is presented in this chapter. 
+Also the unique challenges posed by interior environments, 
 including issues such as occlusions, irregular lighting conditions, 
-and limited rotational freedom for 3D bounding boxes, which make 
-existing detection methods difficult to apply directly to car interior 
-scenarios. Finally, we provide an overview of publicly available 
+and limited rotational freedom for 3D bounding boxes are discussed in this chapter, which make existing detection methods difficult to apply directly to car interior scenarios. 
+Finally, an overview of publicly available 
 datasets and the key performance metrics commonly used in 3D object 
 detection for autonomous driving, assessing their relevance and 
-applicability for interior monitoring applications.
+applicability for interior monitoring applications are provided.
 
 
 \section{3D Object Detection in Autonomous Driving}
@@ -80,7 +79,7 @@ and architecture type (two-stage, single-stage, or hybrid).
         &  & Pseudo-LiDAR++ \cite{pseudo_lidar++}\\
         &  & DSGN \cite{dsgn}\\
         & & \\
-        \uzlemph{Point Cloud-Based Methods} & \uzlemph{Voxel-Based} & VoxelNet \cite{voxnet} \\
+        \uzlemph{Point Cloud-Based Methods} & \uzlemph{Voxel-Based} & VoxelNet \cite{voxelnet} \\
         &  & VoxelRCNN \cite{voxelrcnn} \\
         &  & SE-SSD \cite{se_ssd} \\
         &  & BtcDet \cite{bdc_det} \\
@@ -123,7 +122,7 @@ using data from LiDAR or other depth sensors to create dense, spatial
 representations. These methods can be further divided into voxel-based, 
 point-based, and hybrid approaches:
 \begin{itemize}
-    \item \uzlemph{Voxel-Based Methods}: VoxelNet \cite{voxnet} 
+    \item \uzlemph{Voxel-Based Methods}: VoxelNet \cite{voxelnet} 
     and its successors, such as VoxelRCNN \cite{voxelrcnn}, 
     partition the point cloud into voxel grids and apply convolutional 
     operations, capturing spatial structure but at a high computational 
@@ -136,7 +135,7 @@ point-based, and hybrid approaches:
     and sparse point clouds. Another voxel-based approach, 
     BtcDet \cite{bdc_det}, focuses on long-range and sparse 
     data detection. BtcDet enhances detection performance in challenging 
-    scenes by using shape-adaptive learning to manage low-quality data, 
+    scenes by learning the shape-prior of the objects to manage low-quality data, 
     which is particularly useful in adverse weather or complex scenes.
     \item \uzlemph{Point-Based Methods}: Approaches like 
     PointRCNN \cite{point_rcnn} and 
@@ -170,10 +169,6 @@ cloud processing pipeline.
 Additionally, Frustum PointNets \cite{frustum_pointnet}, for instance, 
 fuses LiDAR and image features within 3D frustums projected from 2D object 
 detection results, effectively reducing the search space for 3D object detection. 
-However, aligning features between images and point clouds in indoor 
-environments poses significant challenges, particularly due to spatial 
-and view misalignments.
-
 
 
 \section{Datasets for 3D Object Detection in Autonomous Driving}
@@ -205,10 +200,12 @@ Additional metrics include:
     IoU evaluates the overlap between predicted and ground truth bounding 
     boxes. For autonomous driving, models are often tested at varying IoU 
     thresholds depending on object size and importance.
-    \item \uzlemph{NuScenes Detection Score (NDS)} and \uzlemph{Average Precision with Heading (APH)}: 
-    Used in the nuScenes and Waymo datasets, these metrics account for 
-    orientation and other attributes specific to 3D space, offering a 
-    comprehensive measure of performance for complex scenes.    
+    \item \uzlemph{Average Precision with Heading (APH)}Average Precision with Heading (APH) is an extension of the traditional Average Precision (AP) metric used in object detection. AP calculates the precision of detections at various recall levels, providing a score that reflects how well the model balances true positives against false positives. However, in 3D detection, accurate heading estimation (orientation) is crucial for understanding object orientation in space, especially in autonomous driving scenarios where vehicles and pedestrians have distinct orientations that impact collision prediction and path planning.
+    
+    APH specifically includes heading information by defining a detection as “correct” only if it matches not only the object’s position but also its orientation (heading). This means that for a detection to be counted as a true positive, it must correctly localize the object within a certain tolerance in both position and orientation. In the context of the Waymo dataset, APH is especially useful for evaluating model performance in crowded or complex environments where heading accuracy is crucial.
+
+    \item \uzlemph{NuScenes Detection Score (NDS)} : 
+    The NDS is a weighted combination of some metrics such as Translation Error (mATE), Scale Error (mASE), Orientation Error (mAOE), Velocity Error (mAVE), and etc., providing a holistic score that reflects the overall performance of the detection model. By incorporating both positional accuracy and attribute-based metrics, the NDS aims to capture the complexities of detecting objects accurately in 3D space and assessing how well the model adapts to diverse scene elements.
 \end{itemize}
 
 
@@ -218,7 +215,7 @@ in outdoor environments, these methods face limitations when applied to
 in-cabin monitoring. The unique challenges of interior environments 
 require adapted models, tailored datasets, and precise metrics that can 
 account for both spatial constraints and occlusions. In the following 
-chapters, we detail our approach to address these gaps by creating a 
+chapters, a new approach is detailed to address these gaps by creating a 
 dedicated dataset and adapting a 3D object detection model, optimized 
 for steering wheel detection and localization within a confined interior 
 space.

@@ -1,6 +1,6 @@
-PWD /Users/sadra/Projects/SW_Detection/uzl-thesis
+PWD /Users/sadra/Projects/SW_Detection/SWD/uzl-thesis
 INPUT /usr/local/texlive/2024/texmf-var/web2c/luahbtex/lualatex.fmt
-INPUT /Users/sadra/Projects/SW_Detection/uzl-thesis/uzl-thesis.tex
+INPUT /Users/sadra/Projects/SW_Detection/SWD/uzl-thesis/uzl-thesis.tex
 OUTPUT uzl-thesis.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tex-ini-files/lualatexquotejobname.lua
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/ltluatex.lua
@@ -330,7 +330,7 @@ INPUT ./chapters/swd_dataset.aux
 INPUT ./chapters/ground_truth_generation_circle_fitting.aux
 INPUT ./chapters/ground_truth_generation_aruco.aux
 INPUT ./chapters/model_and_methodology.aux
-INPUT ./chapters/discussion.aux
+INPUT ./chapters/results.aux
 INPUT ./chapters/conclusion.aux
 INPUT ./chapters/bibliography.aux
 OUTPUT uzl-thesis.aux
@@ -350,15 +350,6 @@ INPUT ./uzl-thesis.bbl
 INPUT ./uzl-thesis.bbl
 INPUT ./logos/uzl-thesis-logo-itcs.pdf
 INPUT ./logos/uzl-thesis-logo-itcs.pdf
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT ./logos/uzl-thesis-logo-slogan.pdf
 INPUT ./logos/uzl-thesis-logo-slogan.pdf
 INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -399,15 +390,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 OUTPUT chapters/swd_dataset.aux
 INPUT ./chapters/swd_dataset.tex
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT ./media/chapter 3/demo_model.jpg
 INPUT ./media/chapter 3/demo_model.jpg
 INPUT ./media/chapter 3/reference_board.jpg
@@ -442,6 +424,15 @@ INPUT ./media/chapter 3/torus6.png
 INPUT ./media/chapter 3/torus6.png
 OUTPUT chapters/ground_truth_generation_circle_fitting.aux
 INPUT ./chapters/ground_truth_generation_circle_fitting.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT ./media/chapter 4/ellipse.png
 INPUT ./media/chapter 4/ellipse.png
 INPUT ./media/chapter 4/sampled_points.png
@@ -474,10 +465,42 @@ INPUT ./media/chapter 5/aruco_board_estimation3.png
 INPUT ./media/chapter 5/aruco_board_estimation3.png
 INPUT ./media/chapter 5/plane_fitting.png
 INPUT ./media/chapter 5/plane_fitting.png
+INPUT ./media/chapter 5/board_geometry.png
+INPUT ./media/chapter 5/board_geometry.png
+INPUT ./media/chapter 5/Distance Matrix.png
+INPUT ./media/chapter 5/Distance Matrix.png
+INPUT ./media/chapter 5/board_on_the_wall.png
+INPUT ./media/chapter 5/board_on_the_wall.png
+INPUT ./media/chapter 5/aruco_board_on_the_wall.png
+INPUT ./media/chapter 5/aruco_board_on_the_wall.png
+INPUT ./media/chapter 5/opencv_error_matrix.jpg
+INPUT ./media/chapter 5/opencv_error_matrix.jpg
+INPUT ./media/chapter 5/point_cloud_error_matrix.jpg
+INPUT ./media/chapter 5/point_cloud_error_matrix.jpg
+INPUT ./media/chapter 5/board's distance by opencv.png
+INPUT ./media/chapter 5/board's distance by opencv.png
+INPUT ./media/chapter 5/board’s distance mean error estimated by mapping from 2D to 3D.png
+INPUT ./media/chapter 5/board’s distance mean error estimated by mapping from 2D to 3D.png
+INPUT ./media/chapter 5/board’s distances estimated by OpenCV.png
+INPUT ./media/chapter 5/board’s distances estimated by OpenCV.png
+INPUT ./media/chapter 5/board’s distances.png
+INPUT ./media/chapter 5/board’s distances.png
+INPUT ./media/chapter 5/board’s mean angle with Z axis estimated by OpenCV.png
+INPUT ./media/chapter 5/board’s mean angle with Z axis estimated by OpenCV.png
+INPUT ./media/chapter 5/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png
+INPUT ./media/chapter 5/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png
+INPUT ./media/chapter 5/board’s angles with the camera Z axis estimated by OpenCV.png
+INPUT ./media/chapter 5/board’s angles with the camera Z axis estimated by OpenCV.png
+INPUT ./media/chapter 5/board’s angles with camera's Z axis estimated by plane fitting.png
+INPUT ./media/chapter 5/board’s angles with camera's Z axis estimated by plane fitting.png
 OUTPUT chapters/model_and_methodology.aux
 INPUT ./chapters/model_and_methodology.tex
-OUTPUT chapters/discussion.aux
-INPUT ./chapters/discussion.tex
+INPUT ./media/chapter 6/voxelrcnn2.png
+INPUT ./media/chapter 6/voxelrcnn2.png
+INPUT ./media/chapter 6/roi_pooling.png
+INPUT ./media/chapter 6/roi_pooling.png
+OUTPUT chapters/results.aux
+INPUT ./chapters/results.tex
 OUTPUT chapters/conclusion.aux
 INPUT ./chapters/conclusion.tex
 OUTPUT chapters/bibliography.aux
@@ -490,7 +513,7 @@ INPUT ./chapters/swd_dataset.aux
 INPUT ./chapters/ground_truth_generation_circle_fitting.aux
 INPUT ./chapters/ground_truth_generation_aruco.aux
 INPUT ./chapters/model_and_methodology.aux
-INPUT ./chapters/discussion.aux
+INPUT ./chapters/results.aux
 INPUT ./chapters/conclusion.aux
 INPUT ./chapters/bibliography.aux
 INPUT ./uzl-thesis.out

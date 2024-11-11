@@ -1,1 +1,106 @@
 \chapter{Model and Methodology}
+\section{Introduction}
+This chapter presents the approach adopted to estimate the 3D position and orientation of the steering wheel using 3D point clouds. Based on Voxel R-CNN \cite{voxelrcnn}, a voxel-based 3D object detection framework, our methodology includes specific modifications to account for the steering wheel’s unique characteristics, including adjustments to bounding box encodings and adaptations for SWD-dataset cubic point clouds. The chapter first provides an overview of Voxel R-CNN’s architecture, then delves into the modifications made to accommodate steering wheel detection.
+
+
+\section{Network Architecture}
+Voxel R-CNN framework, a two-stage voxel-based architecture for 3D object detection. As illustrated in \cref{fig:voxelrcnn}, Voxel R-CNN comprises several key components: a 3D backbone network, a 2D backbone network followed by a Region Proposal Network, and a voxel RoI pooling module coupled with a detection subnet for box refinement. The approach begins by dividing the input point cloud into regular voxels and utilizing the 3D backbone network to extract features from this voxelized representation. These sparse 3D voxel features are then converted into a Bird's Eye View representation, on which the 2D backbone network and RPN are applied to generate 3D region proposals. Finally, the voxel RoI pooling module is used to extract region-specific features, which are then fed into the detection subnet for further refinement of the bounding box predictions. The following sections provide a more detailed discussion of these individual modules, with a particular focus on the innovative voxel RoI pooling component.
+
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth]{media/chapter 6/voxelrcnn2.png}
+    \caption{Voxel R-CNN pipeline: The input point cloud is voxelized, and features are extracted using a 3D backbone network. These features are transformed into a Bird’s Eye View and processed by a 2D backbone and Region Proposal Network (RPN) to generate 3D region proposals. Finally, voxel RoI pooling extracts region-specific features for box refinement in the detection subnet.}
+    \label{fig:voxelrcnn}
+\end{figure}
+
+\subsection{Voxel Feature Encoding (VFE)}
+The VFE module extracts relevant features from the individual points within each voxel, such as 3D coordinates, intensity, and other attributes. This helps the network understand the spatial structure and density of the point cloud in that region.
+
+After extracting the point-wise features, the VFE module aggregates them into a single feature vector representing the entire voxel. This aggregation typically uses pooling operations like max pooling or mean pooling to summarize the information across all points. The resulting compact, fixed-size feature representation is essential for efficiently processing the voxel grid in the subsequent 3D convolutional layers, allowing the network to focus on meaningful spatial features without being overwhelmed by the raw data's sparsity and variability.
+
+\subsection{3D Backbone}
+The 3D backbone in Voxel R-CNN is a crucial component that processes the structured voxel feature map produced by the VFE module. This backbone network typically consists of a series of 3D convolutional layers that operate on the voxelized input, allowing the model to learn complex spatial patterns and relationships in 3D space. By applying 3D convolutions, the backbone captures both local and global context within the point cloud, identifying meaningful features across the x, y, and z dimensions. 
+
+The backbone network usually follows a hierarchical structure, similar to standard CNNs, where initial layers capture low-level details, and deeper layers extract high-level, abstract features. There are three stages in the 3D back-bone with filter numbers of 16,32,64 respectively. This layered approach enables the backbone to detect small, local structures in the early stages and progressively combine them into larger, more meaningful shapes or object parts. After passing through the backbone, the 3D voxel features are transformed into a feature representation that is both spatially compact and semantically rich, making it suitable for downstream tasks like region proposal generation and bounding box prediction. Overall, the 3D backbone enhances Voxel R-CNN's ability to detect and classify objects in cluttered and complex 3D environments by learning a comprehensive representation of the spatial layout.
+
+\subsection{Bird's Eye View Transformation}
+The Bird's Eye View module in Voxel R-CNN converts 3D spatial features into a 2D representation from a top-down viewpoint. This process simplifies the 3D data by collapsing the height dimension. The BEV module concentrates on the x-y plane, retaining crucial spatial relationships. By aggregating voxel features along the z-axis, the BEV module creates a compact 2D feature map that reduces computational complexity while preserving spatial information. This 2D representation can then be efficiently processed using 2D convolutional techniques for tasks like region proposal and bounding box regression, enabling faster inference and alignment with real-time requirements in autonomous driving applications.
+
+\subsection{2D Backbone}
+The 2D backbone in Voxel R-CNN is designed to extract and refine features from the Bird’s Eye View (BEV) feature map, optimizing the network’s understanding of object locations in the x-y plane. This backbone consists of two main components: a top-down feature extraction sub-network and a multi-scale feature fusion sub-network.
+
+The top-down feature extraction sub-network is composed of two blocks of standard 3×3 convolutional layers, which are crucial for capturing spatial details and patterns in the BEV representation. The first block maintains the same resolution as the 3D backbone’s output along the x and y axes, ensuring alignment with the original spatial layout. The second block operates at half the resolution of the first, capturing more abstract and larger-scale features. Each block contains 5 convolutional layers, with feature dimensions set to 64 and 128, respectively, allowing for a progressively richer feature representation.
+
+Following feature extraction, the multi-scale feature fusion sub-network performs upsampling and concatenation of these top-down features, merging information across scales. This fusion process enables the 2D backbone to integrate fine-grained details with broader contextual information, enhancing its ability to recognize objects and understand their spatial relationships. Together, these components provide a robust feature map, which supports effective object detection and localization in the BEV space, while maintaining computational efficiency.
+
+
+\subsection{Region Proposal Network (RPN)}
+Region Proposal Network (RPN) module in Voxel R-CNN is responsible for generating candidate regions, or proposals, where objects are likely located within the Bird’s Eye View (BEV) feature map. This module plays a critical role in reducing the search space for the detection network by focusing on areas that are more likely to contain objects, rather than examining the entire feature map exhaustively.
+
+The RPN works by sliding a small network over the BEV feature map output from the 2D backbone. For each location in the feature map, the RPN proposes bounding boxes with different sizes and aspect ratios, known as anchors, which act as initial guesses for potential object locations. The RPN then evaluates each anchor’s likelihood of containing an object by assigning objectness scores, as well as refining the bounding box coordinates through regression. Anchors with high objectness scores are selected as region proposals and are further refined to improve localization accuracy.
+
+Once the RPN generates these proposals, they are used as input for the subsequent detection head, where they undergo further processing to classify objects and predict precise 3D bounding boxes. This selective proposal approach improves computational efficiency by allowing the detection network to focus on fewer, relevant regions rather than processing the entire scene. The RPN thus enables Voxel R-CNN to perform object detection with greater speed and accuracy, a necessity for real-time autonomous driving applications.
+
+\subsection{RoI Head}
+In Voxel R-CNN, \emph{Voxel RoI Pooling} is a specialized operation designed to handle sparse 3D feature volumes efficiently. Unlike traditional RoI pooling, where max pooling is applied over regular grid points, Voxel RoI pooling accounts for the sparse nature of 3D voxel data, as less than 3\% of the 3D space typically contains non-empty voxels. The Voxel RoI pooling layer starts by dividing each region proposal into a grid of \(6 \times 6 \times 6\) sub-voxels. For each sub-voxel, the grid point at its center is selected as the reference for feature extraction.
+
+Since max pooling over each sub-voxel isn’t feasible in sparse data, Voxel RoI pooling uses a \emph{neighboring voxel aggregation approach}. As depictred in \cref{fig:roi_pooling}, for each grid point \(g_i\), a set of neighboring voxels, \(\Gamma_i = \{v_i^1, v_i^2, \ldots, v_i^K\}\), is identified using a \emph{voxel query} presented by Deng et al. \cite{voxelrcnn} . Then, the features from these neighboring voxels are aggregated using a \emph{PointNet module}. A max pooling operation over the channels then produces an aggregated feature vector \(\eta_i\) for each grid point, summarizing the features of nearby voxels. To capture multi-scale features, Voxel RoI pooling extracts voxel features from the final two stages of the 3D backbone network using different distance thresholds for each stage, allowing it to concatenate multi-scale RoI features.
+
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=0.5\textwidth]{media/chapter 6/roi_pooling.png}
+    \caption{Voxel RoI pooling aggregates features from neighboring voxels for each grid point \(g_i\) using a voxel query approach \cite{voxelrcnn}, then applies a PointNet module followed by max pooling to produce an aggregated feature vector \(\eta_i\), summarizing local voxel features. Source: \cite{voxelrcnn}}
+    \label{fig:roi_pooling}
+\end{figure}
+
+Once RoI features are extracted, they are passed to the \emph{detection head} for further refinement and prediction. This detection head takes the RoI features and first transforms them into feature vectors via a shared 2-layer MLP. The output is then split into two branches: a \emph{bounding box regression branch} and a \emph{confidence prediction branch}. The box regression branch refines the bounding box coordinates by predicting the residuals from the region proposals to the ground truth boxes, ensuring precise localization. The confidence prediction branch, on the other hand, outputs an IoU-related confidence score that represents the likelihood of the proposal being a correctly localized object. Together, these two branches allow the detection head to generate highly accurate 3D bounding boxes and confidence scores for each detected object.
+
+These blocks collectively enable Voxel R-CNN to balance high-speed processing with accurate 3D object detection by capitalizing on voxel-based representations.
+
+
+\section{Adaptatoins for steering wheel detection}
+This section outlines the series of modifications and methodological adaptations made to the Voxel R-CNN model to suit the specific needs of steering wheel detection in the SWD dataset. While Voxel R-CNN was initially developed for general 3D object detection tasks in autonomous driving, the unique characteristics of steering wheel detection required focused changes to both the bounding box encoding, some utility functions and model structure.
+
+The modifications began with redefining the bounding box encoding to align with the steering wheel’s primary orientation changes along the x-axis. Next, the 3D backbone network was refined to accommodate the cubic structure of the SWD dataset’s point clouds, ensuring the model retained detail across all spatial dimensions.
+
+Together, these modifications enabled Voxel R-CNN to function effectively within the context of steering wheel detection, capturing the steering wheel’s orientation and position with high accuracy.
+
+\subsection{Adjustments to Bounding Box Encodings}
+Although the SWD dataset provides ground truth bounding boxes with three degrees of freedom (DOF) for rotation—capturing orientation in all three axes \((x, y, z)\)—Voxel R-CNN’s architecture is limited in handling multiple rotation axes due to its original design constraints, which encode bounding boxes with only one rotational DOF.
+
+
+
+In adapting the SWD dataset for Voxel R-CNN, the x-axis was prioritized for bounding box rotation. Unlike general 3D objects, the steering wheel’s primary rotational adjustments occur along the x-axis, which corresponds to tilting or adjusting the wheel’s angle toward or away from the driver. Given Voxel R-CNN’s single-degree-of-freedom (DOF) limitation in encoding rotation, focusing on the x-axis allowed us to capture the most relevant orientation data for the steering wheel’s positioning without introducing unnecessary complexity. 
+
+
+
+The SWD dataset provides ground truth bounding boxes with an extended encoding format: \([x, y, z, dx, dy, dz, ax, ay, az]\), where \((ax, ay, az)\) represent the angles between the steering wheel’s normal vector and the camera’s coordinate axes.
+To adapt this encoding for Voxel R-CNN, the bounding box format was modified to focus on rotation along the x-axis. Specifically, the rotation angle \(rx\) was calculated as:
+\[
+rx = -\arctan\left(\cos(az), \cos(ay)\right)
+\]
+
+
+The adapted bounding box format for this model thus became \([x, y, z, dx, dy, dz, rx]\), with rx encoding the rotation around the x-axis. This modification enabled Voxel R-CNN to accurately interpret the orientation of the steering wheel in a manner consistent with the dataset’s ground truth annotations.
+
+
+However, considering only a single DOF meant that the ground truth bounding boxes no longer fully encapsulated the entire steering wheel due to its circular shape and orientation variability. To address this, bounding box dimensions were adjusted by doubling the bounding box length along the \(z\) axis (toward the steering wheel) to ensure the entire steering wheel remained within the bounding box despite the rotational limitation. This modification enabled Voxel R-CNN to provide comprehensive spatial coverage of the steering wheel while adhering to its single DOF encoding constraint.
+
+
+
+Adapting the rotation axis required modifying several internal functions. First, the rotation calculations were changed to work with the x-axis rotation, rather than the original z-axis approach. This ensured the model correctly interpreted the steering wheel's orientation. Additionally, the 2D and 3D Intersection over Union metrics, used to evaluate bounding box accuracy, was updated to compare boxes based on the new x-axis rotation encoding. These modifications maintained consistency and precision throughout the detection process.
+
+
+\subsection{Network Adjustments}
+In this work, the 3D backbone network were modified to accommodate cubic point clouds, differing from the original Voxel R-CNN setup designed for elongated voxel grids. The SWD dataset used here spans a fixed range of [-0.167, 0.333] meters along the x-axis, [-0.01, 0.49] meters along the y-axis, and [0.438, 0.938] meters along the z-axis. Given a voxel size of 0.002 meters, this results in a voxel grid of 250\times250\times250 \((x, y, z)\), producing a cubic representation with uniform resolution across all three spatial dimensions.
+
+
+In contrast, the original Voxel R-CNN backbone configuration, designed for the KITTI dataset, utilizes a voxel grid with unbalanced dimensions, such as 1408\times1600\times80. This elongated grid reflects KITTI’s larger coverage along the \(x\) and \(y\) axes, while the z-axis covers a relatively limited vertical range, leading to a structure optimized for road-level scenes but not ideal for cubic point clouds.
+
+
+To adapt Voxel R-CNN for the SWD dataset, the 3D backbone network’s stages reduced to 3 with filter counts of 16, 32, and 64 in each stage respectively. The overall stride of the 3D backbone is set to 8. Consequently, the initial 250\times250\times250 voxel grid is downsampled to a final output resolution of 32\times32\times32. This balanced reduction preserves spatial consistency across all dimensions, which is critical for cubic datasets like SWD.
+
+These backbone adjustments allow the network to effectively capture object features within the cubic point cloud, maintaining spatial fidelity that supports accurate detection in applications requiring uniform voxelization
+
+\section{Summary}
+In summary, this chapter detailed the modifications made to Voxel R-CNN to suit the steering wheel detection task. By altering the bounding box encodings to capture relevant x-axis rotation, adapting SWD dataset ground truths, and balancing feature extraction for cubic point clouds, Voxel R-CNN were optimized for accurate and efficient steering wheel detection within a 3D space.

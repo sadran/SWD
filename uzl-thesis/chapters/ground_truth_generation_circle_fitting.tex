@@ -6,20 +6,17 @@ approach developed for generating ground truth data to
 estimate the 3D location and orientation of a steering wheel 
 using 2D and 3D geometric techniques. This approach sought 
 to capture the steering wheel’s geometric structure by 
-fitting a 2D ellipse to annotated points and extending this 
+fitting a 2D ellipse to the annotated points and extending this 
 representation into 3D space through additional processing 
 steps.
 
 
 Given the complexity of manually annotating the steering wheel 
 across numerous images and the inherent sparsity and noise in 
-the data, we aimed to automate and enhance the annotation 
-process by fitting a mathematical model to a few number of 
+the data, the annotation process is automated and enganced by fitting a mathematical model to a few number of 
 spars annotations. This model would allow us to generate a 
 more comprehensive representation of the steering wheel 
 geometry.
-
-
 The approach was divided into several phases:
 \begin{enumerate}
     \item Annotating the steering wheel with 2D points.
@@ -40,7 +37,7 @@ This chapter details the methodology, results, and the reasons
 for transitioning to a more reliable approach.
 
 
-\section{methodology}
+\section{Methodology}
 
 \subsection{Annotating the Steering Wheel with 2D Points}
 The process began with manual annotation of the steering wheel 
@@ -49,22 +46,21 @@ across all images was infeasible due to the time-consuming
 nature of manual annotation and the large number of frames. 
 Hence, a sparse set of 2D points was initially marked to 
 provide a basic outline of the steering wheel as depicted in 
-\cref{fig:ellips}.
+\cref{fig:ellipse}.
 
 \subsection{Fitting an Ellipse to 2D Points}
-In order to create a denser representation, we decided to fit 
-an ellipse to the existing 2D annotation points. This provided 
+In order to create a denser representation, an ellipse was fitted to the existing 2D annotation points. This provided 
 a more complete 2D shape that captured the true geometric 
 structure of the steering wheel as illustrated in \cref{fig:ellipse}. 
 
-We fitted an ellipse to these points using the general equation of an ellipse:
+The ellipse was fitted to these points using the general equation of an ellipse:
 \[
 c_0 X^2 + c_1 XY + c_2 Y^2 + c_3 X + c_4 Y = b
 \]
 To find the coefficients \([c_0, c_1, c_2, c_3, c_4]\) 
-that best fit the observed points \((X, Y)\), we applied linear 
-regression. Defining \( A = [X^2, XY, Y^2, X, Y] \) and 
-\( c = [c_0, c_1, c_2, c_3, c_4] \), we calculated the coefficients 
+that best fit to the observed points \((X, Y)\), linear 
+regression was applied. Defining \( A = [X^2, XY, Y^2, X, Y] \) and 
+\( c = [c_0, c_1, c_2, c_3, c_4] \), the coefficients are calculated 
 by solving for \( c \) that satisfies the equation \( Ac = b \), 
 where \( b \) represents the constant in the ellipse equation. 
 
@@ -84,15 +80,14 @@ mapped 3d points was unable to accurately represent the
 position of the steering wheel.
 
 \subsection{Fitting a Sphere to the 3D Points}
-To further refine the 3D representation, we attempted to fit a sphere 
-to the sampled points on the steering wheel as demonstrated in
+To further refine the 3D representation, a sphere was fitted to the sampled points on the steering wheel as demonstrated in
 \cref{fig:sphere}. 
-Given the sample points \((x, y, z)\), we used the following general 
-equation for a sphere:
+Given the sample points \((x, y, z)\), the general 
+equation of a sphere is as following:
 \[
 (x - h)^2 + (y - k)^2 + (z - m)^2 = r^2
 \]
-Expanding this equation, we obtain:
+Expanding this equation obtains:
 \[
 x^2 + h^2 - 2xh + y^2 + k^2 - 2yk + z^2 + m^2 - 2mz = r^2
 \]
@@ -101,8 +96,7 @@ Rearranging terms yields:
 2xh + 2yk + 2zm + (r^2 - h^2 - k^2 - m^2) = x^2 + y^2 + z^2
 \]
 Letting \( A = [2x, 2y, 2z, 1] \), \( c = [h, k, m, r^2 - h^2 - k^2 - m^2] \), and 
-\( b = x^2 + y^2 + z^2 \), we can fit a sphere to the points by solving 
-for \( c \) in the equation:
+\( b = x^2 + y^2 + z^2 \), a sphere can fit to the points by solving for \( c \) in the equation:
 \[
 Ac = b
 \]
@@ -112,28 +106,22 @@ This solution provides us with the center \((h, k, m)\) and radius
 
 
 \subsection{Refining with a Circular Cross-Section from the Sphere}
-To better capture the essential structure of the steering wheel, 
-we took a circular cross-section of the fitted sphere in the XY plane 
-by fixing \( z = m \). This simplification was based on the observation 
-that the steering wheel’s geometry is primarily defined in the XY plane, 
-with minimal variation along the z-axis. 
+To better capture the essential structure of the steering wheel, a circular cross-section of the fitted sphere in the XY plane was taken by fixing \( z = m \). This simplification was based on the observation that the steering wheel’s geometry is primarily defined in the XY plane, with minimal variation along the z-axis. 
 Principal Component Analysis (PCA) of the steering wheel points 
 revealed that the distribution along the z-axis is very limited, 
 indicating that this axis does not contain significant information 
 about the overall shape or structure of the steering wheel. 
-By constraining the representation to the XY plane, 
-we avoided unnecessary complexity from minor variations along 
-the z-axis, which could detract from the accuracy of the wheel’s 
-positioning.
+By constraining the representation to the XY plane, unnecessary complexity from minor variations along 
+the z-axis was avoided, which could detract from the accuracy of the wheel’s positioning.
 
-This circular cross-section effectively represents the X and Y 
+This circular cross-section represented the X and Y 
 correlations in the steering wheel geometry, 
 simplifying the model while preserving the essential spatial 
 characteristics of the wheel.
 
 
 \subsection{Aligning the Circle with a Rotation Matrix}
-Finally, we aligned this circle to the steering wheel’s position 
+Finally, this circle was aligned to the steering wheel’s position 
 by applying a rotation matrix followed by a translation 
 to center of the sphere. The rotation matrix was derived 
 from the oriented bounding box of the steering wheel 3D points 
@@ -189,11 +177,9 @@ Figure \cref{fig:circle} shows the final circular representation of the steering
 
 
 \section{Conclusion}
-Despite these steps, this approach was ultimately limited by the sparse 
-and noisy data, as well as the lack of an accurate evaluation method 
+Despite these steps, this approach was ultimately limited by the sparse and noisy data, as well as the lack of an accurate evaluation method 
 for the generated ground truths. This made it difficult to ensure the 
 precision of the ground truths in accurately capturing the true location and orientation of the 
 steering wheel. These limitations prompted us to pursue a second 
-approach using ArUco markers and plane fitting for more reliable 
-results.
+approach using ArUco board for more reliable results.
 
