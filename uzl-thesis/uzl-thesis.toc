@@ -10,7 +10,7 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Contributions of This Thesis}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Structure of This Thesis}{2}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Background and Related Works}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Related Work}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}3D Object Detection in Autonomous Driving}{3}{section.2.1}%
 \contentsline {subsection}{Challenges in 3D Detection for Interior Monitoring}{4}{section*.2}%
 \contentsline {section}{\numberline {2.2}3D Object Detection Methods}{4}{section.2.2}%
@@ -20,46 +20,44 @@
 \contentsline {section}{\numberline {2.3}Datasets for 3D Object Detection in Autonomous Driving}{6}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Performance Metrics for 3D Object Detection}{6}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Summary}{7}{section.2.5}%
-\contentsline {chapter}{\numberline {3}SWD dataset}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Recording Procedure}{8}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Data Extraction}{9}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Ground Truth}{10}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Grand Truth Generation: Fitting a Circle (initial approach)}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Methodology}{14}{section.4.2}%
-\contentsline {subsection}{Annotating the Steering Wheel with 2D Points}{14}{section*.11}%
-\contentsline {subsection}{Fitting an Ellipse to 2D Points}{14}{section*.12}%
+\contentsline {chapter}{\numberline {3}Creating Dataset}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Data Collection Process}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Preprocessing and Data Refinement}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Dataset Structure and Annotation Format}{11}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Ground Truth Generation: Fitting a Circle (initial approach)}{13}{section.3.5}%
+\contentsline {subsection}{Annotating the Steering Wheel with 2D Points}{13}{section*.11}%
+\contentsline {subsection}{Fitting an Ellipse to the Annotated 2D Points}{13}{section*.12}%
 \contentsline {subsection}{Sampling Points from the Ellipse and Mapping to 3D}{14}{section*.13}%
 \contentsline {subsection}{Fitting a Sphere to the 3D Points}{14}{section*.14}%
-\contentsline {subsection}{Refining with a Circular Cross-Section from the Sphere}{15}{section*.15}%
+\contentsline {subsection}{Refining with a Circular Cross-Section from the Sphere}{14}{section*.15}%
 \contentsline {subsection}{Aligning the Circle with a Rotation Matrix}{15}{section*.16}%
-\contentsline {section}{\numberline {4.3}Conclusion}{15}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Ground Truth Generaiton: ArUco Board (Refined Approach)}{17}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{17}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Methodoloy}{18}{section.5.2}%
-\contentsline {subsection}{Location Estimation}{18}{section*.19}%
-\contentsline {subsection}{Orientation Estimation}{20}{section*.22}%
-\contentsline {section}{\numberline {5.3}Evaluation}{22}{section.5.3}%
-\contentsline {subsection}{Experiment 1: Inter-Marker Distance Evaluation}{22}{section*.25}%
-\contentsline {subsection}{Experiment 2: Distance and Angle Variation}{24}{section*.28}%
-\contentsline {section}{\numberline {5.4}Results}{25}{section.5.4}%
-\contentsline {subsection}{Locaiton Estimation}{25}{section*.30}%
-\contentsline {subsection}{Orientation Estimation Results}{27}{section*.34}%
-\contentsline {subsection}{Systematic Error in Orientation Estimation}{27}{section*.36}%
-\contentsline {section}{\numberline {5.5}Conclusion}{30}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Model and Methodology}{31}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction}{31}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Network Architecture}{31}{section.6.2}%
-\contentsline {subsection}{Voxel Feature Encoding (VFE)}{31}{section*.38}%
-\contentsline {subsection}{3D Backbone}{33}{section*.39}%
-\contentsline {subsection}{Bird's Eye View Transformation}{33}{section*.40}%
-\contentsline {subsection}{2D Backbone}{33}{section*.41}%
-\contentsline {subsection}{Region Proposal Network (RPN)}{34}{section*.42}%
-\contentsline {subsection}{RoI Head}{34}{section*.43}%
-\contentsline {section}{\numberline {6.3}Adaptatoins for steering wheel detection}{36}{section.6.3}%
-\contentsline {subsection}{Adjustments to Bounding Box Encodings}{36}{section*.45}%
-\contentsline {subsection}{Network Adjustments}{37}{section*.46}%
-\contentsline {section}{\numberline {6.4}Summary}{37}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Resutls}{38}{chapter.7}%
-\contentsline {chapter}{\numberline {8}conclusion}{39}{chapter.8}%
-\contentsline {chapter}{Bibliography}{40}{chapter*.47}%
+\contentsline {section}{\numberline {3.6}Ground Truth Generation: ArUco Board (Refined Approach)}{15}{section.3.6}%
+\contentsline {subsection}{Location Estimation}{16}{section*.19}%
+\contentsline {subsection}{Orientation Estimation}{18}{section*.22}%
+\contentsline {section}{\numberline {3.7}Experiments}{20}{section.3.7}%
+\contentsline {subsection}{Experiment 1: Inter-Marker Distance Evaluation}{20}{section*.25}%
+\contentsline {subsection}{Experiment 2: Distance and Angle Variation}{21}{section*.28}%
+\contentsline {section}{\numberline {3.8}Results}{24}{section.3.8}%
+\contentsline {subsection}{Location Estimation}{24}{section*.30}%
+\contentsline {subsection}{Orientation Estimation Results}{27}{section*.35}%
+\contentsline {subsection}{Systematic Error in Orientation Estimation}{27}{section*.37}%
+\contentsline {section}{\numberline {3.9}Conclusion}{27}{section.3.9}%
+\contentsline {chapter}{\numberline {4}Estimating Steering Wheel Position}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Network Architecture}{31}{section.4.2}%
+\contentsline {subsection}{Voxel Feature Encoding (VFE)}{32}{section*.39}%
+\contentsline {subsection}{3D Backbone}{32}{section*.40}%
+\contentsline {subsection}{Bird's Eye View Transformation}{32}{section*.41}%
+\contentsline {subsection}{2D Backbone}{34}{section*.42}%
+\contentsline {subsection}{Region Proposal Network (RPN)}{34}{section*.43}%
+\contentsline {subsection}{RoI Head}{35}{section*.44}%
+\contentsline {section}{\numberline {4.3}Adaptations for Steering Wheel Detection}{36}{section.4.3}%
+\contentsline {subsection}{Adjustments to Bounding Box Encodings}{36}{section*.46}%
+\contentsline {subsection}{Network Adjustments}{37}{section*.47}%
+\contentsline {section}{\numberline {4.4}Results}{38}{section.4.4}%
+\contentsline {subsection}{Metrics}{38}{section*.48}%
+\contentsline {subsection}{Error Analysis by Steering Wheel Position}{41}{section*.54}%
+\contentsline {section}{\numberline {4.5}Conclusion}{42}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Conclusion}{48}{chapter.5}%
+\contentsline {chapter}{Bibliography}{50}{chapter*.60}%

@@ -1,9 +1,6 @@
-\chapter{Ground Truth Generaiton: ArUco Board (Refined Approach)}
-
-\section{Introduction}
+\section{Ground Truth Generation: ArUco Board (Refined Approach)}
 To overcome the limitations of the initial ellipse fitting 
-approach, a second method was developed using ArUco board. This method aimed to achieve precise 3D 
-estimation of the steering wheel's location and orientation. 
+approach, a second method was developed using ArUco board. This method aimed to achieve precise 3D estimation of the steering wheel's location and orientation. 
 The use of ArUco board allowed for a more robust and accurate approach to capture the 3D 
 geometry of the steering wheel. By leveraging the known 
 properties and spatial relationships of the ArUco markers, 
@@ -25,8 +22,7 @@ several advantages, including robustness to  variations in
 lighting, simple detection with minimal  computational overhead, 
 and compatibility with popular  libraries like OpenCV \cite{opencv_library}, which 
 provides dedicated functions for detecting ArUco markers and 
-estimating their pose in both 2D  and 3D. Figures \cref{fig:marker_detection} and \cref{fig:marker_orientation} 
-demonstrate OpenCV's capabilities in detecting ArUco markers and 
+estimating their pose in both 2D  and 3D. Figures \cref{fig:marker_detection} and \cref{fig:marker_orientation} demonstrate OpenCV's capabilities in detecting ArUco markers and 
 estimating their 3D position, respectively. 
 
 \begin{figure}[htpb]
@@ -54,7 +50,7 @@ estimating their 3D position, respectively.
         Axis-color correspondences are X: red, Y: green, Z: blue.}
         \label{fig:marker_orientation}
     \end{subfigure}
-    \caption{ArUco merkers' detection and pose estimation by OpenCV.}
+    \caption{ArUco markers detection and pose estimation by OpenCV.}
 \end{figure}
 
 This refined approach aimed to address the challenges 
@@ -62,27 +58,13 @@ encountered in the initial method, particularly the issues of
 data sparsity, noise, and inaccurate geometric representation. 
 By leveraging the advantages of ArUco board, this method 
 sought to tackle the difficulties in precisely estimating the 
-3D locaiton and orientation of the steering wheel. 
+3D location and orientation of the steering wheel. 
 
 The proposed technique involved positioning a board with 
 multiple ArUco markers at the center of the steering wheel 
-like in \cref{fig:gt_stream} and fitting a plane to the ArUco baord to 
+like in \cref{fig:gt_stream} and fitting a plane to the ArUco board to 
 enhance the accuracy of orientation estimation. 
-This approach was extensively evaluated to validate its 
-reliability in capturing the 3D geometry of the steering wheel.
-
-This chapter presents the structured methodology, the evaluation 
-of different techniques for location and orientation estimation, 
-and the results of this second approach in accurately capturing 
-the steering wheel’s 3D position.
-
-\section{Methodoloy}
-To address the limitations identified in the initial approach, 
-a structured methodology was developed using ArUco board. The ArUco markers were printed on a board mounted 
-at the center of the steering wheel as depicted in 
-\cref{fig:gt_stream}. This setup allowed us to capture both the 
-2D and 3D spatial data required for accurately estimating the 
-steering wheel's position.
+This setup allowed us to capture both the 2D and 3D spatial data required for accurately estimating the steering wheel's position.
 
 The methodology involved two primary components for estimating 
 the location and orientation of the steering wheel. 
@@ -91,7 +73,7 @@ sections:
 
 \subsection{Location Estimation}
 As depicted in \cref{fig:gt_stream}, the ArUco board is positioned at the center of the steering 
-wheel. Therfore, the detected centroid of the ArUco board directly 
+wheel. Therefore, the detected centroid of the ArUco board directly 
 corresponds to the 3D spatial coordinates of the steering 
 wheel's center. Given the known arrangement of markers on the 
 ArUco board, the location of the board's center, and 
@@ -115,7 +97,7 @@ the camera, and the angle of view.
 \textbf{2. 2D Estimation with Mapping to 3D: }
 This alternative method starts by detecting the 2D position of 
 the markers in the image plane using OpenCV’s \emph{detectMarkers} 
-function. \Cref{fig:detectMarkers} shows merkers' location detected 
+function. \Cref{fig:detectMarkers} shows markers' location detected 
 by OpenCV on the 2D image.
 After detecting the 2D positions, these points are 
 mapped to 3D space using depth information derived from the 
@@ -190,7 +172,7 @@ OpenCV’s \emph{estimatePoseSingleMarkers} function also calculates the
 orientation of markers in the form of rotation vectors. 
 These vectors indicate the rotational pose of each marker 
 relative to the camera’s coordinate system. Assuming that orientation of the markers on the board are known, the overall orientation of the board
-can be estimated by removing the outlier rotation vectors and averaging the remainings. However, this method has limitations, as it relies on the 
+can be estimated by removing the outlier rotation vectors and averaging the remaining. However, this method has limitations, as it relies on the 
 accuracy of OpenCV's built-in pose estimation.
 
 As illustrated in \cref{fig:estimatePoseSingleMarkers}, 
@@ -312,7 +294,7 @@ comprehensive analysis of the methods, highlighting their strengths
 and limitations.
 
 \subsection{Experiment 1: Inter-Marker Distance Evaluation}
-To assess the accuracy of the location estimation methods, a marker board with known geometric properties was used. The actual distances between the markers on the board were predefined and served as the ground truth. The dimensions provided in \cref{fig:marker_dimention} were used to calculate the distances between the markers, as well as the distances between the markers and center of the board. \Cref{fig:distance_matrix} depicts the distance matrix of the 3x4 ArUco baord used for this experiment.
+To assess the accuracy of the location estimation methods, a marker board with known geometric properties was used. The actual distances between the markers on the board were predefined and served as the ground truth. The dimensions provided in \cref{fig:marker_dimention} were used to calculate the distances between the markers, as well as the distances between the markers and center of the board. \Cref{fig:distance_matrix} depicts the distance matrix of the 3x4 ArUco board used for this experiment.
 
 \begin{figure}[htpb]
     \centering

@@ -160,11 +160,11 @@ def find_outliers_and_best_centered_frames(distance_errors, rotation_errors, pos
 
 
 def main():
-    result_dir = Path("/root/thesis_sadra_nvme/sw-detection/swd-voxelrcnn/output/voxel_rcnn/voxel_rcnn_sw/rotation_along_x_big_dataset_2h/eval/epoch_80/test/test_set/final_result/data")
+    result_dir = Path("/Users/sadra/Projects/SW_Detection/SWD/swd-voxelrcnn/output/voxel_rcnn/voxel_rcnn_sw/rotation_along_x_big_dataset_2h/eval/epoch_80/test/validation_set/final_result/data")
     output_dir = result_dir.parent.parent / 'statistics'
     output_dir.mkdir(exist_ok=True)
 
-    ground_truth_path = "/root/thesis_sadra_nvme/sw-detection/swd-voxelrcnn/data/swd/test/groundtruth.csv"
+    ground_truth_path = "/Users/sadra/Projects/SW_Detection/SWD/swd-voxelrcnn/data/swd/validation/ground_truth.csv"
     gt_df = pd.read_csv(ground_truth_path, index_col='frame')
 
     

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.10.24)  11 NOV 2024 04:05
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.10.24)  13 NOV 2024 04:25
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/sadra/Projects/SW_Detection/SWD/uzl-thesis/uzl-thesis.tex
@@ -2841,20 +2841,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./uzl-thesis.aux (./chapters/introduction.aux) (./chapters/background_and_related_works.aux) (./chapters/swd_dataset.aux) (./chapters/ground_truth_generation_circle_fitting.aux) (./chapters/ground_truth_generation_aruco.aux
-
-LaTeX Warning: Label `fig:distance_error_matrix' multiply defined.
-
-
-LaTeX Warning: Label `fig:distance_error_matrix@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:distance_error_matrix' multiply defined.
-
-
-LaTeX Warning: Label `fig:distance_error_matrix@cref' multiply defined.
-
-) (./chapters/model_and_methodology.aux) (./chapters/results.aux) (./chapters/conclusion.aux) (./chapters/bibliography.aux))
+ (./uzl-thesis.aux (./chapters/introduction.aux) (./chapters/related_work.aux) (./chapters/creating_dataset.aux) (./chapters/estimating_steering_wheel_position.aux) (./chapters/conclusion.aux) (./chapters/bibliography.aux))
 \openout1 = uzl-thesis.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 344.
@@ -2965,7 +2952,7 @@ Package biblatex Info: Reference section=0 on input line 344.
 Package biblatex Info: Reference segment=0 on input line 344.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<logos/uzl-thesis-logo-itcs.pdf, id=131, 426.79149pt x 113.8112pt>
+<logos/uzl-thesis-logo-itcs.pdf, id=115, 426.79149pt x 113.8112pt>
 File: logos/uzl-thesis-logo-itcs.pdf Graphic file (type pdf)
 <use logos/uzl-thesis-logo-itcs.pdf>
 Package luatex.def Info: logos/uzl-thesis-logo-itcs.pdf  used on input line 344.
@@ -2979,7 +2966,7 @@ LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/it' will be
 (Font)              scaled to size 15.4pt on input line 344.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 344.
-<logos/uzl-thesis-logo-slogan.pdf, id=132, 142.26349pt x 11.38112pt>
+<logos/uzl-thesis-logo-slogan.pdf, id=116, 142.26349pt x 11.38112pt>
 File: logos/uzl-thesis-logo-slogan.pdf Graphic file (type pdf)
 <use logos/uzl-thesis-logo-slogan.pdf>
 Package luatex.def Info: logos/uzl-thesis-logo-slogan.pdf  used on input line 344.
@@ -3007,7 +2994,7 @@ Package cleveref Info: loaded `english' language definitions on input line 344.
 Package cleveref Info: loaded `english' language definitions on input line 344.
  [3
 
-] (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+] [4] (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2024/02/21 1.10 listings language file
@@ -3027,7 +3014,7 @@ File: lstlang2.sty 2024/02/21 1.10 listings language file
 File: lstlang3.sty 2024/02/21 1.10 listings language file
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-) [4
+) [5
 
 ]
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
@@ -3039,14 +3026,14 @@ Package cleveref Info: loaded `english' language definitions on input line 5.
 Package cleveref Info: loaded `english' language definitions on input line 7.
 Package cleveref Info: loaded `english' language definitions on input line 8.
 Package cleveref Info: loaded `english' language definitions on input line 9.
- [5
-
-
-])
+)
 \tf@toc=\write6
 
 \openout6 = uzl-thesis.toc
- [6]
+ [6
+
+
+]
 \openout2 = chapters/introduction.aux
  (./chapters/introduction.tex
 Chapter 1.
@@ -3066,11 +3053,14 @@ Overfull \hbox (1.11443pt too wide) in paragraph at lines 36--44
 
 
 
-])
+]
+LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 46.
+)
 Package cleveref Info: loaded `english' language definitions on input line 351.
  [2]
-\openout2 = chapters/background_and_related_works.aux
- (./chapters/background_and_related_works.tex
+\openout2 = chapters/related_work.aux
+ (./chapters/related_work.tex
 Chapter 2.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
 (Font)              scaled to size 13.0pt on input line 38.
@@ -3080,9 +3070,6 @@ LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
 
 
 ]
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 42.
-
 Overfull \hbox (3.71675pt too wide) in paragraph at lines 55--60
 [][]\TU/AlegreyaSans(2)/m/n/12 Adapt-abil-ity to Point Cloud Di-men-sions[]\TU/Alegreya(0)/m/n/12 : Stan-dard point clouds from datasets like KITTI
  []
@@ -3122,513 +3109,637 @@ Package cleveref Info: loaded `english' language definitions on input line 204.
 [6])
 Package cleveref Info: loaded `english' language definitions on input line 352.
  [7]
-\openout2 = chapters/swd_dataset.aux
- (./chapters/swd_dataset.tex
+\openout2 = chapters/creating_dataset.aux
+ (./chapters/creating_dataset.tex
 Chapter 3.
-
-Overfull \hbox (10.13115pt too wide) in paragraph at lines 28--35
-\TU/Alegreya(0)/m/n/12 To ac-cu-rately cap-ture the steer-ing wheel’s po-si-tion across mul-ti-ple con-fig-u-ra-tions, a record-
- []
-
-<media/chapter 3/demo_model.jpg, id=302, 1284.8pt x 722.7pt>
-File: media/chapter 3/demo_model.jpg Graphic file (type jpg)
-<use media/chapter 3/demo_model.jpg>
-Package luatex.def Info: media/chapter 3/demo_model.jpg  used on input line 50.
-(luatex.def)             Requested size: 192.0548pt x 108.02538pt.
-<media/chapter 3/reference_board.jpg, id=303, 1284.8pt x 722.7pt>
-File: media/chapter 3/reference_board.jpg Graphic file (type jpg)
-<use media/chapter 3/reference_board.jpg>
-Package luatex.def Info: media/chapter 3/reference_board.jpg  used on input line 58.
-(luatex.def)             Requested size: 192.0548pt x 108.02538pt.
 [8
 
 
 
 
 ]
-Overfull \hbox (6.76872pt too wide) in paragraph at lines 76--89
+Overfull \hbox (10.13115pt too wide) in paragraph at lines 35--42
+\TU/Alegreya(0)/m/n/12 To ac-cu-rately cap-ture the steer-ing wheel’s po-si-tion across mul-ti-ple con-fig-u-ra-tions, a record-
+ []
+
+<media/chapter 3/demo_model.jpg, id=285, 1284.8pt x 722.7pt>
+File: media/chapter 3/demo_model.jpg Graphic file (type jpg)
+<use media/chapter 3/demo_model.jpg>
+Package luatex.def Info: media/chapter 3/demo_model.jpg  used on input line 57.
+(luatex.def)             Requested size: 192.0548pt x 108.02538pt.
+<media/chapter 3/reference_board.jpg, id=286, 1284.8pt x 722.7pt>
+File: media/chapter 3/reference_board.jpg Graphic file (type jpg)
+<use media/chapter 3/reference_board.jpg>
+Package luatex.def Info: media/chapter 3/reference_board.jpg  used on input line 65.
+(luatex.def)             Requested size: 192.0548pt x 108.02538pt.
+
+Overfull \hbox (6.76872pt too wide) in paragraph at lines 83--94
 \TU/Alegreya(0)/m/n/12 was cap-tured with no driver present and the marker board fully vis-i-ble as shown in fig. []󰋈.󰋇a[].
  []
 
-
-Overfull \hbox (14.62714pt too wide) in paragraph at lines 90--93
+Package cleveref Info: loaded `english' language definitions on input line 94.
+[9<./media/chapter 3/demo_model.jpg><./media/chapter 3/reference_board.jpg>]
+Overfull \hbox (14.62714pt too wide) in paragraph at lines 95--98
 []\TU/Alegreya(0)/m/n/12 For data pro-cess-ing, ground truths were ex-tracted from the ini-tial ground truth streams,
  []
 
-<media/chapter 3/gt_stream.png, id=314, 513.92pt x 513.92pt>
+<media/chapter 3/gt_stream.png, id=296, 513.92pt x 513.92pt>
 File: media/chapter 3/gt_stream.png Graphic file (type png)
 <use media/chapter 3/gt_stream.png>
-Package luatex.def Info: media/chapter 3/gt_stream.png  used on input line 98.
+Package luatex.def Info: media/chapter 3/gt_stream.png  used on input line 103.
 (luatex.def)             Requested size: 192.0548pt x 192.05296pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 []\TU/Alegreya(0)/m/n/10.9 (a) |Ground truth data on the steer-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 \TU/Alegreya(0)/m/n/10.9 wheel’s lo-ca-tion and ori-en-ta-tion were
  []
 
-<media/chapter 3/main_stream.png, id=315, 513.92pt x 513.92pt>
+<media/chapter 3/main_stream.png, id=297, 513.92pt x 513.92pt>
 File: media/chapter 3/main_stream.png Graphic file (type png)
 <use media/chapter 3/main_stream.png>
-Package luatex.def Info: media/chapter 3/main_stream.png  used on input line 107.
+Package luatex.def Info: media/chapter 3/main_stream.png  used on input line 112.
 (luatex.def)             Requested size: 192.0548pt x 192.05296pt.
 
-Underfull \hbox (badness 2707) in paragraph at lines 111--111
+Underfull \hbox (badness 2707) in paragraph at lines 116--116
 \TU/Alegreya(0)/m/n/10.9 sim-u-lat-ing a driv-ing sce-nario, while the
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 130.
-[9<./media/chapter 3/demo_model.jpg><./media/chapter 3/reference_board.jpg>]
-Overfull \hbox (8.74721pt too wide) in paragraph at lines 139--142
+Package cleveref Info: loaded `english' language definitions on input line 138.
+[10<./media/chapter 3/gt_stream.png><./media/chapter 3/main_stream.png>]
+Overfull \hbox (8.74721pt too wide) in paragraph at lines 147--150
 []\TU/Alegreya(0)/m/n/12 These com-pre-hen-sive pre-pro-cess-ing steps helped to cre-ate pre-cise, re-fined point clouds
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 154.
-[10<./media/chapter 3/gt_stream.png><./media/chapter 3/main_stream.png>]
-<media/chapter 3/obb1.png, id=329, 490.08093pt x 526.21594pt>
+<media/chapter 3/obb1.png, id=306, 490.08093pt x 526.21594pt>
 File: media/chapter 3/obb1.png Graphic file (type png)
 <use media/chapter 3/obb1.png>
 Package luatex.def Info: media/chapter 3/obb1.png  used on input line 172.
 (luatex.def)             Requested size: 128.0387pt x 137.47935pt.
-<media/chapter 3/obb2.png, id=330, 520.19344pt x 527.72156pt>
+<media/chapter 3/obb2.png, id=307, 520.19344pt x 527.72156pt>
 File: media/chapter 3/obb2.png Graphic file (type png)
 <use media/chapter 3/obb2.png>
 Package luatex.def Info: media/chapter 3/obb2.png  used on input line 176.
 (luatex.def)             Requested size: 128.0387pt x 129.88477pt.
-<media/chapter 3/obb3.png, id=331, 350.05782pt x 359.84438pt>
+<media/chapter 3/obb3.png, id=308, 350.05782pt x 359.84438pt>
 File: media/chapter 3/obb3.png Graphic file (type png)
 <use media/chapter 3/obb3.png>
 Package luatex.def Info: media/chapter 3/obb3.png  used on input line 180.
 (luatex.def)             Requested size: 128.0387pt x 131.61938pt.
-<media/chapter 3/obb4.png, id=332, 502.12593pt x 464.4853pt>
+<media/chapter 3/obb4.png, id=309, 502.12593pt x 464.4853pt>
 File: media/chapter 3/obb4.png Graphic file (type png)
 <use media/chapter 3/obb4.png>
 Package luatex.def Info: media/chapter 3/obb4.png  used on input line 184.
 (luatex.def)             Requested size: 128.0387pt x 118.43864pt.
-<media/chapter 3/obb5.png, id=333, 401.24907pt x 397.485pt>
+<media/chapter 3/obb5.png, id=310, 401.24907pt x 397.485pt>
 File: media/chapter 3/obb5.png Graphic file (type png)
 <use media/chapter 3/obb5.png>
 Package luatex.def Info: media/chapter 3/obb5.png  used on input line 188.
 (luatex.def)             Requested size: 128.0387pt x 126.83995pt.
-<media/chapter 3/obb6.png, id=334, 441.90094pt x 408.02437pt>
+<media/chapter 3/obb6.png, id=311, 441.90094pt x 408.02437pt>
 File: media/chapter 3/obb6.png Graphic file (type png)
 <use media/chapter 3/obb6.png>
 Package luatex.def Info: media/chapter 3/obb6.png  used on input line 192.
 (luatex.def)             Requested size: 128.0387pt x 118.22441pt.
-<media/chapter 3/torus1.png, id=336, 372.64218pt x 402.75468pt>
+Package cleveref Info: loaded `english' language definitions on input line 207.
+[11<./media/chapter 3/obb1.png><./media/chapter 3/obb2.png><./media/chapter 3/obb3.png><./media/chapter 3/obb4.png><./media/chapter 3/obb5.png><./media/chapter 3/obb6.png>]
+<media/chapter 3/torus1.png, id=322, 372.64218pt x 402.75468pt>
 File: media/chapter 3/torus1.png Graphic file (type png)
 <use media/chapter 3/torus1.png>
 Package luatex.def Info: media/chapter 3/torus1.png  used on input line 213.
 (luatex.def)             Requested size: 128.0387pt x 138.38512pt.
-<media/chapter 3/torus2.png, id=337, 481.04718pt x 491.58656pt>
+<media/chapter 3/torus2.png, id=323, 481.04718pt x 491.58656pt>
 File: media/chapter 3/torus2.png Graphic file (type png)
 <use media/chapter 3/torus2.png>
 Package luatex.def Info: media/chapter 3/torus2.png  used on input line 217.
 (luatex.def)             Requested size: 128.0387pt x 130.84738pt.
-<media/chapter 3/torus3.png, id=338, 411.03563pt x 408.77719pt>
+<media/chapter 3/torus3.png, id=324, 411.03563pt x 408.77719pt>
 File: media/chapter 3/torus3.png Graphic file (type png)
 <use media/chapter 3/torus3.png>
 Package luatex.def Info: media/chapter 3/torus3.png  used on input line 221.
 (luatex.def)             Requested size: 128.0387pt x 127.33089pt.
-<media/chapter 3/torus4.png, id=339, 529.98pt x 501.37312pt>
+<media/chapter 3/torus4.png, id=325, 529.98pt x 501.37312pt>
 File: media/chapter 3/torus4.png Graphic file (type png)
 <use media/chapter 3/torus4.png>
 Package luatex.def Info: media/chapter 3/torus4.png  used on input line 225.
 (luatex.def)             Requested size: 128.0387pt x 121.12764pt.
-<media/chapter 3/torus5.png, id=340, 364.36125pt x 364.36125pt>
+<media/chapter 3/torus5.png, id=326, 364.36125pt x 364.36125pt>
 File: media/chapter 3/torus5.png Graphic file (type png)
 <use media/chapter 3/torus5.png>
 Package luatex.def Info: media/chapter 3/torus5.png  used on input line 229.
 (luatex.def)             Requested size: 128.0387pt x 128.03427pt.
-<media/chapter 3/torus6.png, id=341, 460.72125pt x 435.12563pt>
+<media/chapter 3/torus6.png, id=327, 460.72125pt x 435.12563pt>
 File: media/chapter 3/torus6.png Graphic file (type png)
 <use media/chapter 3/torus6.png>
 Package luatex.def Info: media/chapter 3/torus6.png  used on input line 233.
 (luatex.def)             Requested size: 128.0387pt x 120.92473pt.
-)
-Package cleveref Info: loaded `english' language definitions on input line 353.
- [11<./media/chapter 3/obb1.png><./media/chapter 3/obb2.png><./media/chapter 3/obb3.png><./media/chapter 3/obb4.png><./media/chapter 3/obb5.png><./media/chapter 3/obb6.png>]
-Package cleveref Info: loaded `english' language definitions on input line 353.
+Package cleveref Info: loaded `english' language definitions on input line 264.
  [12<./media/chapter 3/torus1.png><./media/chapter 3/torus2.png><./media/chapter 3/torus3.png><./media/chapter 3/torus4.png><./media/chapter 3/torus5.png><./media/chapter 3/torus6.png>]
-\openout2 = chapters/ground_truth_generation_circle_fitting.aux
- (./chapters/ground_truth_generation_circle_fitting.tex
-Chapter 4.
-
-Overfull \hbox (0.13113pt too wide) in paragraph at lines 29--35
-[]\TU/Alegreya(0)/m/n/12 Al-though this ini-tial ap-proach showed some promise, it was con-strained by the sparse
- []
-
-
-Overfull \hbox (0.17111pt too wide) in paragraph at lines 43--50
+Overfull \hbox (0.17111pt too wide) in paragraph at lines 281--288
 \TU/Alegreya(0)/m/n/12 consuming na-ture of man-ual an-no-ta-tion and the large num-ber of frames. Hence, a sparse
  []
 
-[13
-
-
-
-
-]
-Package cleveref Info: loaded `english' language definitions on input line 102.
- [14]
+Package cleveref Info: loaded `english' language definitions on input line 312.
+[13]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 129.
+(Font)              scaled to size 8.0pt on input line 367.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 129.
+(Font)              scaled to size 10.0pt on input line 367.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 11.00006pt on input line 129.
+(Font)              scaled to size 11.00006pt on input line 367.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 7.70004pt on input line 129.
+(Font)              scaled to size 7.70004pt on input line 367.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 5.50003pt on input line 129.
+(Font)              scaled to size 5.50003pt on input line 367.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 129.
+(Font)              scaled to size 7.0pt on input line 367.
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 367--367
  [][][]\TU/Alegreya(0)/m/n/10 avail-able at []$\TU/LatinModernMonoProp(0)/m/n/10 http://www.open3d.org/docs/release/python_api/open3d.geometry.
  []
 
-<media/chapter 4/ellipse.png, id=384, 361.35pt x 361.35pt>
-File: media/chapter 4/ellipse.png Graphic file (type png)
-<use media/chapter 4/ellipse.png>
-Package luatex.def Info: media/chapter 4/ellipse.png  used on input line 139.
+Package cleveref Info: loaded `english' language definitions on input line 372.
+[14]
+<media/chapter 3/ellipse.png, id=365, 361.35pt x 361.35pt>
+File: media/chapter 3/ellipse.png Graphic file (type png)
+<use media/chapter 3/ellipse.png>
+Package luatex.def Info: media/chapter 3/ellipse.png  used on input line 377.
 (luatex.def)             Requested size: 76.8193pt x 76.81755pt.
-<media/chapter 4/sampled_points.png, id=385, 202.356pt x 202.356pt>
-File: media/chapter 4/sampled_points.png Graphic file (type png)
-<use media/chapter 4/sampled_points.png>
-Package luatex.def Info: media/chapter 4/sampled_points.png  used on input line 145.
+<media/chapter 3/sampled_points.png, id=366, 202.356pt x 202.356pt>
+File: media/chapter 3/sampled_points.png Graphic file (type png)
+<use media/chapter 3/sampled_points.png>
+Package luatex.def Info: media/chapter 3/sampled_points.png  used on input line 383.
 (luatex.def)             Requested size: 76.8193pt x 76.81888pt.
-<media/chapter 4/obb.png, id=386, 574.145pt x 583.17876pt>
-File: media/chapter 4/obb.png Graphic file (type png)
-<use media/chapter 4/obb.png>
-Package luatex.def Info: media/chapter 4/obb.png  used on input line 151.
+<media/chapter 3/obb.png, id=367, 574.145pt x 583.17876pt>
+File: media/chapter 3/obb.png Graphic file (type png)
+<use media/chapter 3/obb.png>
+Package luatex.def Info: media/chapter 3/obb.png  used on input line 389.
 (luatex.def)             Requested size: 76.8193pt x 78.02274pt.
-<media/chapter 4/sphere.png, id=387, 582.67688pt x 536.0025pt>
-File: media/chapter 4/sphere.png Graphic file (type png)
-<use media/chapter 4/sphere.png>
-Package luatex.def Info: media/chapter 4/sphere.png  used on input line 157.
+<media/chapter 3/sphere.png, id=368, 582.67688pt x 536.0025pt>
+File: media/chapter 3/sphere.png Graphic file (type png)
+<use media/chapter 3/sphere.png>
+Package luatex.def Info: media/chapter 3/sphere.png  used on input line 395.
 (luatex.def)             Requested size: 76.8193pt x 70.66422pt.
-<media/chapter 4/circl.png, id=388, 749.80125pt x 862.22125pt>
-File: media/chapter 4/circl.png Graphic file (type png)
-<use media/chapter 4/circl.png>
-Package luatex.def Info: media/chapter 4/circl.png  used on input line 163.
+<media/chapter 3/circl.png, id=369, 749.80125pt x 862.22125pt>
+File: media/chapter 3/circl.png Graphic file (type png)
+<use media/chapter 3/circl.png>
+Package luatex.def Info: media/chapter 3/circl.png  used on input line 401.
 (luatex.def)             Requested size: 76.8193pt x 88.3322pt.
-)
-Package cleveref Info: loaded `english' language definitions on input line 354.
- [15]
-Package cleveref Info: loaded `english' language definitions on input line 354.
- [16<./media/chapter 4/ellipse.png><./media/chapter 4/sampled_points.png><./media/chapter 4/obb.png><./media/chapter 4/sphere.png><./media/chapter 4/circl.png>]
-\openout2 = chapters/ground_truth_generation_aruco.aux
- (./chapters/ground_truth_generation_aruco.tex
-Chapter 5.
-<media/chapter 5/singlemarkersoriginal.jpg, id=411, 642.4pt x 481.8pt>
-File: media/chapter 5/singlemarkersoriginal.jpg Graphic file (type jpg)
-<use media/chapter 5/singlemarkersoriginal.jpg>
-Package luatex.def Info: media/chapter 5/singlemarkersoriginal.jpg  used on input line 36.
+Package cleveref Info: loaded `english' language definitions on input line 453.
+ [15<./media/chapter 3/ellipse.png><./media/chapter 3/sampled_points.png><./media/chapter 3/obb.png><./media/chapter 3/sphere.png><./media/chapter 3/circl.png>]
+<media/chapter 3/singlemarkersoriginal.jpg, id=387, 642.4pt x 481.8pt>
+File: media/chapter 3/singlemarkersoriginal.jpg Graphic file (type jpg)
+<use media/chapter 3/singlemarkersoriginal.jpg>
+Package luatex.def Info: media/chapter 3/singlemarkersoriginal.jpg  used on input line 458.
 (luatex.def)             Requested size: 128.0387pt x 96.02747pt.
-<media/chapter 5/singlemarkersdetection.jpg, id=412, 154.176pt x 115.632pt>
-File: media/chapter 5/singlemarkersdetection.jpg Graphic file (type jpg)
-<use media/chapter 5/singlemarkersdetection.jpg>
-Package luatex.def Info: media/chapter 5/singlemarkersdetection.jpg  used on input line 42.
+<media/chapter 3/singlemarkersdetection.jpg, id=388, 154.176pt x 115.632pt>
+File: media/chapter 3/singlemarkersdetection.jpg Graphic file (type jpg)
+<use media/chapter 3/singlemarkersdetection.jpg>
+Package luatex.def Info: media/chapter 3/singlemarkersdetection.jpg  used on input line 464.
 (luatex.def)             Requested size: 128.0387pt x 96.03099pt.
 
-Underfull \hbox (badness 5519) in paragraph at lines 46--46
+Underfull \hbox (badness 5519) in paragraph at lines 468--468
 []\TU/Alegreya(0)/m/n/10.9 (b) |These are the de-tected
  []
 
 
-Underfull \hbox (badness 3895) in paragraph at lines 46--46
+Underfull \hbox (badness 3895) in paragraph at lines 468--468
 \TU/Alegreya(0)/m/n/10.9 some mark-ers are ro-tated.
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 46--46
+Underfull \hbox (badness 2744) in paragraph at lines 468--468
 \TU/Alegreya(0)/m/n/10.9 The small red square in-di-
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 46--46
+Underfull \hbox (badness 3679) in paragraph at lines 468--468
 \TU/Alegreya(0)/m/n/10.9 cates the marker’s top le󰀖t
  []
 
-<media/chapter 5/singlemarkersaxes.jpg, id=413, 642.4pt x 481.8pt>
-File: media/chapter 5/singlemarkersaxes.jpg Graphic file (type jpg)
-<use media/chapter 5/singlemarkersaxes.jpg>
-Package luatex.def Info: media/chapter 5/singlemarkersaxes.jpg  used on input line 51.
+<media/chapter 3/singlemarkersaxes.jpg, id=389, 642.4pt x 481.8pt>
+File: media/chapter 3/singlemarkersaxes.jpg Graphic file (type jpg)
+<use media/chapter 3/singlemarkersaxes.jpg>
+Package luatex.def Info: media/chapter 3/singlemarkersaxes.jpg  used on input line 473.
 (luatex.def)             Requested size: 128.0387pt x 96.02747pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 476--476
 []\TU/Alegreya(0)/m/n/10.9 (c) |The marker co-or-di-nate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 476--476
 \TU/Alegreya(0)/m/n/10.9 sys-tem that is placed in
  []
 
 
-Underfull \hbox (badness 3579) in paragraph at lines 54--54
+Underfull \hbox (badness 3579) in paragraph at lines 476--476
 \TU/Alegreya(0)/m/n/10.9 cor-ner of the marker with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 476--476
 \TU/Alegreya(0)/m/n/10.9 the Z axis point-ing out.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 476--476
 \TU/Alegreya(0)/m/n/10.9 Axis-color cor-re-spon-dences
  []
 
 
-Overfull \hbox (17.07278pt too wide) in paragraph at lines 60--66
+Overfull \hbox (17.07278pt too wide) in paragraph at lines 482--488
 []\TU/Alegreya(0)/m/n/12 This re-fined ap-proach aimed to ad-dress the chal-lenges en-coun-tered in the ini-tial method,
  []
 
-[17
-
-
-
-
-]
-Package cleveref Info: loaded `english' language definitions on input line 113.
- [18<./media/chapter 5/singlemarkersoriginal.jpg><./media/chapter 5/singlemarkersdetection.jpg><./media/chapter 5/singlemarkersaxes.jpg>]
-<media/chapter 5/aruco_detection.png, id=431, 259.7203pt x 259.7203pt>
-File: media/chapter 5/aruco_detection.png Graphic file (type png)
-<use media/chapter 5/aruco_detection.png>
-Package luatex.def Info: media/chapter 5/aruco_detection.png  used on input line 128.
+Package cleveref Info: loaded `english' language definitions on input line 509.
+[16<./media/chapter 3/singlemarkersoriginal.jpg><./media/chapter 3/singlemarkersdetection.jpg><./media/chapter 3/singlemarkersaxes.jpg>]
+<media/chapter 3/aruco_detection.png, id=401, 259.7203pt x 259.7203pt>
+File: media/chapter 3/aruco_detection.png Graphic file (type png)
+<use media/chapter 3/aruco_detection.png>
+Package luatex.def Info: media/chapter 3/aruco_detection.png  used on input line 536.
 (luatex.def)             Requested size: 213.39568pt x 213.39606pt.
-Package cleveref Info: loaded `english' language definitions on input line 159.
- [19<./media/chapter 5/aruco_detection.png>]
-<media/chapter 5/aruco_board_ids.png, id=440, 2757.30125pt x 1843.88875pt>
-File: media/chapter 5/aruco_board_ids.png Graphic file (type png)
-<use media/chapter 5/aruco_board_ids.png>
-Package luatex.def Info: media/chapter 5/aruco_board_ids.png  used on input line 172.
+Package cleveref Info: loaded `english' language definitions on input line 558.
+ [17<./media/chapter 3/aruco_detection.png>]
+<media/chapter 3/aruco_board_ids.png, id=410, 2757.30125pt x 1843.88875pt>
+File: media/chapter 3/aruco_board_ids.png Graphic file (type png)
+<use media/chapter 3/aruco_board_ids.png>
+Package luatex.def Info: media/chapter 3/aruco_board_ids.png  used on input line 580.
 (luatex.def)             Requested size: 213.39568pt x 142.70296pt.
-Package cleveref Info: loaded `english' language definitions on input line 206.
- [20<./media/chapter 5/aruco_board_ids.png>]
-<media/chapter 5/aruco_board_estimation0.png, id=452, 331.2375pt x 332.24126pt>
-File: media/chapter 5/aruco_board_estimation0.png Graphic file (type png)
-<use media/chapter 5/aruco_board_estimation0.png>
-Package luatex.def Info: media/chapter 5/aruco_board_estimation0.png  used on input line 211.
+Package cleveref Info: loaded `english' language definitions on input line 603.
+ [18<./media/chapter 3/aruco_board_ids.png>]
+<media/chapter 3/aruco_board_estimation0.png, id=419, 331.2375pt x 332.24126pt>
+File: media/chapter 3/aruco_board_estimation0.png Graphic file (type png)
+<use media/chapter 3/aruco_board_estimation0.png>
+Package luatex.def Info: media/chapter 3/aruco_board_estimation0.png  used on input line 619.
 (luatex.def)             Requested size: 98.16019pt x 98.45644pt.
-<media/chapter 5/aruco_board_estimation1.png, id=453, 331.2375pt x 331.2375pt>
-File: media/chapter 5/aruco_board_estimation1.png Graphic file (type png)
-<use media/chapter 5/aruco_board_estimation1.png>
-Package luatex.def Info: media/chapter 5/aruco_board_estimation1.png  used on input line 215.
+<media/chapter 3/aruco_board_estimation1.png, id=420, 331.2375pt x 331.2375pt>
+File: media/chapter 3/aruco_board_estimation1.png Graphic file (type png)
+<use media/chapter 3/aruco_board_estimation1.png>
+Package luatex.def Info: media/chapter 3/aruco_board_estimation1.png  used on input line 623.
 (luatex.def)             Requested size: 98.16019pt x 98.15898pt.
-<media/chapter 5/aruco_board_estimation2.png, id=454, 331.2375pt x 331.2375pt>
-File: media/chapter 5/aruco_board_estimation2.png Graphic file (type png)
-<use media/chapter 5/aruco_board_estimation2.png>
-Package luatex.def Info: media/chapter 5/aruco_board_estimation2.png  used on input line 219.
+<media/chapter 3/aruco_board_estimation2.png, id=421, 331.2375pt x 331.2375pt>
+File: media/chapter 3/aruco_board_estimation2.png Graphic file (type png)
+<use media/chapter 3/aruco_board_estimation2.png>
+Package luatex.def Info: media/chapter 3/aruco_board_estimation2.png  used on input line 627.
 (luatex.def)             Requested size: 98.16019pt x 98.15898pt.
-<media/chapter 5/aruco_board_estimation3.png, id=455, 331.2375pt x 331.2375pt>
-File: media/chapter 5/aruco_board_estimation3.png Graphic file (type png)
-<use media/chapter 5/aruco_board_estimation3.png>
-Package luatex.def Info: media/chapter 5/aruco_board_estimation3.png  used on input line 223.
+<media/chapter 3/aruco_board_estimation3.png, id=422, 331.2375pt x 331.2375pt>
+File: media/chapter 3/aruco_board_estimation3.png Graphic file (type png)
+<use media/chapter 3/aruco_board_estimation3.png>
+Package luatex.def Info: media/chapter 3/aruco_board_estimation3.png  used on input line 631.
 (luatex.def)             Requested size: 98.16019pt x 98.15898pt.
-<media/chapter 5/plane_fitting.png, id=458, 220.57407pt x 123.46124pt>
-File: media/chapter 5/plane_fitting.png Graphic file (type png)
-<use media/chapter 5/plane_fitting.png>
-Package luatex.def Info: media/chapter 5/plane_fitting.png  used on input line 280.
+Package cleveref Info: loaded `english' language definitions on input line 684.
+ [19<./media/chapter 3/aruco_board_estimation0.png><./media/chapter 3/aruco_board_estimation1.png><./media/chapter 3/aruco_board_estimation2.png><./media/chapter 3/aruco_board_estimation3.png>]
+<media/chapter 3/plane_fitting.png, id=436, 220.57407pt x 123.46124pt>
+File: media/chapter 3/plane_fitting.png Graphic file (type png)
+<use media/chapter 3/plane_fitting.png>
+Package luatex.def Info: media/chapter 3/plane_fitting.png  used on input line 688.
 (luatex.def)             Requested size: 213.39568pt x 119.44829pt.
-Package cleveref Info: loaded `english' language definitions on input line 294.
- [21<./media/chapter 5/aruco_board_estimation0.png><./media/chapter 5/aruco_board_estimation1.png><./media/chapter 5/aruco_board_estimation2.png><./media/chapter 5/aruco_board_estimation3.png>]
-<media/chapter 5/board_geometry.png, id=471, 1505.625pt x 1129.21875pt>
-File: media/chapter 5/board_geometry.png Graphic file (type png)
-<use media/chapter 5/board_geometry.png>
-Package luatex.def Info: media/chapter 5/board_geometry.png  used on input line 319.
+<media/chapter 3/board_geometry.png, id=439, 1505.625pt x 1129.21875pt>
+File: media/chapter 3/board_geometry.png Graphic file (type png)
+<use media/chapter 3/board_geometry.png>
+Package luatex.def Info: media/chapter 3/board_geometry.png  used on input line 728.
 (luatex.def)             Requested size: 213.39568pt x 160.03659pt.
-<media/chapter 5/Distance Matrix.png, id=472, 1199.98312pt x 1060.71281pt>
-File: media/chapter 5/Distance Matrix.png Graphic file (type png)
-<use media/chapter 5/Distance Matrix.png>
-Package luatex.def Info: media/chapter 5/Distance Matrix.png  used on input line 326.
-(luatex.def)             Requested size: 384.1096pt x 339.53215pt.
-Package cleveref Info: loaded `english' language definitions on input line 335.
- [22<./media/chapter 5/plane_fitting.png>]
-Package cleveref Info: loaded `english' language definitions on input line 335.
- [23<./media/chapter 5/board_geometry.png><./media/chapter 5/Distance Matrix.png>]
-<media/chapter 5/board_on_the_wall.png, id=489, 296.60812pt x 304.13625pt>
-File: media/chapter 5/board_on_the_wall.png Graphic file (type png)
-<use media/chapter 5/board_on_the_wall.png>
-Package luatex.def Info: media/chapter 5/board_on_the_wall.png  used on input line 340.
+Package cleveref Info: loaded `english' language definitions on input line 731.
+ [20<./media/chapter 3/plane_fitting.png>]
+<media/chapter 3/Distance Matrix.png, id=448, 1199.98312pt x 1060.71281pt>
+File: media/chapter 3/Distance Matrix.png Graphic file (type png)
+<use media/chapter 3/Distance Matrix.png>
+Package luatex.def Info: media/chapter 3/Distance Matrix.png  used on input line 735.
+(luatex.def)             Requested size: 426.79135pt x 377.25974pt.
+<media/chapter 3/board_on_the_wall.png, id=450, 296.60812pt x 304.13625pt>
+File: media/chapter 3/board_on_the_wall.png Graphic file (type png)
+<use media/chapter 3/board_on_the_wall.png>
+Package luatex.def Info: media/chapter 3/board_on_the_wall.png  used on input line 749.
 (luatex.def)             Requested size: 192.0548pt x 196.9344pt.
-<media/chapter 5/aruco_board_on_the_wall.png, id=490, 170.6375pt x 162.6075pt>
-File: media/chapter 5/aruco_board_on_the_wall.png Graphic file (type png)
-<use media/chapter 5/aruco_board_on_the_wall.png>
-Package luatex.def Info: media/chapter 5/aruco_board_on_the_wall.png  used on input line 346.
+<media/chapter 3/aruco_board_on_the_wall.png, id=451, 170.6375pt x 162.6075pt>
+File: media/chapter 3/aruco_board_on_the_wall.png Graphic file (type png)
+<use media/chapter 3/aruco_board_on_the_wall.png>
+Package luatex.def Info: media/chapter 3/aruco_board_on_the_wall.png  used on input line 755.
 (luatex.def)             Requested size: 192.0548pt x 183.02975pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--347
+Underfull \hbox (badness 10000) in paragraph at lines 756--756
 []\TU/Alegreya(0)/m/n/10.9 (b) |Mark-ers’ ori-en-ta-tion es-ti-mated by
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 347--347
+Underfull \hbox (badness 4072) in paragraph at lines 756--756
 \TU/Alegreya(0)/m/n/10.9 OpenCV. color codes are as: dark blue
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 359.
-[24<./media/chapter 5/board_on_the_wall.png><./media/chapter 5/aruco_board_on_the_wall.png>]
-<media/chapter 5/opencv_error_matrix.jpg, id=501, 657.2053pt x 662.475pt>
-File: media/chapter 5/opencv_error_matrix.jpg Graphic file (type jpg)
-<use media/chapter 5/opencv_error_matrix.jpg>
-Package luatex.def Info: media/chapter 5/opencv_error_matrix.jpg  used on input line 376.
-(luatex.def)             Requested size: 277.41176pt x 279.64268pt.
-<media/chapter 5/point_cloud_error_matrix.jpg, id=502, 651.18282pt x 657.2053pt>
-File: media/chapter 5/point_cloud_error_matrix.jpg Graphic file (type jpg)
-<use media/chapter 5/point_cloud_error_matrix.jpg>
-Package luatex.def Info: media/chapter 5/point_cloud_error_matrix.jpg  used on input line 381.
-(luatex.def)             Requested size: 277.41176pt x 279.98546pt.
+Package cleveref Info: loaded `english' language definitions on input line 772.
+[21<./media/chapter 3/board_geometry.png>]
+Package cleveref Info: loaded `english' language definitions on input line 772.
+ [22<./media/chapter 3/Distance Matrix.png>]
+Package cleveref Info: loaded `english' language definitions on input line 772.
+ [23<./media/chapter 3/board_on_the_wall.png><./media/chapter 3/aruco_board_on_the_wall.png>]
+<media/chapter 3/opencv_error_matrix.jpg, id=475, 657.2053pt x 662.475pt>
+File: media/chapter 3/opencv_error_matrix.jpg Graphic file (type jpg)
+<use media/chapter 3/opencv_error_matrix.jpg>
+Package luatex.def Info: media/chapter 3/opencv_error_matrix.jpg  used on input line 787.
+(luatex.def)             Requested size: 426.79135pt x 430.21953pt.
+<media/chapter 3/point_cloud_error_matrix.jpg, id=476, 651.18282pt x 657.2053pt>
+File: media/chapter 3/point_cloud_error_matrix.jpg Graphic file (type jpg)
+<use media/chapter 3/point_cloud_error_matrix.jpg>
+Package luatex.def Info: media/chapter 3/point_cloud_error_matrix.jpg  used on input line 793.
+(luatex.def)             Requested size: 426.79135pt x 430.7484pt.
 
-
-LaTeX Warning: Float too large for page by 2.63737pt on input line 386.
-
-
-Overfull \hbox (8.24213pt too wide) in paragraph at lines 392--402
+Overfull \hbox (8.24213pt too wide) in paragraph at lines 820--830
  [][] 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 409.
-[25]
-Package cleveref Info: loaded `english' language definitions on input line 409.
- [26<./media/chapter 5/opencv_error_matrix.jpg><./media/chapter 5/point_cloud_error_matrix.jpg>]
-<media/chapter 5/board's distance by opencv.png, id=524, 337.26pt x 358.33875pt>
-File: media/chapter 5/board's distance by opencv.png Graphic file (type png)
-<use media/chapter 5/board's distance by opencv.png>
-Package luatex.def Info: media/chapter 5/board's distance by opencv.png  used on input line 416.
+Package cleveref Info: loaded `english' language definitions on input line 837.
+[24]
+Package cleveref Info: loaded `english' language definitions on input line 837.
+ [25<./media/chapter 3/opencv_error_matrix.jpg>]
+Package cleveref Info: loaded `english' language definitions on input line 837.
+ [26<./media/chapter 3/point_cloud_error_matrix.jpg>]
+<media/chapter 3/board's distance by opencv.png, id=502, 337.26pt x 358.33875pt>
+File: media/chapter 3/board's distance by opencv.png Graphic file (type png)
+<use media/chapter 3/board's distance by opencv.png>
+Package luatex.def Info: media/chapter 3/board's distance by opencv.png  used on input line 844.
 (luatex.def)             Requested size: 192.0548pt x 204.05836pt.
-<media/chapter 5/board’s distance mean error estimated by mapping from 2D to 3D.png, id=525, 329.73187pt x 359.84438pt>
-File: media/chapter 5/board’s distance mean error estimated by mapping from 2D to 3D.png Graphic file (type png)
-<use media/chapter 5/board’s distance mean error estimated by mapping from 2D to 3D.png>
-Package luatex.def Info: media/chapter 5/board’s distance mean error estimated by mapping from 2D to 3D.png  used on input line 422.
+<media/chapter 3/board’s distance mean error estimated by mapping from 2D to 3D.png, id=503, 329.73187pt x 359.84438pt>
+File: media/chapter 3/board’s distance mean error estimated by mapping from 2D to 3D.png Graphic file (type png)
+<use media/chapter 3/board’s distance mean error estimated by mapping from 2D to 3D.png>
+Package luatex.def Info: media/chapter 3/board’s distance mean error estimated by mapping from 2D to 3D.png  used on input line 850.
 (luatex.def)             Requested size: 192.0548pt x 209.59938pt.
-<media/chapter 5/board’s distances estimated by OpenCV.png, id=526, 481.8pt x 361.35pt>
-File: media/chapter 5/board’s distances estimated by OpenCV.png Graphic file (type png)
-<use media/chapter 5/board’s distances estimated by OpenCV.png>
-Package luatex.def Info: media/chapter 5/board’s distances estimated by OpenCV.png  used on input line 428.
+<media/chapter 3/board’s distances estimated by OpenCV.png, id=504, 481.8pt x 361.35pt>
+File: media/chapter 3/board’s distances estimated by OpenCV.png Graphic file (type png)
+<use media/chapter 3/board’s distances estimated by OpenCV.png>
+Package luatex.def Info: media/chapter 3/board’s distances estimated by OpenCV.png  used on input line 856.
 (luatex.def)             Requested size: 192.0548pt x 144.0412pt.
-<media/chapter 5/board’s distances.png, id=527, 481.8pt x 361.35pt>
-File: media/chapter 5/board’s distances.png Graphic file (type png)
-<use media/chapter 5/board’s distances.png>
-Package luatex.def Info: media/chapter 5/board’s distances.png  used on input line 434.
+<media/chapter 3/board’s distances.png, id=505, 481.8pt x 361.35pt>
+File: media/chapter 3/board’s distances.png Graphic file (type png)
+<use media/chapter 3/board’s distances.png>
+Package luatex.def Info: media/chapter 3/board’s distances.png  used on input line 862.
 (luatex.def)             Requested size: 192.0548pt x 144.0412pt.
 
-Overfull \hbox (4.27438pt too wide) in paragraph at lines 446--447
+Overfull \hbox (4.27438pt too wide) in paragraph at lines 873--875
 \TU/Alegreya(0)/m/n/12 an-gle with Z axis, com-pared to the di-rect es-ti-ma-tion method us-ing OpenCV’s es-ti-matePos-
  []
 
-<media/chapter 5/board’s mean angle with Z axis estimated by OpenCV.png, id=532, 328.97906pt x 359.09157pt>
-File: media/chapter 5/board’s mean angle with Z axis estimated by OpenCV.png Graphic file (type png)
-<use media/chapter 5/board’s mean angle with Z axis estimated by OpenCV.png>
-Package luatex.def Info: media/chapter 5/board’s mean angle with Z axis estimated by OpenCV.png  used on input line 455.
+<media/chapter 3/board’s mean angle with Z axis estimated by OpenCV.png, id=510, 328.97906pt x 359.09157pt>
+File: media/chapter 3/board’s mean angle with Z axis estimated by OpenCV.png Graphic file (type png)
+<use media/chapter 3/board’s mean angle with Z axis estimated by OpenCV.png>
+Package luatex.def Info: media/chapter 3/board’s mean angle with Z axis estimated by OpenCV.png  used on input line 881.
 (luatex.def)             Requested size: 192.0548pt x 209.63759pt.
-<media/chapter 5/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png, id=533, 326.72063pt x 359.84438pt>
-File: media/chapter 5/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png Graphic file (type png)
-<use media/chapter 5/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png>
-Package luatex.def Info: media/chapter 5/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png  used on input line 461.
+<media/chapter 3/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png, id=511, 326.72063pt x 359.84438pt>
+File: media/chapter 3/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png Graphic file (type png)
+<use media/chapter 3/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png>
+Package luatex.def Info: media/chapter 3/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png  used on input line 887.
 (luatex.def)             Requested size: 192.0548pt x 211.52115pt.
-<media/chapter 5/board’s angles with the camera Z axis estimated by OpenCV.png, id=534, 481.8pt x 361.35pt>
-File: media/chapter 5/board’s angles with the camera Z axis estimated by OpenCV.png Graphic file (type png)
-<use media/chapter 5/board’s angles with the camera Z axis estimated by OpenCV.png>
-Package luatex.def Info: media/chapter 5/board’s angles with the camera Z axis estimated by OpenCV.png  used on input line 467.
+<media/chapter 3/board’s angles with the camera Z axis estimated by OpenCV.png, id=512, 481.8pt x 361.35pt>
+File: media/chapter 3/board’s angles with the camera Z axis estimated by OpenCV.png Graphic file (type png)
+<use media/chapter 3/board’s angles with the camera Z axis estimated by OpenCV.png>
+Package luatex.def Info: media/chapter 3/board’s angles with the camera Z axis estimated by OpenCV.png  used on input line 893.
 (luatex.def)             Requested size: 192.0548pt x 144.0412pt.
-<media/chapter 5/board’s angles with camera's Z axis estimated by plane fitting.png, id=535, 481.8pt x 361.35pt>
-File: media/chapter 5/board’s angles with camera's Z axis estimated by plane fitting.png Graphic file (type png)
-<use media/chapter 5/board’s angles with camera's Z axis estimated by plane fitting.png>
-Package luatex.def Info: media/chapter 5/board’s angles with camera's Z axis estimated by plane fitting.png  used on input line 473.
+<media/chapter 3/board’s angles with camera's Z axis estimated by plane fitting.png, id=513, 481.8pt x 361.35pt>
+File: media/chapter 3/board’s angles with camera's Z axis estimated by plane fitting.png Graphic file (type png)
+<use media/chapter 3/board’s angles with camera's Z axis estimated by plane fitting.png>
+Package luatex.def Info: media/chapter 3/board’s angles with camera's Z axis estimated by plane fitting.png  used on input line 899.
 (luatex.def)             Requested size: 192.0548pt x 144.0412pt.
-Package cleveref Info: loaded `english' language definitions on input line 489.
+Package cleveref Info: loaded `english' language definitions on input line 920.
 [27]
-Package cleveref Info: loaded `english' language definitions on input line 489.
- [28<./media/chapter 5/board's distance by opencv.png><./media/chapter 5/board’s distance mean error estimated by mapping from 2D to 3D.png><./media/chapter 5/board’s distances estimated by OpenCV.png><./media/chapter 5/board’s distances.png>]
-Package cleveref Info: loaded `english' language definitions on input line 489.
- [29<./media/chapter 5/board’s mean angle with Z axis estimated by OpenCV.png><./media/chapter 5/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png><./media/chapter 5/board’s angles with the camera Z axis estimated by OpenCV.png><./media/chapter 5/board’s angles with camera's Z axis estimated by plane fitting.png>])
-Package cleveref Info: loaded `english' language definitions on input line 355.
+Package cleveref Info: loaded `english' language definitions on input line 920.
+ [28<./media/chapter 3/board's distance by opencv.png><./media/chapter 3/board’s distance mean error estimated by mapping from 2D to 3D.png><./media/chapter 3/board’s distances estimated by OpenCV.png><./media/chapter 3/board’s distances.png>]
+Package cleveref Info: loaded `english' language definitions on input line 920.
+ [29<./media/chapter 3/board’s mean angle with Z axis estimated by OpenCV.png><./media/chapter 3/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png><./media/chapter 3/board’s angles with the camera Z axis estimated by OpenCV.png><./media/chapter 3/board’s angles with camera's Z axis estimated by plane fitting.png>])
+Package cleveref Info: loaded `english' language definitions on input line 353.
  [30]
-\openout2 = chapters/model_and_methodology.aux
- (./chapters/model_and_methodology.tex
-Chapter 6.
-<media/chapter 6/voxelrcnn2.png, id=566, 717.43031pt x 731.73375pt>
-File: media/chapter 6/voxelrcnn2.png Graphic file (type png)
-<use media/chapter 6/voxelrcnn2.png>
-Package luatex.def Info: media/chapter 6/voxelrcnn2.png  used on input line 11.
-(luatex.def)             Requested size: 426.79135pt x 435.30325pt.
+\openout2 = chapters/estimating_steering_wheel_position.aux
+ (./chapters/estimating_steering_wheel_position.tex
+Chapter 4.
 [31
 
 
 
 
 ]
-Package cleveref Info: loaded `english' language definitions on input line 20.
- [32<./media/chapter 6/voxelrcnn2.png>]
-Overfull \hbox (6.60002pt too wide) in paragraph at lines 24--25
+<media/chapter 4/voxelrcnn2.png, id=550, 717.43031pt x 731.73375pt>
+File: media/chapter 4/voxelrcnn2.png Graphic file (type png)
+<use media/chapter 4/voxelrcnn2.png>
+Package luatex.def Info: media/chapter 4/voxelrcnn2.png  used on input line 15.
+(luatex.def)             Requested size: 426.79135pt x 435.30325pt.
+
+Overfull \hbox (6.60002pt too wide) in paragraph at lines 28--29
 \TU/Alegreya(0)/m/n/12 ab-stract fea-tures. There are three stages in the 󰋈D back-bone with fil-ter num-bers of 󰋆󰋋,󰋈󰋇,󰋋󰋉
  []
 
 Package cleveref Info: loaded `english' language definitions on input line 33.
-[33]
+[32]
+Package cleveref Info: loaded `english' language definitions on input line 33.
+ [33<./media/chapter 4/voxelrcnn2.png>]
 Package cleveref Info: loaded `english' language definitions on input line 48.
  [34]
-<media/chapter 6/roi_pooling.png, id=594, 292.09125pt x 266.9975pt>
-File: media/chapter 6/roi_pooling.png Graphic file (type png)
-<use media/chapter 6/roi_pooling.png>
-Package luatex.def Info: media/chapter 6/roi_pooling.png  used on input line 51.
+<media/chapter 4/roi_pooling.png, id=570, 292.09125pt x 266.9975pt>
+File: media/chapter 4/roi_pooling.png Graphic file (type png)
+<use media/chapter 4/roi_pooling.png>
+Package luatex.def Info: media/chapter 4/roi_pooling.png  used on input line 55.
 (luatex.def)             Requested size: 213.39568pt x 195.0695pt.
 
-Overfull \hbox (13.18878pt too wide) in paragraph at lines 56--57
+Overfull \hbox (13.18878pt too wide) in paragraph at lines 60--61
 \TU/Alegreya(0)/m/n/12 them into fea-ture vec-tors via a shared 󰋇-layer MLP. The out-put is then split into two branches:
  []
 
 
-Overfull \hbox (0.56868pt too wide) in paragraph at lines 56--57
+Overfull \hbox (0.56868pt too wide) in paragraph at lines 60--61
 \TU/Alegreya(0)/m/n/12 a \TU/Alegreya(0)/m/it/12 bound-ing box re-gres-sion branch \TU/Alegreya(0)/m/n/12 and a \TU/Alegreya(0)/m/it/12 con-fi-dence pre-dic-tion branch\TU/Alegreya(0)/m/n/12 . The box re-gres-sion branch
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 63.
-[35<./media/chapter 6/roi_pooling.png>]
+Package cleveref Info: loaded `english' language definitions on input line 61.
+[35<./media/chapter 4/roi_pooling.png>]
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 80.
+(Font)              scaled to size 12.0pt on input line 84.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 80.
+(Font)              scaled to size 8.0pt on input line 84.
 LaTeX Font Info:    Font shape `TU/Alegreya(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 80.
-Package cleveref Info: loaded `english' language definitions on input line 88.
+(Font)              scaled to size 6.0pt on input line 84.
+Package cleveref Info: loaded `english' language definitions on input line 89.
  [36]
-Overfull \hbox (2.36635pt too wide) in paragraph at lines 95--96
+Overfull \hbox (2.36635pt too wide) in paragraph at lines 99--100
 \TU/Alegreya(0)/m/n/12 In this work, the 󰋈D back-bone net-work were mod-i-fied to ac-com-mo-date cu-bic point clouds,
  []
 
 
-Overfull \hbox (1.93272pt too wide) in paragraph at lines 98--99
+Overfull \hbox (1.93272pt too wide) in paragraph at lines 102--103
 []\TU/Alegreya(0)/m/n/12 In con-trast, the orig-i-nal Voxel R-CNN back-bone con-fig-u-ra-tion, de-signed for the KITTI
  []
 
-)
-Package cleveref Info: loaded `english' language definitions on input line 356.
- [37]
-\openout2 = chapters/results.aux
- (./chapters/results.tex
-Chapter 7.
-) [38
+Package cleveref Info: loaded `english' language definitions on input line 114.
+[37]
+<media/chapter 4/3dmap70.png, id=597, 248.42813pt x 150.5625pt>
+File: media/chapter 4/3dmap70.png Graphic file (type png)
+<use media/chapter 4/3dmap70.png>
+Package luatex.def Info: media/chapter 4/3dmap70.png  used on input line 126.
+(luatex.def)             Requested size: 256.07741pt x 155.20975pt.
+Package cleveref Info: loaded `english' language definitions on input line 136.
+ [38<./media/chapter 4/3dmap70.png>]
+<media/chapter 4/bevmap70.png, id=607, 248.42813pt x 150.5625pt>
+File: media/chapter 4/bevmap70.png Graphic file (type png)
+<use media/chapter 4/bevmap70.png>
+Package luatex.def Info: media/chapter 4/bevmap70.png  used on input line 139.
+(luatex.def)             Requested size: 256.07741pt x 155.20975pt.
+<media/chapter 4/distance_error.png, id=609, 248.42813pt x 150.5625pt>
+File: media/chapter 4/distance_error.png Graphic file (type png)
+<use media/chapter 4/distance_error.png>
+Package luatex.def Info: media/chapter 4/distance_error.png  used on input line 150.
+(luatex.def)             Requested size: 256.07741pt x 155.20975pt.
+Package cleveref Info: loaded `english' language definitions on input line 157.
+ [39<./media/chapter 4/bevmap70.png><./media/chapter 4/distance_error.png>]
+<media/chapter 4/rotation_error.png, id=620, 248.42813pt x 150.5625pt>
+File: media/chapter 4/rotation_error.png Graphic file (type png)
+<use media/chapter 4/rotation_error.png>
+Package luatex.def Info: media/chapter 4/rotation_error.png  used on input line 161.
+(luatex.def)             Requested size: 256.07741pt x 155.20975pt.
+
+Overfull \hbox (1.1768pt too wide) in paragraph at lines 169--170
+\TU/Alegreya(0)/m/n/12 and the dataset. The con-ver-gence pat-tern sug-gests that the model’s cus-tomiza-tions—par-
+ []
+
+<media/chapter 4/loss.png, id=622, 248.42813pt x 150.5625pt>
+File: media/chapter 4/loss.png Graphic file (type png)
+<use media/chapter 4/loss.png>
+Package luatex.def Info: media/chapter 4/loss.png  used on input line 173.
+(luatex.def)             Requested size: 256.07741pt x 155.20975pt.
+Package cleveref Info: loaded `english' language definitions on input line 181.
+[40<./media/chapter 4/rotation_error.png><./media/chapter 4/loss.png>]
+<media/chapter 4/distance_box_plot.png, id=633, 557.83406pt x 450.9347pt>
+File: media/chapter 4/distance_box_plot.png Graphic file (type png)
+<use media/chapter 4/distance_box_plot.png>
+Package luatex.def Info: media/chapter 4/distance_box_plot.png  used on input line 186.
+(luatex.def)             Requested size: 426.79135pt x 345.01208pt.
+<media/chapter 4/top_distance_outliers/P06_181_with_gt.png, id=635, 425.33907pt x 440.39531pt>
+File: media/chapter 4/top_distance_outliers/P06_181_with_gt.png Graphic file (type png)
+<use media/chapter 4/top_distance_outliers/P06_181_with_gt.png>
+Package luatex.def Info: media/chapter 4/top_distance_outliers/P06_181_with_gt.png  used on input line 196.
+(luatex.def)             Requested size: 192.0548pt x 198.85475pt.
+<media/chapter 4/top_distance_outliers/M07_736_with_gt.png, id=636, 529.22719pt x 478.03593pt>
+File: media/chapter 4/top_distance_outliers/M07_736_with_gt.png Graphic file (type png)
+<use media/chapter 4/top_distance_outliers/M07_736_with_gt.png>
+Package luatex.def Info: media/chapter 4/top_distance_outliers/M07_736_with_gt.png  used on input line 200.
+(luatex.def)             Requested size: 192.0548pt x 173.4787pt.
+<media/chapter 4/top_distance_outliers/P06_29_with_gt.png, id=637, 483.30562pt x 487.8225pt>
+File: media/chapter 4/top_distance_outliers/P06_29_with_gt.png Graphic file (type png)
+<use media/chapter 4/top_distance_outliers/P06_29_with_gt.png>
+Package luatex.def Info: media/chapter 4/top_distance_outliers/P06_29_with_gt.png  used on input line 204.
+(luatex.def)             Requested size: 192.0548pt x 193.85269pt.
+<media/chapter 4/top_distance_outliers/P06_797_with_gt.png, id=638, 402.75468pt x 426.09187pt>
+File: media/chapter 4/top_distance_outliers/P06_797_with_gt.png Graphic file (type png)
+<use media/chapter 4/top_distance_outliers/P06_797_with_gt.png>
+Package luatex.def Info: media/chapter 4/top_distance_outliers/P06_797_with_gt.png  used on input line 208.
+(luatex.def)             Requested size: 192.0548pt x 203.18243pt.
+<media/chapter 4/top_distance_outliers/E07_136_with_gt.png, id=639, 364.36125pt x 383.18156pt>
+File: media/chapter 4/top_distance_outliers/E07_136_with_gt.png Graphic file (type png)
+<use media/chapter 4/top_distance_outliers/E07_136_with_gt.png>
+Package luatex.def Info: media/chapter 4/top_distance_outliers/E07_136_with_gt.png  used on input line 213.
+(luatex.def)             Requested size: 192.0548pt x 201.97435pt.
+<media/chapter 4/top_distance_outliers/D07_864_with_gt.png, id=640, 463.7325pt x 476.53032pt>
+File: media/chapter 4/top_distance_outliers/D07_864_with_gt.png Graphic file (type png)
+<use media/chapter 4/top_distance_outliers/D07_864_with_gt.png>
+Package luatex.def Info: media/chapter 4/top_distance_outliers/D07_864_with_gt.png  used on input line 217.
+(luatex.def)             Requested size: 192.0548pt x 197.35648pt.
 
 
+LaTeX Warning: Float too large for page by 27.02077pt on input line 229.
+
+Package cleveref Info: loaded `english' language definitions on input line 230.
+[41<./media/chapter 4/distance_box_plot.png>]
+<media/chapter 4/rotation_box_plot.png, id=651, 544.28343pt x 450.9347pt>
+File: media/chapter 4/rotation_box_plot.png Graphic file (type png)
+<use media/chapter 4/rotation_box_plot.png>
+Package luatex.def Info: media/chapter 4/rotation_box_plot.png  used on input line 236.
+(luatex.def)             Requested size: 426.79135pt x 353.59232pt.
+<media/chapter 4/top_rotations_outliers/O06_824_with_gt.png, id=653, 459.21562pt x 465.99094pt>
+File: media/chapter 4/top_rotations_outliers/O06_824_with_gt.png Graphic file (type png)
+<use media/chapter 4/top_rotations_outliers/O06_824_with_gt.png>
+Package luatex.def Info: media/chapter 4/top_rotations_outliers/O06_824_with_gt.png  used on input line 247.
+(luatex.def)             Requested size: 192.0548pt x 194.89005pt.
+<media/chapter 4/top_rotations_outliers/P06_29_with_gt.png, id=654, 498.36188pt x 526.21594pt>
+File: media/chapter 4/top_rotations_outliers/P06_29_with_gt.png Graphic file (type png)
+<use media/chapter 4/top_rotations_outliers/P06_29_with_gt.png>
+Package luatex.def Info: media/chapter 4/top_rotations_outliers/P06_29_with_gt.png  used on input line 251.
+(luatex.def)             Requested size: 192.0548pt x 202.78246pt.
+<media/chapter 4/top_rotations_outliers/K06_164_with_gt.png, id=655, 411.78844pt x 427.5975pt>
+File: media/chapter 4/top_rotations_outliers/K06_164_with_gt.png Graphic file (type png)
+<use media/chapter 4/top_rotations_outliers/K06_164_with_gt.png>
+Package luatex.def Info: media/chapter 4/top_rotations_outliers/K06_164_with_gt.png  used on input line 255.
+(luatex.def)             Requested size: 192.0548pt x 199.42451pt.
+<media/chapter 4/top_rotations_outliers/P06_322_with_gt.png, id=656, 391.4625pt x 407.27156pt>
+File: media/chapter 4/top_rotations_outliers/P06_322_with_gt.png Graphic file (type png)
+<use media/chapter 4/top_rotations_outliers/P06_322_with_gt.png>
+Package luatex.def Info: media/chapter 4/top_rotations_outliers/P06_322_with_gt.png  used on input line 259.
+(luatex.def)             Requested size: 192.0548pt x 199.81339pt.
+<media/chapter 4/top_rotations_outliers/P06_797_with_gt.png, id=657, 460.72125pt x 490.83376pt>
+File: media/chapter 4/top_rotations_outliers/P06_797_with_gt.png Graphic file (type png)
+<use media/chapter 4/top_rotations_outliers/P06_797_with_gt.png>
+Package luatex.def Info: media/chapter 4/top_rotations_outliers/P06_797_with_gt.png  used on input line 264.
+(luatex.def)             Requested size: 192.0548pt x 204.60593pt.
+<media/chapter 4/top_rotations_outliers/N06_226_with_gt.png, id=658, 505.13719pt x 492.33937pt>
+File: media/chapter 4/top_rotations_outliers/N06_226_with_gt.png Graphic file (type png)
+<use media/chapter 4/top_rotations_outliers/N06_226_with_gt.png>
+Package luatex.def Info: media/chapter 4/top_rotations_outliers/N06_226_with_gt.png  used on input line 268.
+(luatex.def)             Requested size: 192.0548pt x 187.18855pt.
 
 
-]
+LaTeX Warning: Float too large for page by 30.211pt on input line 280.
+
+<media/chapter 4/best_distance/A06_56_with_gt.png, id=660, 540.51938pt x 475.7775pt>
+File: media/chapter 4/best_distance/A06_56_with_gt.png Graphic file (type png)
+<use media/chapter 4/best_distance/A06_56_with_gt.png>
+Package luatex.def Info: media/chapter 4/best_distance/A06_56_with_gt.png  used on input line 291.
+(luatex.def)             Requested size: 192.0548pt x 169.05101pt.
+<media/chapter 4/best_distance/C06_490_with_gt.png, id=661, 492.33937pt x 490.83376pt>
+File: media/chapter 4/best_distance/C06_490_with_gt.png Graphic file (type png)
+<use media/chapter 4/best_distance/C06_490_with_gt.png>
+Package luatex.def Info: media/chapter 4/best_distance/C06_490_with_gt.png  used on input line 295.
+(luatex.def)             Requested size: 192.0548pt x 191.46933pt.
+<media/chapter 4/best_distance/G06_797_with_gt.png, id=662, 496.85625pt x 465.23813pt>
+File: media/chapter 4/best_distance/G06_797_with_gt.png Graphic file (type png)
+<use media/chapter 4/best_distance/G06_797_with_gt.png>
+Package luatex.def Info: media/chapter 4/best_distance/G06_797_with_gt.png  used on input line 299.
+(luatex.def)             Requested size: 192.0548pt x 179.83067pt.
+<media/chapter 4/best_distance/I07_232_with_gt.png, id=663, 537.50812pt x 482.55281pt>
+File: media/chapter 4/best_distance/I07_232_with_gt.png Graphic file (type png)
+<use media/chapter 4/best_distance/I07_232_with_gt.png>
+Package luatex.def Info: media/chapter 4/best_distance/I07_232_with_gt.png  used on input line 303.
+(luatex.def)             Requested size: 192.0548pt x 172.41559pt.
+<media/chapter 4/best_distance/J07_381_with_gt.png, id=664, 553.31718pt x 484.81125pt>
+File: media/chapter 4/best_distance/J07_381_with_gt.png Graphic file (type png)
+<use media/chapter 4/best_distance/J07_381_with_gt.png>
+Package luatex.def Info: media/chapter 4/best_distance/J07_381_with_gt.png  used on input line 308.
+(luatex.def)             Requested size: 192.0548pt x 168.27353pt.
+<media/chapter 4/best_distance/L06_38_with_gt.png, id=665, 502.12593pt x 508.14844pt>
+File: media/chapter 4/best_distance/L06_38_with_gt.png Graphic file (type png)
+<use media/chapter 4/best_distance/L06_38_with_gt.png>
+Package luatex.def Info: media/chapter 4/best_distance/L06_38_with_gt.png  used on input line 312.
+(luatex.def)             Requested size: 192.0548pt x 194.36226pt.
+Package cleveref Info: loaded `english' language definitions on input line 337.
+[42]
+Package cleveref Info: loaded `english' language definitions on input line 337.
+ [43<./media/chapter 4/top_distance_outliers/P06_181_with_gt.png><./media/chapter 4/top_distance_outliers/M07_736_with_gt.png><./media/chapter 4/top_distance_outliers/P06_29_with_gt.png><./media/chapter 4/top_distance_outliers/P06_797_with_gt.png><./media/chapter 4/top_distance_outliers/E07_136_with_gt.png><./media/chapter 4/top_distance_outliers/D07_864_with_gt.png>]
+Package cleveref Info: loaded `english' language definitions on input line 337.
+ [44<./media/chapter 4/rotation_box_plot.png>]
+Package cleveref Info: loaded `english' language definitions on input line 337.
+ [45<./media/chapter 4/top_rotations_outliers/O06_824_with_gt.png><./media/chapter 4/top_rotations_outliers/P06_29_with_gt.png><./media/chapter 4/top_rotations_outliers/K06_164_with_gt.png><./media/chapter 4/top_rotations_outliers/P06_322_with_gt.png><./media/chapter 4/top_rotations_outliers/P06_797_with_gt.png><./media/chapter 4/top_rotations_outliers/N06_226_with_gt.png>]
+Package cleveref Info: loaded `english' language definitions on input line 337.
+ [46<./media/chapter 4/best_distance/A06_56_with_gt.png><./media/chapter 4/best_distance/C06_490_with_gt.png><./media/chapter 4/best_distance/G06_797_with_gt.png><./media/chapter 4/best_distance/I07_232_with_gt.png><./media/chapter 4/best_distance/J07_381_with_gt.png><./media/chapter 4/best_distance/L06_38_with_gt.png>])
+Package cleveref Info: loaded `english' language definitions on input line 354.
+ [47]
 \openout2 = chapters/conclusion.aux
  (./chapters/conclusion.tex
-Chapter 8.
-) [39
+Chapter 5.
+) [48
 
 
 
 
 ]
+Package cleveref Info: loaded `english' language definitions on input line 355.
+ [49]
 \openout2 = chapters/bibliography.aux
  (./chapters/bibliography.tex
 
@@ -3642,13 +3753,13 @@ Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Using 'family-given' now.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--385
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
 []\TU/Alegreya(0)/m/n/12 Brad-ski, G. and Kaehler, A.  \TU/Alegreya(0)/m/it/12 OpenCV\TU/Alegreya(0)/m/n/12 . So󰀖t-ware li-brary. Avail-able at
  []
 
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 385.
-[40
+(Font)              scaled to size 12.0pt on input line 382.
+[50
 
 
 
@@ -3656,44 +3767,40 @@ LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/sc' will be
 
 
 ]
-Package cleveref Info: loaded `english' language definitions on input line 385.
- [41] (./uzl-thesis.aux
+Package cleveref Info: loaded `english' language definitions on input line 382.
+ [51] (./uzl-thesis.aux
 Package cleveref Info: loaded `english' language definitions on input line 12.
 Package cleveref Info: loaded `english' language definitions on input line 14.
 Package cleveref Info: loaded `english' language definitions on input line 16.
 Package cleveref Info: loaded `english' language definitions on input line 18.
 Package cleveref Info: loaded `english' language definitions on input line 19.
 Package cleveref Info: loaded `english' language definitions on input line 20.
- (./chapters/introduction.aux) (./chapters/background_and_related_works.aux) (./chapters/swd_dataset.aux) (./chapters/ground_truth_generation_circle_fitting.aux) (./chapters/ground_truth_generation_aruco.aux) (./chapters/model_and_methodology.aux) (./chapters/results.aux) (./chapters/conclusion.aux) (./chapters/bibliography.aux))
+ (./chapters/introduction.aux) (./chapters/related_work.aux) (./chapters/creating_dataset.aux) (./chapters/estimating_steering_wheel_position.aux) (./chapters/conclusion.aux) (./chapters/bibliography.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `uzl-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0FC2DA7EB29AA6D0A507262298216ED0;5610.
+(rerunfilecheck)             Checksum: C63A1EEDB409E944A94EA7E3651A3696;5441.
 Package logreq Info: Writing requests to 'uzl-thesis.run.xml'.
 
 \openout1 = uzl-thesis.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 48031 strings out of 476447
+ 48201 strings out of 476447
  100000,2373549 words of node,token memory allocated
  869 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 7 glue, 4 kern, 1 glyph, 60 attribute, 72 glue_spec, 32 attribute_list, 2 write, 13 pdf_action nodes
-   avail lists: 1:1,2:1405,3:586,4:221,5:1006,6:75,7:8379,8:86,9:556,10:13,11:778
- 68632 multiletter control sequences out of 65536+600000
- 284 fonts using 86133119 bytes
+   avail lists: 1:1,2:1405,3:586,4:213,5:906,6:70,7:9475,8:86,9:471,10:23,11:960
+ 68771 multiletter control sequences out of 65536+600000
+ 284 fonts using 86132967 bytes
  102i,10n,135p,1906b,2944s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf></usr/local/texlive/2024/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2024/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf></usr/local/texlive/2024/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf></usr/local/texlive/2024/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2024/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Bold.otf></usr/local/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmmonoprop10-regular.otf></usr/local/texlive/2024/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf></usr/local/texlive/2024/texmf-dist/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf></usr/local/texlive/2024/texmf-dist/fonts/opentype/huerta/alegreya/AlegreyaSans-Bold.otf></usr/local/texlive/2024/texmf-dist/fonts/opentype/huerta/alegreya/AlegreyaSans-Italic.otf></usr/local/texlive/2024/texmf-dist/fonts/opentype/huerta/alegreya/AlegreyaSans-Regular.otf></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on uzl-thesis.pdf (47 pages, 5255097 bytes).
+Output written on uzl-thesis.pdf (57 pages, 7402535 bytes).
 
-PDF statistics: 772 PDF objects out of 1000 (max. 8388607)
- 608 compressed objects within 7 object streams
- 156 named destinations out of 1000 (max. 131072)
- 264 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 851 PDF objects out of 1000 (max. 8388607)
+ 645 compressed objects within 7 object streams
+ 175 named destinations out of 1000 (max. 131072)
+ 232 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -139,10 +139,10 @@
   % and in English. 
   %
   Abstract              = {
-    TO DO 
+    This thesis develops a robust approach for estimating the 3D position and orientation of a steering wheel within a vehicle cabin using 3D point cloud data, addressing the unique challenges of confined interior spaces and frequent occlusions. The research begins by creating a specialized dataset, capturing high-quality 3D point clouds of car interiors with annotated steering wheel bounding boxes. Initial ground truth generation involved a 3D circle-fitting method, which proved ineffective due to data sparsity and noise. A refined approach using ArUco board successfully generated accurate 3D bounding boxes, providing reliable ground truth data for model training and a comprehensive evaluation of the annotations was performed to prove their accuracy. To detect the steering wheel, this thesis leverages a modified Voxel R-CNN model, adapting the network to work with cubic point clouds and focusing on x-axis rotation, which aligns with the steering wheel’s primary movement. Experimental evaluations demonstrate the model’s effectiveness in estimating the steering wheel’s 3D position with high accuracy, achieving strong mAP scores across 3D and bird’s-eye-view (BEV) metrics. This research significantly advances in-cabin monitoring by providing a dataset and model tailored to automotive interiors, which are essential for enhancing driver monitoring and autonomous driving safety systems. 
   },
   Zusammenfassung       = {
-    TO DO 
+    In dieser Arbeit wird ein robuster Ansatz zur Schätzung der 3D-Position und -Orientierung eines Lenkrads in einem Fahrzeuginnenraum anhand von 3D-Punktwolkendaten entwickelt, der die besonderen Herausforderungen von engen Innenräumen und häufigen Verdeckungen berücksichtigt. Die Forschung beginnt mit der Erstellung eines speziellen Datensatzes, der hochwertige 3D-Punktwolken von Fahrzeuginnenräumen mit beschrifteten Lenkradbegrenzungsfeldern erfasst. Die anfängliche Generierung der Grundwahrheit beinhaltete eine 3D-Kreisanpassungsmethode, die sich aufgrund der geringen Datenmenge und des Rauschens als unwirksam erwies. Ein verfeinerter Ansatz unter Verwendung des ArUco-Boards erzeugte erfolgreich genaue 3D-Begrenzungsboxen, die zuverlässige Daten für das Modelltraining lieferten. Zur Erkennung des Lenkrads wird in dieser Arbeit ein modifiziertes Voxel-R-CNN-Modell verwendet, das an die Arbeit mit kubischen Punktwolken angepasst ist und sich auf die Drehung um die x-Achse konzentriert, die mit der Hauptbewegung des Lenkrads übereinstimmt. Experimentelle Auswertungen zeigen die Effektivität des Modells bei der Schätzung der 3D-Position des Lenkrads mit hoher Genauigkeit, wobei hohe mAP-Werte für 3D- und Vogelperspektiven-Metriken (BEV) erzielt werden. Diese Forschung bringt die Überwachung im Fahrzeuginnenraum erheblich voran, indem sie einen Datensatz und ein Modell bereitstellt, die auf den Fahrzeuginnenraum zugeschnitten sind und die für die Verbesserung der Fahrerüberwachung und der Sicherheitssysteme für autonomes Fahren unerlässlich sind.
   },
   %
   % Optional: 'Danksagungen' (German) or 'Acknowledgements'
@@ -349,12 +349,9 @@
 %
 
 \include{chapters/introduction}
-\include{chapters/background_and_related_works}
-\include{chapters/swd_dataset}
-\include{chapters/ground_truth_generation_circle_fitting}
-\include{chapters/ground_truth_generation_aruco}
-\include{chapters/model_and_methodology}
-\include{chapters/results}
+\include{chapters/related_work}
+\include{chapters/creating_dataset}
+\include{chapters/estimating_steering_wheel_position}
 \include{chapters/conclusion}
 % Normally, the bibliography comes next at this point. Do *not* (try
 % to) include further indices and tables like an index or

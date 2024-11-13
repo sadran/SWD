@@ -325,12 +325,9 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
 INPUT ./uzl-thesis.aux
 INPUT ./chapters/introduction.aux
-INPUT ./chapters/background_and_related_works.aux
-INPUT ./chapters/swd_dataset.aux
-INPUT ./chapters/ground_truth_generation_circle_fitting.aux
-INPUT ./chapters/ground_truth_generation_aruco.aux
-INPUT ./chapters/model_and_methodology.aux
-INPUT ./chapters/results.aux
+INPUT ./chapters/related_work.aux
+INPUT ./chapters/creating_dataset.aux
+INPUT ./chapters/estimating_steering_wheel_position.aux
 INPUT ./chapters/conclusion.aux
 INPUT ./chapters/bibliography.aux
 OUTPUT uzl-thesis.aux
@@ -377,8 +374,8 @@ INPUT ./uzl-thesis.toc
 OUTPUT uzl-thesis.toc
 OUTPUT chapters/introduction.aux
 INPUT ./chapters/introduction.tex
-OUTPUT chapters/background_and_related_works.aux
-INPUT ./chapters/background_and_related_works.tex
+OUTPUT chapters/related_work.aux
+INPUT ./chapters/related_work.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
@@ -388,8 +385,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-OUTPUT chapters/swd_dataset.aux
-INPUT ./chapters/swd_dataset.tex
+OUTPUT chapters/creating_dataset.aux
+INPUT ./chapters/creating_dataset.tex
 INPUT ./media/chapter 3/demo_model.jpg
 INPUT ./media/chapter 3/demo_model.jpg
 INPUT ./media/chapter 3/reference_board.jpg
@@ -422,8 +419,6 @@ INPUT ./media/chapter 3/torus5.png
 INPUT ./media/chapter 3/torus5.png
 INPUT ./media/chapter 3/torus6.png
 INPUT ./media/chapter 3/torus6.png
-OUTPUT chapters/ground_truth_generation_circle_fitting.aux
-INPUT ./chapters/ground_truth_generation_circle_fitting.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
@@ -433,74 +428,120 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT ./media/chapter 4/ellipse.png
-INPUT ./media/chapter 4/ellipse.png
-INPUT ./media/chapter 4/sampled_points.png
-INPUT ./media/chapter 4/sampled_points.png
-INPUT ./media/chapter 4/obb.png
-INPUT ./media/chapter 4/obb.png
-INPUT ./media/chapter 4/sphere.png
-INPUT ./media/chapter 4/sphere.png
-INPUT ./media/chapter 4/circl.png
-INPUT ./media/chapter 4/circl.png
-OUTPUT chapters/ground_truth_generation_aruco.aux
-INPUT ./chapters/ground_truth_generation_aruco.tex
-INPUT ./media/chapter 5/singlemarkersoriginal.jpg
-INPUT ./media/chapter 5/singlemarkersoriginal.jpg
-INPUT ./media/chapter 5/singlemarkersdetection.jpg
-INPUT ./media/chapter 5/singlemarkersdetection.jpg
-INPUT ./media/chapter 5/singlemarkersaxes.jpg
-INPUT ./media/chapter 5/singlemarkersaxes.jpg
-INPUT ./media/chapter 5/aruco_detection.png
-INPUT ./media/chapter 5/aruco_detection.png
-INPUT ./media/chapter 5/aruco_board_ids.png
-INPUT ./media/chapter 5/aruco_board_ids.png
-INPUT ./media/chapter 5/aruco_board_estimation0.png
-INPUT ./media/chapter 5/aruco_board_estimation0.png
-INPUT ./media/chapter 5/aruco_board_estimation1.png
-INPUT ./media/chapter 5/aruco_board_estimation1.png
-INPUT ./media/chapter 5/aruco_board_estimation2.png
-INPUT ./media/chapter 5/aruco_board_estimation2.png
-INPUT ./media/chapter 5/aruco_board_estimation3.png
-INPUT ./media/chapter 5/aruco_board_estimation3.png
-INPUT ./media/chapter 5/plane_fitting.png
-INPUT ./media/chapter 5/plane_fitting.png
-INPUT ./media/chapter 5/board_geometry.png
-INPUT ./media/chapter 5/board_geometry.png
-INPUT ./media/chapter 5/Distance Matrix.png
-INPUT ./media/chapter 5/Distance Matrix.png
-INPUT ./media/chapter 5/board_on_the_wall.png
-INPUT ./media/chapter 5/board_on_the_wall.png
-INPUT ./media/chapter 5/aruco_board_on_the_wall.png
-INPUT ./media/chapter 5/aruco_board_on_the_wall.png
-INPUT ./media/chapter 5/opencv_error_matrix.jpg
-INPUT ./media/chapter 5/opencv_error_matrix.jpg
-INPUT ./media/chapter 5/point_cloud_error_matrix.jpg
-INPUT ./media/chapter 5/point_cloud_error_matrix.jpg
-INPUT ./media/chapter 5/board's distance by opencv.png
-INPUT ./media/chapter 5/board's distance by opencv.png
-INPUT ./media/chapter 5/board’s distance mean error estimated by mapping from 2D to 3D.png
-INPUT ./media/chapter 5/board’s distance mean error estimated by mapping from 2D to 3D.png
-INPUT ./media/chapter 5/board’s distances estimated by OpenCV.png
-INPUT ./media/chapter 5/board’s distances estimated by OpenCV.png
-INPUT ./media/chapter 5/board’s distances.png
-INPUT ./media/chapter 5/board’s distances.png
-INPUT ./media/chapter 5/board’s mean angle with Z axis estimated by OpenCV.png
-INPUT ./media/chapter 5/board’s mean angle with Z axis estimated by OpenCV.png
-INPUT ./media/chapter 5/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png
-INPUT ./media/chapter 5/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png
-INPUT ./media/chapter 5/board’s angles with the camera Z axis estimated by OpenCV.png
-INPUT ./media/chapter 5/board’s angles with the camera Z axis estimated by OpenCV.png
-INPUT ./media/chapter 5/board’s angles with camera's Z axis estimated by plane fitting.png
-INPUT ./media/chapter 5/board’s angles with camera's Z axis estimated by plane fitting.png
-OUTPUT chapters/model_and_methodology.aux
-INPUT ./chapters/model_and_methodology.tex
-INPUT ./media/chapter 6/voxelrcnn2.png
-INPUT ./media/chapter 6/voxelrcnn2.png
-INPUT ./media/chapter 6/roi_pooling.png
-INPUT ./media/chapter 6/roi_pooling.png
-OUTPUT chapters/results.aux
-INPUT ./chapters/results.tex
+INPUT ./media/chapter 3/ellipse.png
+INPUT ./media/chapter 3/ellipse.png
+INPUT ./media/chapter 3/sampled_points.png
+INPUT ./media/chapter 3/sampled_points.png
+INPUT ./media/chapter 3/obb.png
+INPUT ./media/chapter 3/obb.png
+INPUT ./media/chapter 3/sphere.png
+INPUT ./media/chapter 3/sphere.png
+INPUT ./media/chapter 3/circl.png
+INPUT ./media/chapter 3/circl.png
+INPUT ./media/chapter 3/singlemarkersoriginal.jpg
+INPUT ./media/chapter 3/singlemarkersoriginal.jpg
+INPUT ./media/chapter 3/singlemarkersdetection.jpg
+INPUT ./media/chapter 3/singlemarkersdetection.jpg
+INPUT ./media/chapter 3/singlemarkersaxes.jpg
+INPUT ./media/chapter 3/singlemarkersaxes.jpg
+INPUT ./media/chapter 3/aruco_detection.png
+INPUT ./media/chapter 3/aruco_detection.png
+INPUT ./media/chapter 3/aruco_board_ids.png
+INPUT ./media/chapter 3/aruco_board_ids.png
+INPUT ./media/chapter 3/aruco_board_estimation0.png
+INPUT ./media/chapter 3/aruco_board_estimation0.png
+INPUT ./media/chapter 3/aruco_board_estimation1.png
+INPUT ./media/chapter 3/aruco_board_estimation1.png
+INPUT ./media/chapter 3/aruco_board_estimation2.png
+INPUT ./media/chapter 3/aruco_board_estimation2.png
+INPUT ./media/chapter 3/aruco_board_estimation3.png
+INPUT ./media/chapter 3/aruco_board_estimation3.png
+INPUT ./media/chapter 3/plane_fitting.png
+INPUT ./media/chapter 3/plane_fitting.png
+INPUT ./media/chapter 3/board_geometry.png
+INPUT ./media/chapter 3/board_geometry.png
+INPUT ./media/chapter 3/Distance Matrix.png
+INPUT ./media/chapter 3/Distance Matrix.png
+INPUT ./media/chapter 3/board_on_the_wall.png
+INPUT ./media/chapter 3/board_on_the_wall.png
+INPUT ./media/chapter 3/aruco_board_on_the_wall.png
+INPUT ./media/chapter 3/aruco_board_on_the_wall.png
+INPUT ./media/chapter 3/opencv_error_matrix.jpg
+INPUT ./media/chapter 3/opencv_error_matrix.jpg
+INPUT ./media/chapter 3/point_cloud_error_matrix.jpg
+INPUT ./media/chapter 3/point_cloud_error_matrix.jpg
+INPUT ./media/chapter 3/board's distance by opencv.png
+INPUT ./media/chapter 3/board's distance by opencv.png
+INPUT ./media/chapter 3/board’s distance mean error estimated by mapping from 2D to 3D.png
+INPUT ./media/chapter 3/board’s distance mean error estimated by mapping from 2D to 3D.png
+INPUT ./media/chapter 3/board’s distances estimated by OpenCV.png
+INPUT ./media/chapter 3/board’s distances estimated by OpenCV.png
+INPUT ./media/chapter 3/board’s distances.png
+INPUT ./media/chapter 3/board’s distances.png
+INPUT ./media/chapter 3/board’s mean angle with Z axis estimated by OpenCV.png
+INPUT ./media/chapter 3/board’s mean angle with Z axis estimated by OpenCV.png
+INPUT ./media/chapter 3/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png
+INPUT ./media/chapter 3/board’s_ mean_angle_with_Z_axis_estimated_by_plane_fitting.png
+INPUT ./media/chapter 3/board’s angles with the camera Z axis estimated by OpenCV.png
+INPUT ./media/chapter 3/board’s angles with the camera Z axis estimated by OpenCV.png
+INPUT ./media/chapter 3/board’s angles with camera's Z axis estimated by plane fitting.png
+INPUT ./media/chapter 3/board’s angles with camera's Z axis estimated by plane fitting.png
+OUTPUT chapters/estimating_steering_wheel_position.aux
+INPUT ./chapters/estimating_steering_wheel_position.tex
+INPUT ./media/chapter 4/voxelrcnn2.png
+INPUT ./media/chapter 4/voxelrcnn2.png
+INPUT ./media/chapter 4/roi_pooling.png
+INPUT ./media/chapter 4/roi_pooling.png
+INPUT ./media/chapter 4/3dmap70.png
+INPUT ./media/chapter 4/3dmap70.png
+INPUT ./media/chapter 4/bevmap70.png
+INPUT ./media/chapter 4/bevmap70.png
+INPUT ./media/chapter 4/distance_error.png
+INPUT ./media/chapter 4/distance_error.png
+INPUT ./media/chapter 4/rotation_error.png
+INPUT ./media/chapter 4/rotation_error.png
+INPUT ./media/chapter 4/loss.png
+INPUT ./media/chapter 4/loss.png
+INPUT ./media/chapter 4/distance_box_plot.png
+INPUT ./media/chapter 4/distance_box_plot.png
+INPUT ./media/chapter 4/top_distance_outliers/P06_181_with_gt.png
+INPUT ./media/chapter 4/top_distance_outliers/P06_181_with_gt.png
+INPUT ./media/chapter 4/top_distance_outliers/M07_736_with_gt.png
+INPUT ./media/chapter 4/top_distance_outliers/M07_736_with_gt.png
+INPUT ./media/chapter 4/top_distance_outliers/P06_29_with_gt.png
+INPUT ./media/chapter 4/top_distance_outliers/P06_29_with_gt.png
+INPUT ./media/chapter 4/top_distance_outliers/P06_797_with_gt.png
+INPUT ./media/chapter 4/top_distance_outliers/P06_797_with_gt.png
+INPUT ./media/chapter 4/top_distance_outliers/E07_136_with_gt.png
+INPUT ./media/chapter 4/top_distance_outliers/E07_136_with_gt.png
+INPUT ./media/chapter 4/top_distance_outliers/D07_864_with_gt.png
+INPUT ./media/chapter 4/top_distance_outliers/D07_864_with_gt.png
+INPUT ./media/chapter 4/rotation_box_plot.png
+INPUT ./media/chapter 4/rotation_box_plot.png
+INPUT ./media/chapter 4/top_rotations_outliers/O06_824_with_gt.png
+INPUT ./media/chapter 4/top_rotations_outliers/O06_824_with_gt.png
+INPUT ./media/chapter 4/top_rotations_outliers/P06_29_with_gt.png
+INPUT ./media/chapter 4/top_rotations_outliers/P06_29_with_gt.png
+INPUT ./media/chapter 4/top_rotations_outliers/K06_164_with_gt.png
+INPUT ./media/chapter 4/top_rotations_outliers/K06_164_with_gt.png
+INPUT ./media/chapter 4/top_rotations_outliers/P06_322_with_gt.png
+INPUT ./media/chapter 4/top_rotations_outliers/P06_322_with_gt.png
+INPUT ./media/chapter 4/top_rotations_outliers/P06_797_with_gt.png
+INPUT ./media/chapter 4/top_rotations_outliers/P06_797_with_gt.png
+INPUT ./media/chapter 4/top_rotations_outliers/N06_226_with_gt.png
+INPUT ./media/chapter 4/top_rotations_outliers/N06_226_with_gt.png
+INPUT ./media/chapter 4/best_distance/A06_56_with_gt.png
+INPUT ./media/chapter 4/best_distance/A06_56_with_gt.png
+INPUT ./media/chapter 4/best_distance/C06_490_with_gt.png
+INPUT ./media/chapter 4/best_distance/C06_490_with_gt.png
+INPUT ./media/chapter 4/best_distance/G06_797_with_gt.png
+INPUT ./media/chapter 4/best_distance/G06_797_with_gt.png
+INPUT ./media/chapter 4/best_distance/I07_232_with_gt.png
+INPUT ./media/chapter 4/best_distance/I07_232_with_gt.png
+INPUT ./media/chapter 4/best_distance/J07_381_with_gt.png
+INPUT ./media/chapter 4/best_distance/J07_381_with_gt.png
+INPUT ./media/chapter 4/best_distance/L06_38_with_gt.png
+INPUT ./media/chapter 4/best_distance/L06_38_with_gt.png
 OUTPUT chapters/conclusion.aux
 INPUT ./chapters/conclusion.tex
 OUTPUT chapters/bibliography.aux
@@ -508,12 +549,9 @@ INPUT ./chapters/bibliography.tex
 INPUT ./uzl-thesis-bibtex-entries.bib
 INPUT ./uzl-thesis.aux
 INPUT ./chapters/introduction.aux
-INPUT ./chapters/background_and_related_works.aux
-INPUT ./chapters/swd_dataset.aux
-INPUT ./chapters/ground_truth_generation_circle_fitting.aux
-INPUT ./chapters/ground_truth_generation_aruco.aux
-INPUT ./chapters/model_and_methodology.aux
-INPUT ./chapters/results.aux
+INPUT ./chapters/related_work.aux
+INPUT ./chapters/creating_dataset.aux
+INPUT ./chapters/estimating_steering_wheel_position.aux
 INPUT ./chapters/conclusion.aux
 INPUT ./chapters/bibliography.aux
 INPUT ./uzl-thesis.out
