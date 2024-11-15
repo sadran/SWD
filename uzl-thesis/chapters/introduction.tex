@@ -34,18 +34,23 @@ steering wheel’s 3D position and orientation, this dataset serves as a
 critical foundation for model training and validation.
 
 Second, this thesis proposes a model-based approach for detecting the 
-steering wheel’s 3D position using a modified VoxelRCNN architecture. 
+steering wheel’s 3D position using a modified Voxel-RCNN \cite{voxelrcnn} architecture. 
 Existing 3D object detection models, such as those trained on KITTI 
-dataset data, are typically optimized for outdoor environments with 
-non-cubic point cloud dimensions and restricted rotational degrees of 
-freedom (DOF). To overcome these limitations, the research modifies the VoxelRCNN 
-architecture to account for a cubic point cloud structure and allows for rotation detection along 
+dataset data are typically optimized for outdoor environments with 
+unbalanced point cloud dimensions and restricted rotational degrees of 
+freedom (DOF). To overcome these limitations, the research modifies the Voxel-RCNN 
+architecture to account for a point cloud with balanced cubic dimensions \((N \times N \times N)\), and allows for rotation estimation along 
 the x-axis, which is crucial for accurately representing the orientation of the steering wheel.
 
 \section{Structure of This Thesis}
-This thesis is organized to guide the reader through the development of a dataset and model for 3D steering wheel detection within the context of in-cabin monitoring for autonomous driving. Chapter 1, \textbf{Introduction}, presents the motivation for this research and highlights the specific contributions of this thesis. Chapter 2, \textbf{Related Work}, provides an overview of the existing literature on 3D object detection in autonomous driving, covering detection methods, commonly used datasets, and performance metrics, along with a summary of current challenges in the field.
-
-Chapter 3, \textbf{Creating Dataset}, details the process of building a custom dataset for steering wheel detection. This includes data collection, preprocessing, ground truth generation, and the experiments conducted to validate the dataset. Both an initial and refined approach to ground truth generation are discussed, with results presented to evaluate the dataset’s effectiveness. Chapter 4, \textbf{Estimating Steering Wheel Position}, focuses on the architecture and adaptations made to a 3D object detection network for accurately detecting the steering wheel. It includes an evaluation of the model’s performance based on the developed dataset. The thesis concludes with Chapter 5, \textbf{Conclusion}, summarizing the key findings and suggesting directions for future research.
+This thesis is organized to guide the reader through the development of a dataset and model for 3D steering wheel's pose estimation within the context of in-cabin monitoring for autonomous driving. The organization of this thesis is as follows:
+\begin{itemize}
+    \item Chapter 1, \textbf{Introduction}, presents the motivation for this research and highlights the specific contributions of this thesis. 
+    \item Chapter 2, \textbf{Related Work}, provides an overview of the existing literature on 3D object detection in autonomous driving, covering detection methods, commonly used datasets, and performance metrics, along with a summary of current challenges in the field.
+    \item Chapter 3, \textbf{Creating Dataset}, details the process of building a custom dataset for steering wheel's pose estimation. This includes data collection, preprocessing, ground truth generation, and the experiments conducted to validate the dataset. Both the initial and refined ground truth generation approaches are discussed, and results presented to evaluate the dataset’s effectiveness.
+    \item Chapter 4, \textbf{Estimating Steering Wheel Position}, focuses on the architecture and adaptations made to a 3D object detection network for accurately estimating the steering wheel's position. It includes an evaluation of the model’s performance based on the developed dataset.
+    \item The thesis concludes with Chapter 5, \textbf{Conclusion}, summarizing the key findings and suggesting directions for future research.
+\end{itemize}
 
 
 

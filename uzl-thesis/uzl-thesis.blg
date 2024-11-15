@@ -7,6 +7,7 @@ A level-1 auxiliary file: chapters/related_work.aux
 A level-1 auxiliary file: chapters/creating_dataset.aux
 A level-1 auxiliary file: chapters/estimating_steering_wheel_position.aux
 A level-1 auxiliary file: chapters/conclusion.aux
+A level-1 auxiliary file: chapters/next_steps.aux
 A level-1 auxiliary file: chapters/bibliography.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -30,7 +31,7 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 22 entries,
             6399 wiz_defined-function locations,
-            1330 strings with 13894 characters,
+            1331 strings with 13917 characters,
 and the built_in function-call counts, 265217 in all, are:
 = -- 22571
 > -- 3592

@@ -329,6 +329,7 @@ INPUT ./chapters/related_work.aux
 INPUT ./chapters/creating_dataset.aux
 INPUT ./chapters/estimating_steering_wheel_position.aux
 INPUT ./chapters/conclusion.aux
+INPUT ./chapters/next_steps.aux
 INPUT ./chapters/bibliography.aux
 OUTPUT uzl-thesis.aux
 INPUT /usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -345,8 +346,8 @@ OUTPUT uzl-thesis-blx.bib
 INPUT ./uzl-thesis.bbl
 INPUT ./uzl-thesis.bbl
 INPUT ./uzl-thesis.bbl
-INPUT ./logos/uzl-thesis-logo-itcs.pdf
-INPUT ./logos/uzl-thesis-logo-itcs.pdf
+INPUT ./logos/uzl-thesis-logo-uzl.pdf
+INPUT ./logos/uzl-thesis-logo-uzl.pdf
 INPUT ./logos/uzl-thesis-logo-slogan.pdf
 INPUT ./logos/uzl-thesis-logo-slogan.pdf
 INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -359,17 +360,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang2.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang3.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang2.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang3.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang2.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang3.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT ./uzl-thesis.toc
 OUTPUT uzl-thesis.toc
 OUTPUT chapters/introduction.aux
@@ -407,18 +397,6 @@ INPUT ./media/chapter 3/obb5.png
 INPUT ./media/chapter 3/obb5.png
 INPUT ./media/chapter 3/obb6.png
 INPUT ./media/chapter 3/obb6.png
-INPUT ./media/chapter 3/torus1.png
-INPUT ./media/chapter 3/torus1.png
-INPUT ./media/chapter 3/torus2.png
-INPUT ./media/chapter 3/torus2.png
-INPUT ./media/chapter 3/torus3.png
-INPUT ./media/chapter 3/torus3.png
-INPUT ./media/chapter 3/torus4.png
-INPUT ./media/chapter 3/torus4.png
-INPUT ./media/chapter 3/torus5.png
-INPUT ./media/chapter 3/torus5.png
-INPUT ./media/chapter 3/torus6.png
-INPUT ./media/chapter 3/torus6.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
@@ -428,6 +406,18 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./media/chapter 3/torus1.png
+INPUT ./media/chapter 3/torus1.png
+INPUT ./media/chapter 3/torus2.png
+INPUT ./media/chapter 3/torus2.png
+INPUT ./media/chapter 3/torus3.png
+INPUT ./media/chapter 3/torus3.png
+INPUT ./media/chapter 3/torus4.png
+INPUT ./media/chapter 3/torus4.png
+INPUT ./media/chapter 3/torus5.png
+INPUT ./media/chapter 3/torus5.png
+INPUT ./media/chapter 3/torus6.png
+INPUT ./media/chapter 3/torus6.png
 INPUT ./media/chapter 3/ellipse.png
 INPUT ./media/chapter 3/ellipse.png
 INPUT ./media/chapter 3/sampled_points.png
@@ -544,6 +534,8 @@ INPUT ./media/chapter 4/best_distance/L06_38_with_gt.png
 INPUT ./media/chapter 4/best_distance/L06_38_with_gt.png
 OUTPUT chapters/conclusion.aux
 INPUT ./chapters/conclusion.tex
+OUTPUT chapters/next_steps.aux
+INPUT ./chapters/next_steps.tex
 OUTPUT chapters/bibliography.aux
 INPUT ./chapters/bibliography.tex
 INPUT ./uzl-thesis-bibtex-entries.bib
@@ -553,8 +545,8 @@ INPUT ./chapters/related_work.aux
 INPUT ./chapters/creating_dataset.aux
 INPUT ./chapters/estimating_steering_wheel_position.aux
 INPUT ./chapters/conclusion.aux
+INPUT ./chapters/next_steps.aux
 INPUT ./chapters/bibliography.aux
 INPUT ./uzl-thesis.out
 INPUT ./uzl-thesis.run.xml
 OUTPUT uzl-thesis.run.xml
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb

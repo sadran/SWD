@@ -71,7 +71,7 @@
   % The 'verfasst' gets two arguments. Change the first to {an der}
   % for clinics, as in 'Verfasst = {an der}{Medizinischen Klinik I}'
   %
-  Logo-Dateiname        = {logos/uzl-thesis-logo-itcs.pdf},
+  Logo-Dateiname        = {logos/uzl-thesis-logo-uzl.pdf},
   Verfasst              = {am}{Institut für Neuro- und Bioinformatik},
   %
   % The titles:
@@ -139,7 +139,7 @@
   % and in English. 
   %
   Abstract              = {
-    This thesis develops a robust approach for estimating the 3D position and orientation of a steering wheel within a vehicle cabin using 3D point cloud data, addressing the unique challenges of confined interior spaces and frequent occlusions. The research begins by creating a specialized dataset, capturing high-quality 3D point clouds of car interiors with annotated steering wheel bounding boxes. Initial ground truth generation involved a 3D circle-fitting method, which proved ineffective due to data sparsity and noise. A refined approach using ArUco board successfully generated accurate 3D bounding boxes, providing reliable ground truth data for model training and a comprehensive evaluation of the annotations was performed to prove their accuracy. To detect the steering wheel, this thesis leverages a modified Voxel R-CNN model, adapting the network to work with cubic point clouds and focusing on x-axis rotation, which aligns with the steering wheel’s primary movement. Experimental evaluations demonstrate the model’s effectiveness in estimating the steering wheel’s 3D position with high accuracy, achieving strong mAP scores across 3D and bird’s-eye-view (BEV) metrics. This research significantly advances in-cabin monitoring by providing a dataset and model tailored to automotive interiors, which are essential for enhancing driver monitoring and autonomous driving safety systems. 
+    This thesis develops a robust approach for estimating the 3D position and orientation of a steering wheel within a vehicle cabin using 3D point cloud data, addressing the unique challenges of confined interior spaces and frequent occlusions. The research begins by creating a specialized dataset, capturing high-quality 3D point clouds of car interiors with annotated steering wheel bounding boxes. Initial ground truth generation involved a 3D circle-fitting method, which proved ineffective due to data sparsity and noise. A refined approach using ArUco board successfully generated accurate 3D bounding boxes, providing reliable ground truth data for model training, and a comprehensive evaluation of the annotations was performed to prove their accuracy. To detect the steering wheel, this thesis leverages a modified Voxel R-CNN model, adapting the network to work with cubic point clouds and focusing on x-axis rotation, which aligns with the steering wheel’s primary movement. Experimental evaluations demonstrate the model’s effectiveness in estimating the steering wheel’s 3D position with high accuracy, achieving strong mAP scores across 3D and bird’s-eye-view (BEV) metrics. This research significantly advances in-cabin monitoring by providing a dataset and model tailored to automotive interiors, which are essential for enhancing driver monitoring and autonomous driving safety systems. 
   },
   Zusammenfassung       = {
     In dieser Arbeit wird ein robuster Ansatz zur Schätzung der 3D-Position und -Orientierung eines Lenkrads in einem Fahrzeuginnenraum anhand von 3D-Punktwolkendaten entwickelt, der die besonderen Herausforderungen von engen Innenräumen und häufigen Verdeckungen berücksichtigt. Die Forschung beginnt mit der Erstellung eines speziellen Datensatzes, der hochwertige 3D-Punktwolken von Fahrzeuginnenräumen mit beschrifteten Lenkradbegrenzungsfeldern erfasst. Die anfängliche Generierung der Grundwahrheit beinhaltete eine 3D-Kreisanpassungsmethode, die sich aufgrund der geringen Datenmenge und des Rauschens als unwirksam erwies. Ein verfeinerter Ansatz unter Verwendung des ArUco-Boards erzeugte erfolgreich genaue 3D-Begrenzungsboxen, die zuverlässige Daten für das Modelltraining lieferten. Zur Erkennung des Lenkrads wird in dieser Arbeit ein modifiziertes Voxel-R-CNN-Modell verwendet, das an die Arbeit mit kubischen Punktwolken angepasst ist und sich auf die Drehung um die x-Achse konzentriert, die mit der Hauptbewegung des Lenkrads übereinstimmt. Experimentelle Auswertungen zeigen die Effektivität des Modells bei der Schätzung der 3D-Position des Lenkrads mit hoher Genauigkeit, wobei hohe mAP-Werte für 3D- und Vogelperspektiven-Metriken (BEV) erzielt werden. Diese Forschung bringt die Überwachung im Fahrzeuginnenraum erheblich voran, indem sie einen Datensatz und ein Modell bereitstellt, die auf den Fahrzeuginnenraum zugeschnitten sind und die für die Verbesserung der Fahrerüberwachung und der Sicherheitssysteme für autonomes Fahren unerlässlich sind.
@@ -151,18 +151,9 @@
   % table of contents.
   %
   Acknowledgements      = {
-    This is the place where you can thank people and institutions, do
-    not try to do this on the title page. The only exception is in
-    case you wrote your thesis while working or staying at a company or abroad. Then you
-    should use the \Latex{Weitere Unterstützung} key to provide a text
-    (in German) that acknowledges the company or foreign
-    institute. For instance, you could use texts like »Die Arbeit
-      ist im Rahmen einer Tätigkeit bei der Firma Muster GmbH
-      entstanden« or »Die Arbeit ist im Rahmen eines
-      Forschungsaufenthalts beim Institut für Dieses und Jenes an der
-      Universität Entenhausen entstanden«. Do not name and thank
-      individual persons from the company or foreign institute on the
-      title page, do that here. 
+This thesis was conducted at Gestigon GmbH – A Valeo brand – under the supervision of Foti Coleca and Thomas Klähn. I am grateful to the team at Gestigon for their guidance and support throughout the research and development process.
+I would also like to express my sincere gratitude to Professor Erhardt Barth from the Neuro-Bioinformatics Institute at the University of Lübeck for his invaluable academic supervision and insightful feedback, which greatly contributed to the progress of this work.
+Additionally, I acknowledge the use of ChatGPT, an AI language model by OpenAI, for assistance with rephrasing, spell-checking, and grammar-checking throughout this document.
   },
   % Bibliography style: Choose between
   % 
@@ -179,9 +170,6 @@
   % Alternatively:
   Numerische Bibliographie
 }
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%
 %
@@ -340,6 +328,7 @@
 \usepackage{cleveref}
 \usepackage{multirow}
 \usepackage{subcaption}
+\usepackage{caption}
 
 \begin{document}
 
@@ -353,6 +342,7 @@
 \include{chapters/creating_dataset}
 \include{chapters/estimating_steering_wheel_position}
 \include{chapters/conclusion}
+\include{chapters/next_steps}
 % Normally, the bibliography comes next at this point. Do *not* (try
 % to) include further indices and tables like an index or
 % a list of figures or a list of tables or such things. Nobody
